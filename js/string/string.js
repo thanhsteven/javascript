@@ -80,4 +80,10 @@ console.log(myStr.substring(1, 5));
 
 // Loại bỏ khoảng trống 2 bên, đưa tất cả về in hoa, thay chữ "Developer D" thành chữ "Developer and Desinger", sau đó repeat lại 2 lần.
 const myStr3 = "      Frontend Developer D       ";
-console.log(myStr3.trim().replace("Developer D","Developer and Desinger").toUpperCase().repeat(2));
+console.log(
+  myStr3
+    .trim()
+    .replace("Developer D", "Developer and Desinger")
+    .toUpperCase()
+    .repeat(2)
+);
