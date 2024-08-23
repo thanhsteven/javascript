@@ -47,3 +47,9 @@ Trang con :
 
 - Trang liên hệ -> làm giống isoglass.
 - Trang giới thiệu -> làm giống isoglass -> bỏ bộ theo dõi -> các section còn lại thì giống y chang được.
+
+- Sửa thẻ h5 ở footer thành thẻ p
+- bỏ button trong gallery hình ảnh giữa 2 page quà tặng và in vỏ hộp
+- thêm canonical vào thêm trang page
+- sửa cái h3 trong page quà tặng và in vỏ hộp bên dưới kèm theo cái h5
+
