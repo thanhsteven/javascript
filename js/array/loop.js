@@ -42,3 +42,13 @@ for (let i = number2.length - 1; i >= 0; i--) {
   console.log(`The index is ${number2[i]}`);
 }
 
+console.log("[-----Ví dụ 5-----]");
+const number3 = number2;
+// * Nested loop
+for (let i = number3.length - 1; i >= 0; i--) {
+  console.log(`The value is ${number3[i]}`);
+  for (let j = number3.length - 1; j >= 0; j--) {
+    console.log(j);
+  }
+}
+
