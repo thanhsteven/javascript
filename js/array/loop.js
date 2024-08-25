@@ -52,3 +52,43 @@ for (let i = number3.length - 1; i >= 0; i--) {
   }
 }
 
+console.log("[-----Ví dụ 6-----]");
+// * While và do while
+
+//- while -> Check điều kiện xong thì mới xử lý
+/*
+while (condition: điều kiện) {
+  body code here
+}
+*/
+console.log("Ví dụ về while");
+const number4 = number2;
+let a = 1;
+while (a < 10) {
+  console.log("The a is " + a);
+  a++;
+}
+
+//- dowhile -> xử lý xong mới check điều kiện
+/*
+do {
+  body code here
+} while (condition: điều kiện)
+*/
+console.log("Ví dụ về dowhile");
+let b = 1;
+do {
+  b++;
+  console.log("The b is " + b);
+} while (b < 10);
+
+// * For of
+let array = [];
+for (let value of number4) {
+  value += 10;
+  array.push(value);
+  console.log(value);
+  //- là giá trị chứ không phải index
+}
+console.log(array);
+
