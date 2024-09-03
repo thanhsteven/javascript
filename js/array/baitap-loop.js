@@ -44,7 +44,6 @@ const complexArray = [
 ];
 
 // * Sử dụng phương thức flat
-// - flat(number) -> làm phẳng 1 mảng lồng nhau thành 1 mảng mới với tất cả các phần tử nằm ở cùng 1 mức.
+// - flat(number) -> làm phẳng 1 mảng lồng nhau thành 1 mảng mới với tất cả các phần tử con nằm ở cùng 1 cấp.
 const flattenedArray = complexArray.flat(2);
 console.log(flattenedArray);
-
