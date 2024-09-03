@@ -30,4 +30,3 @@ console.log(sliceStudents);
 // * Cách 2 -> Sử dụng spread operator [...array]
 const spreadStudents = [...students];
 console.log(spreadStudents);
-

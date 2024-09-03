@@ -54,7 +54,45 @@ console.log(newUser);
 // ! Copy object
 // * Sao chép 1 object -> Spread Operator: {...object}
 const userA = { firstName: "Kim Thành" };
-const newUserA = userA; //=>
+const newUserA = userA;
 newUserA.firstName = "kimthanh";
 console.log(userA); // {firstName: 'kimthanh'}
 console.log(newUserA); // {firstName: 'kimthanh'}
+
+// ! Copy object phức tạp hơn
+const userB = {
+  lastName: "Nguyễn",
+  firstName: "Châu",
+  age: 20,
+  gender: "Male",
+  email: "nguyenvanan@example.com",
+  sayHi: function () {
+    console.log("Hi");
+  },
+  company: {
+    name: "XLibre",
+    address: "91a Cao Thang",
+    room: {
+      name: "Marketing",
+    },
+  },
+};
+
+const newUserBv2 = { ...userB };
+console.log(newUserBv2);
+const newUserBv3 = Object.assign({}, userB);
+console.log("[-----New User B version 3-----]");
+console.log(newUserBv3);
+
+// - 2 Cách trên chỉ dùng cho object đơn giản thôi => Object đơn giản là object chỉ có 1 cấp duy nhất.
+// - 2 Cách trên cũng chỉ copy được tới 1 cấp duy nhất trong Object chứ không copy được hết toàn bộ 1 object phức tạp => Object phức tạp là object bên trong có thêm 1 object nữa.
+
+// * Cách tốt nhất là:
+const newUserBv4 = JSON.parse(JSON.stringify(userB));
+newUserBv4.company.room.name = "Leader Marketing";
+newUserBv4.company.name = "Diamond";
+console.log("[-----New User B version 4-----]");
+console.log(newUserBv4);
+
+console.log("[-----Object bản gốc-----]");
+console.log(userB);
