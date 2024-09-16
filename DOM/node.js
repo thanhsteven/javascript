@@ -18,3 +18,24 @@ console.log(singleNode4);
 // - Nó có thể loop nhưng không sử dụng được các phương thức của array như push, pop, shift,...
 const multiNodes = document.querySelectorAll(".item");
 console.log(multiNodes);
+for (let i = 0; i < multiNodes.length; i++) {
+  console.log(multiNodes[i]);
+}
+
+// ! Document.getElementsByClassName("classname")
+// - Trả về một HTMLCollection chứa danh sách các node, nếu không có thì trả về empty
+const classNodes = document.getElementsByClassName("item");
+console.log(classNodes);
+
+// ! Document.getElementsByTagName(tagName)
+// - Trả về một HTML Collection chứa danh sách các node, nếu không có thì trả về empty []
+const tagNodes = document.getElementsByTagName("li");
+console.log(tagNodes);
+
+// ! Document.getElementsById("id")
+// - Trả về 1 node
+const idNode = document.getElementById("spinner");
+console.log(idNode);
+
+// * Hay dùng nhất là document.querySelector(tag, class, id)
+// * Tương tự luôn là document.querySelectorAll(tag, class, id)
