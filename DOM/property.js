@@ -14,3 +14,5 @@ console.log(li);
 li.forEach((item) => {
   console.log(item.getAttribute("class"));
 });
+
+// ! selector.setAttribute("attribute", value)
