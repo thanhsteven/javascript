@@ -16,3 +16,20 @@ li.forEach((item) => {
 });
 
 // ! selector.setAttribute("attribute", value)
+// - Set giá trị cho attribute nào đó của selector
+link.setAttribute("target", "_blank");
+const listLinks = document.querySelectorAll("a.link");
+
+li.forEach((item) => item.setAttribute("target", "_blank"));
+
+// ! seclector.removeAttribute("attribute", value)
+// - Xóa attribute của selector
+const p = document.getElementById("spinner");
+p.removeAttribute("style");
+
+// ! selector.hasAttribute("attribute")
+// - Kiểm tra selector có Attribute nào đó không, nếu có -> true ngược lại không có thì trả về false.
+console.log(p.hasAttribute("class"));
+if (p.hasAttribute("id")) {
+  console.log(p.hasAttribute("id"));
+}

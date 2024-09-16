@@ -4,15 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/app.css" />
   </head>
+  <style>
+    .container.isactive {
+      color: green;
+    }
+    .container.is-active {
+      color: purple;
+    }
+  </style>
   <body>
-    <div class="container">
-      <h1 class="heading">This is Title</h1>
-      <p id="spinner">
+    <div class="container isactive">
+      <h1 class="heading title abc xyz">This is Title</h1>
+      <p id="spinner" style="color: red">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eum
         tempore praesentium! Accusamus sunt excepturi molestiae dolorem earum
+        <strong class="demo" style="display: none">Hello Word</strong>
         ducimus magnam, quaerat voluptatem illo, architecto ipsum tempora?
-        Delectus, minus! Excepturi, velit.
+        Delectu minus! Excepturi, velit.
       </p>
       <ul>
         <li class="item item1">item 1</li>
@@ -24,11 +35,10 @@
       <a
         href="https://isoglass.com.vn"
         class="link"
-        target="_blank"
         rel="noopener noreferrer nofollow"
         >iSOGLASS</a
       >
     </div>
-    <script src="./js/object/this.js"></script>
+    <script src="./DOM/class.js"></script>
   </body>
 </html>
