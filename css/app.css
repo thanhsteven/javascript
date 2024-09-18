@@ -6,12 +6,18 @@
 .card {
   border: 1px solid #ddd;
   border-radius: 12px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
   cursor: pointer;
+  transition: transform linear 0.3s;
+}
+.card:hover {
+  transform: translateY(-4px);
 }
 .wrapper {
   max-width: 300px;
   height: auto;
+  margin: 20px;
   overflow: hidden;
 }
 .card-image {

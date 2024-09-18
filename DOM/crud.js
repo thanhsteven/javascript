@@ -25,3 +25,17 @@ cardContent.appendChild(cardHeading);
 cardHeading.textContent = "This is Name Card";
 card.appendChild(cardContent);
 body.appendChild(card);
+
+// ! document.createTextNode("string")
+const cardPar = document.createElement("p");
+const cardText = document.createTextNode("Hello this is Tesla Model 3");
+cardPar.appendChild(cardText);
+cardContent.appendChild(cardPar);
+
+// ! selector.cloneNode()
+const cardClone = card.cloneNode(true);
+body.appendChild(cardClone);
+
+// ! selector.hasChildNodes()
+// - Kiểm tra có phần tử có phần tử con hay không ? Nếu có thì trả về true, ngược lại là false
+console.log(card.hasChildNodes());
