@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .card {
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -34,3 +29,83 @@
   font-size: 14px;
   text-transform: lowercase;
 }
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.3s;
+}
+
+.modal.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.modal-close {
+  margin-left: auto;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #999;
+}
+
+.modal-desc {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modal-action {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.modal-submit,
+.modal-cancel {
+  border: 0;
+  font-family: inherit;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #999;
+  cursor: pointer;
+}
+
+.modal-submit {
+  background-color: #3d6ef7;
+  color: #fff;
+}
+
+.modal-cancel {
+  border: 1px solid #ddd;
+  color: #333;
+}
+
