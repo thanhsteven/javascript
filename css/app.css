@@ -114,13 +114,13 @@
   left: 15px;
   bottom: 15px;
   background-color: white;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   display: flex;
   max-width: 400px;
   height: 130px;
   transform: translateY(150%);
-  animation: noti 100s forwards 1s linear;
+  animation: noti 5s forwards 1s ease-in;
   padding: 10px;
 }
 @keyframes noti {
