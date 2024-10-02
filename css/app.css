@@ -120,7 +120,7 @@
   max-width: 400px;
   height: 130px;
   transform: translateY(150%);
-  animation: noti 5s forwards 1s ease-in;
+  animation: noti 4s forwards 1 linear;
   padding: 10px;
 }
 @keyframes noti {
