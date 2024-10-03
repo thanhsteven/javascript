@@ -75,7 +75,7 @@ console.log(fruits.slice(2, 5));
 - shift(): xóa phần tử ở đầu mảng
 
 - slice(start, end)
-- splice()
+- splice(start, )
 
 - indexOf()
 - lastIndexOf()
