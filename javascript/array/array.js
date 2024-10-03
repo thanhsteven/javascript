@@ -52,7 +52,7 @@ console.log(student04.push("ngọc"));
 console.log(student04);
 
 // * unshift -> thêm phần tử vào đầu mảng
-console.log("-----array.push-----");
+console.log("-----array.unshift-----");
 console.log(student04.unshift("tùng"));
 console.log(student04);
 

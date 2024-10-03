@@ -8,4 +8,3 @@ console.log(mergeArray);
 // * Cách 2 -> spread operator
 const mergeArray2 = [...arr1, ...arr2, ...arr3];
 console.log(mergeArray2);
-
