@@ -1,4 +1,4 @@
-"4.5"; // Dùng parseFloat = 4.5 
+"4.5"; // Dùng parseFloat = 4.5
 "5"; // Dùng parseIn = 5
 
 // ! Có thể sử dụng hàm Number để thay thế cho cả 2 hàm trên với cùng 1 chức năng
@@ -12,13 +12,11 @@ console.log(Number(false)); // = 0
 console.log(Number(true)); // = 1
 console.log(Number(NaN)); // = NaN
 
-
 // ! Ngược lại với Number là String
 // ! String chuyển tất cả thành dạng string hết
 // * String(value)
 console.log(String(6.3)); // = "6.3"
 console.log(String(null)); // = "null"
-
 
 // ! Hàm Boolean
 // ! Trả về 2 giá trị là True hoặc False
@@ -47,9 +45,8 @@ console.log("" - 1); // Number("") --> 0 - 1 = -1
 console.log(false - true); // 0 - 1 = -1
 console.log(null + 10); // 0 + 10 = 10
 
-
 // ! Toán tử so sánh
-// * Bao gồm: < | > | <= | >= 
+// * Bao gồm: < | > | <= | >=
 console.log(5 > 7); // False
 console.log(6 >= 6); // True
 
