@@ -16,11 +16,10 @@ console.log(newStr2);
 const newStr3 = `My name is ${name} and I am a ${job} and 
 I love conding.`;
 console.log(newStr3);
+// * Length : số lượng ký tự của 1 chuỗi, đếm từ số 0 trở đi (tính luôn số 0).
 console.log(newStr3.length);
 
-//! Length : số lượng ký tự của 1 chuỗi, đếm từ số 0 trở đi (tính luôn số 0).
-//! Index : là vị trí của từng ký tự trong chuỗi, bao gồm cả khoảng trắng.
-
+// * Index : là vị trí của từng ký tự trong chuỗi, bao gồm cả khoảng trắng.
 const myStr = "Frontend Developer";
 
 // * Ngăn cách 2 từ thành 1 mảng
