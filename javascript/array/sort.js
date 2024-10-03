@@ -3,7 +3,7 @@ console.log("-----array.sort-----");
 const number = [1, 100, 5, 999, 12000];
 console.log(number.sort());
 
-// * Cơ chế của sort là bên trong sẽ gọi 1 functioni call back ở trong.
+// * Cơ chế của sort là bên trong sẽ gọi 1 function call back ở trong.
 // * sort(function(a, b))
 // * Trong function này có 2 tham số a và b -> đại diện cho 2 số đứng gần nhau trong mảng
 
