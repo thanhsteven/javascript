@@ -19,6 +19,10 @@ console.log(fruits);
 fruits.pop();
 console.log(fruits);
 
+// * Xóa phần tử đầu mảng
+fruits.shift();
+console.log(fruits);
+
 // * Vòng lặp trong mảng
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
@@ -54,11 +58,11 @@ console.log(tropicalFruits.includes());
 
 /*
 ! Tổng hợp kiến thức
-- push()
-- unshift()
+- push(): thêm phần tử mới vào cuối mảng
+- unshift(): thêm phần tử mới vào đầu mảng
 
-- pop()
-- shift()
+- pop(): xóa phần tử ở cuối mảng
+- shift(): xóa phần tử ở đầu mảng
 
 - indexOf()
 - lastIndexOf()
