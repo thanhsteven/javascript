@@ -80,21 +80,43 @@ let forEachAnimals = animals.forEach(function (item) {
 });
 console.log(forEachAnimals); // undefined
 
-// * Hàm map() trong JavaScript được sử dụng để tạo ra một mảng mới bằng cách áp dụng một hàm lên từng phần tử của mảng gốc. Không giống như forEach() chỉ thực hiện thao tác trên các phần tử mà không trả về giá trị, map() trả về một mảng mới với các giá trị đã được biến đổi.
+// * Hàm map(): trong JavaScript được sử dụng để tạo ra một mảng mới bằng cách áp dụng một hàm lên từng phần tử của mảng gốc. Không giống như forEach() chỉ thực hiện thao tác trên các phần tử mà không trả về giá trị, map() trả về một mảng mới với các giá trị đã được biến đổi.
 let mapAnimals = animals.map(function (item) {
   return "This is " + item;
 });
 console.log(mapAnimals);
 
-// *  Hàm filter() trong JavaScript được sử dụng để tạo ra một mảng mới chứa các phần tử từ mảng ban đầu thỏa mãn điều kiện do bạn cung cấp. Hàm này không thay đổi mảng gốc mà chỉ lọc ra các phần tử và trả về mảng mới dựa trên điều kiện kiểm tra.
+// *  Hàm filter(): trong JavaScript được sử dụng để tạo ra một mảng mới chứa các phần tử từ mảng ban đầu thỏa mãn điều kiện do bạn cung cấp. Hàm này không thay đổi mảng gốc mà chỉ lọc ra các phần tử và trả về mảng mới dựa trên điều kiện kiểm tra.
+//- let newArray = array.filter(function(element, [index], [array]) { điều kiện kiểm tra })
+
 let numberList = [45, 92, 15, 63, 12, 77, 32, 80, 48, 7];
 let filterNumber = numberList.filter(function (item) {
   return item > 50 && item + 1;
 });
 console.log(filterNumber);
 
-// * Hàm reduce() trong JavaScript được sử dụng để "rút gọn" (giảm) một mảng xuống một giá trị duy nhất bằng cách áp dụng một hàm callback lên từng phần tử của mảng. Hàm này thường được sử dụng để tính tổng, tích, hoặc thực hiện các phép tính phức tạp khác dựa trên các phần tử của mảng.
+// * Hàm reduce(): trong JavaScript được sử dụng để "rút gọn" (giảm) một mảng xuống một giá trị duy nhất bằng cách áp dụng một hàm callback lên từng phần tử của mảng. Hàm này thường được sử dụng để tính tổng, tích, hoặc thực hiện các phép tính phức tạp khác dựa trên các phần tử của mảng.
+//- array.reduce(function(pre, next, [index], [array]) { return => code xử lý })
 let reduceNumber = numberList.reduce(function (pre, next) {
   return pre + next;
 });
 console.log(reduceNumber);
+
+// * Hàm every(): trong JavaScript được sử dụng để kiểm tra xem tất cả các phần tử trong một mảng có thỏa mãn một điều kiện nhất định hay không. Nếu tất cả các phần tử đều thỏa mãn điều kiện, every() sẽ trả về true; nếu có ít nhất một phần tử không thỏa mãn, nó sẽ trả về false. Nếu mảng rỗng, every() cũng trả về true.
+//- array.every(function(element, [index], [array]) { return => Điều kiện kiểm tra})
+let everyNumber = numberList.every(function (item) {
+  return item > 10;
+});
+console.log(everyNumber);
+
+let checkStringNumber = numberList.every(function (item) {
+  return typeof item === "number";
+});
+console.log(checkStringNumber);
+
+// * Hàm some(): trong JavaScript được sử dụng để kiểm tra xem có ít nhất một phần tử trong mảng thỏa mãn một điều kiện nhất định hay không. Nếu có ít nhất một phần tử thỏa mãn điều kiện, some() sẽ trả về true; nếu không có phần tử nào thỏa mãn, nó sẽ trả về false. Nếu mảng rỗng, some() cũng trả về false.
+//- array.some(function(element, [index], [array]) { return => điều kiện kiểm tra })
+let someNumber = numberList.some(function (item) {
+  return item < 12;
+});
+console.log(someNumber);
