@@ -60,3 +60,11 @@ console.log(fruit2);
 
 // * Trích xuất phần tử trong mảng và trả về một mảng mới không thay đồi mảng cũ
 console.log(fruits.slice(2, 5));
+
+console.log("----- New Array 2 -----");
+
+let animals = ["cat", "dog", "elephant", "tiger", "lion", "rabbit", "giraffe"];
+
+animals.forEach(function (item) {
+  item.toString() + " đây là string";
+});

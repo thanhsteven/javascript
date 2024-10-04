@@ -1,9 +1,12 @@
 let fullName = "Phạm Kim Thành";
 let birthday = "24/01/1996";
-
+let yearBorn = 1996;
 let lastName = "Phạm";
 let middleName = "Kim";
 let firstName = "Thành";
+
+// * Chuyển sang string
+console.log(yearBorn.toString());
 
 // * Nối chuỗi
 let result = lastName.concat(" ", middleName, firstName);
