@@ -91,4 +91,3 @@ for (let value of number4) {
   //- là giá trị chứ không phải index
 }
 console.log(array);
-

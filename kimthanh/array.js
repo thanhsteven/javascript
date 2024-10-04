@@ -56,15 +56,39 @@ let fruit = fruits.concat(tropicalFruits);
 console.log(fruit);
 
 let fruit2 = [...fruits, ...tropicalFruits];
+console.log(fruits.slice(2, 5));
 console.log(fruit2);
 
-// * Trích xuất phần tử trong mảng và trả về một mảng mới không thay đồi mảng cũ
-console.log(fruits.slice(2, 5));
-
 console.log("----- New Array 2 -----");
+let animals = [
+  "cat",
+  "dog",
+  "elephant",
+  "tiger",
+  "lion",
+  "rabbit",
+  "giraffe",
+  "bear",
+  "zebra",
+  "kangaroo",
+];
 
-let animals = ["cat", "dog", "elephant", "tiger", "lion", "rabbit", "giraffe"];
-
-animals.forEach(function (item) {
-  item.toString() + " đây là string";
+// * Hàm forEach() trong JavaScript được sử dụng để thực hiện một hàm (callback) trên mỗi phần tử của mảng. Nó lặp qua từng phần tử của mảng và không trả về giá trị (undefined). forEach() là một phương thức của mảng và được sử dụng khi bạn muốn thực hiện một thao tác trên mỗi phần tử mà không cần trả về một mảng mới.
+// ? Sử dụng forEach thì không có return nhé
+let forEachAnimals = animals.forEach(function (item) {
+  return "Đây là con " + item.toString();
 });
+console.log(forEachAnimals); // undefined
+
+// * Hàm map() trong JavaScript được sử dụng để tạo ra một mảng mới bằng cách áp dụng một hàm lên từng phần tử của mảng gốc. Không giống như forEach() chỉ thực hiện thao tác trên các phần tử mà không trả về giá trị, map() trả về một mảng mới với các giá trị đã được biến đổi.
+let mapAnimals = animals.map(function (item) {
+  return "This is " + item;
+});
+console.log(mapAnimals);
+
+// *  Hàm filter() trong JavaScript được sử dụng để tạo ra một mảng mới chứa các phần tử từ mảng ban đầu thỏa mãn điều kiện do bạn cung cấp. Hàm này không thay đổi mảng gốc mà chỉ lọc ra các phần tử và trả về mảng mới dựa trên điều kiện kiểm tra.
+let numberList = [45, 92, 15, 63, 12, 77, 32, 80, 48, 7];
+let filterNumber = numberList.filter(function (item) {
+  return item > 50 && item + 1;
+});
+console.log(filterNumber);
