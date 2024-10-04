@@ -1,5 +1,3 @@
-// ! Object.keys(object)
-// * Trả về 1 mảng (array) chứa tất cả các key của object
 const student = {
   id: "S123456",
   name: "Nguyen Van An",
@@ -10,7 +8,10 @@ const student = {
     console.log("Hi");
   },
 };
+
+// ! Object.keys(object)
 const keys = Object.keys(student);
+// * Trả về 1 mảng (array) chứa tất cả các key của object
 console.log(keys);
 console.log(`Độ dài mảng: ${keys.length}`);
 
@@ -80,6 +81,7 @@ const userB = {
 
 const newUserBv2 = { ...userB };
 console.log(newUserBv2);
+
 const newUserBv3 = Object.assign({}, userB);
 console.log("[-----New User B version 3-----]");
 console.log(newUserBv3);
@@ -91,6 +93,7 @@ console.log(newUserBv3);
 const newUserBv4 = JSON.parse(JSON.stringify(userB));
 newUserBv4.company.room.name = "Leader Marketing";
 newUserBv4.company.name = "Diamond";
+
 console.log("[-----New User B version 4-----]");
 console.log(newUserBv4);
 
