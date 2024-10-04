@@ -92,3 +92,9 @@ let filterNumber = numberList.filter(function (item) {
   return item > 50 && item + 1;
 });
 console.log(filterNumber);
+
+// * Hàm reduce() trong JavaScript được sử dụng để "rút gọn" (giảm) một mảng xuống một giá trị duy nhất bằng cách áp dụng một hàm callback lên từng phần tử của mảng. Hàm này thường được sử dụng để tính tổng, tích, hoặc thực hiện các phép tính phức tạp khác dựa trên các phần tử của mảng.
+let reduceNumber = numberList.reduce(function (pre, next) {
+  return pre + next;
+});
+console.log(reduceNumber);
