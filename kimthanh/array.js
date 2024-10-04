@@ -31,19 +31,14 @@ for (let i = 0; i < fruits.length; i++) {
 // * Đảo ngược giá trị trong mảng
 console.log(fruits.reverse());
 
-// * Nối các phần tử trong mảng thành string
+// * Nối các phần tử trong mảng thành chuỗi
 console.log(fruits.join(" "));
 
-let tropicalFruits = [
-  "Mango",
-  "Papaya",
-  "Pineapple",
-  "Coconut",
-  "Banana",
-  "Lychee",
-  "Banana",
-  "Dragon Fruit",
-];
+// * Chuyển mảng thành chuỗi
+console.log(fruits.toString());
+
+console.log("----- New Array -----");
+let tropicalFruits = ["Mango", "Pineapple", "Banana", "Banana", "Dragon Fruit"];
 
 // * Tìm vị trí của phần tử đầu tiên trong mảng
 console.log(tropicalFruits.indexOf("Banana"));
@@ -54,7 +49,7 @@ console.log(tropicalFruits.lastIndexOf("Lychee"));
 console.log(tropicalFruits.lastIndexOf("Banana"));
 
 // * Kiểm tra xem trong mảng có phần tử X hay không ?
-console.log(tropicalFruits.includes());
+console.log(tropicalFruits.includes("Banana")); // - true
 
 // * Gộp mảng - có 2 cách
 let fruit = fruits.concat(tropicalFruits);
