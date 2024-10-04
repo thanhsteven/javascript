@@ -56,7 +56,7 @@ console.log(tropicalFruits.lastIndexOf("Banana"));
 // * Kiểm tra xem trong mảng có phần tử X hay không ?
 console.log(tropicalFruits.includes());
 
-// * Gộp mảng - 2 cách
+// * Gộp mảng - có 2 cách
 let fruit = fruits.concat(tropicalFruits);
 console.log(fruit);
 
@@ -65,25 +65,3 @@ console.log(fruit2);
 
 // * Trích xuất phần tử trong mảng và trả về một mảng mới không thay đồi mảng cũ
 console.log(fruits.slice(2, 5));
-
-/*
-! Tổng hợp kiến thức
-- push(): thêm phần tử mới vào cuối mảng
-- unshift(): thêm phần tử mới vào đầu mảng
-
-- pop(): xóa phần tử ở cuối mảng
-- shift(): xóa phần tử ở đầu mảng
-
-- slice(start, end)
-- splice(start, )
-
-- indexOf()
-- lastIndexOf()
-
-- join()
-- reverse()
-
-- include()
-- concat()
-
-*/
