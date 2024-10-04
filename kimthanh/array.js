@@ -52,26 +52,16 @@ console.log(tropicalFruits.lastIndexOf("Banana"));
 console.log(tropicalFruits.includes("Banana")); // - true
 
 // * Gộp mảng - có 2 cách
+// * Cách 1
 let fruit = fruits.concat(tropicalFruits);
 console.log(fruit);
-
+// * Cách 2
 let fruit2 = [...fruits, ...tropicalFruits];
 console.log(fruits.slice(2, 5));
 console.log(fruit2);
 
 console.log("----- New Array 2 -----");
-let animals = [
-  "cat",
-  "dog",
-  "elephant",
-  "tiger",
-  "lion",
-  "rabbit",
-  "giraffe",
-  "bear",
-  "zebra",
-  "kangaroo",
-];
+let animals = ["cat", "dog", "elephant", "tiger", "zebra", "kangaroo"];
 
 // * Hàm forEach() trong JavaScript được sử dụng để thực hiện một hàm (callback) trên mỗi phần tử của mảng. Nó lặp qua từng phần tử của mảng và không trả về giá trị (undefined). forEach() là một phương thức của mảng và được sử dụng khi bạn muốn thực hiện một thao tác trên mỗi phần tử mà không cần trả về một mảng mới.
 // ? Sử dụng forEach thì không có return nhé
