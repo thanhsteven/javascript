@@ -4,15 +4,31 @@ const person = {
   job: "Developer",
   isMarried: false,
   hobbies: ["reading", "gaming", "coding"],
+  greet: function () {
+    return "Xin chào, tôi tên là " + this.name;
+  },
   address: {
     street: "91a Cao Thắng",
     city: "HCM city",
     country: "Vietnam",
   },
-  greet: function () {
-    console.log("Hello, my name is " + this.name);
-  },
 };
+
+// * Destructuring nhiều lớp
+const {
+  name: myName,
+  age: myAge,
+  job,
+  isMarried: married,
+  address: { street, city, country },
+  greet,
+} = person;
+
+console.log(
+  `Tôi tên là ${myName}, năm nay tôi ${myAge} tuổi, tôi đang là một ${job}, tôi ${
+    married == false ? "chưa kết hôn" : "đã kết hôn rồi"
+  }. Địa chỉ mà tôi sinh sốn là ${street} ${city} ${country} và đây là lời nói đầu tiên của tôi khi gặp cô ấy: ${person.greet()}`
+);
 
 // * Thay đổi giá trị của object
 person.address.street = "91a đường Cao Thắng";
@@ -94,4 +110,42 @@ console.log(newUser);
 
 const copyUser = Object.assign({}, user);
 console.log(copyUser);
+
+const minhchau = {
+  name: "Minh Châu",
+  age: 25,
+  isMale: "Female",
+  isMarried: true,
+};
+
+// * Destructuring là một cách viết ngắn gọn hơn khi sử dụng các thuộc tính key của object. Tuy nhiên các tên biến bắt buộc phải trùng với tên key của object, bởi vì JavaScript sẽ tìm kiếm các thuộc tính trong object dựa trên tên key mà bạn chỉ định.
+let { name, age, isMale } = minhchau;
+console.log(name, age, isMale);
+
+// * Một cách khác để đặt tên theo ý muốn
+const {
+  name: fullName,
+  age: yourAge,
+  isMale: gender,
+  grade = "Đại học",
+} = minhchau;
+
+console.log(
+  `Bạn ${fullName} năm nay ${yourAge} tuổi là ${
+    gender === "Female" ? "Nữ" : "Nam"
+  } và đang học ${grade}`
+);
+
+// * Vòng lặp trong Object
+for (let key in person) {
+  console.log(key + " : " + person[key]);
+}
+
+Object.entries(person).forEach(([key, value]) => {
+  console.log(`${key} : ${value}`);
+});
+
+for (let [key, value] of Object.entries(person)) {
+  console.log(`${key} : ${value}`);
+}
 

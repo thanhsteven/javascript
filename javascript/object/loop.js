@@ -16,3 +16,4 @@ for (let key in student) {
   const value = student[key];
   console.log(`${key}: ${value}`);
 }
+
