@@ -67,3 +67,17 @@ if (ulList.hasAttribute("id")) {
   console.log("Đúng là nó có thuộc tính này");
 }
 
+// * textContent
+//- Lấy văn bản thô từ phần tử và các phần tử con, kể cả văn bản bị ẩn.
+descript.textContent = "Khi người mình yêu khóc";
+console.log(descript.textContent);
+
+// * innerText
+//- Lấy văn bản hiển thị mà người dùng có thể nhìn thấy, không bao gồm văn bản bị ẩn.
+let paragraph = document.querySelector(".paragraph");
+console.log(paragraph.innerText);
+
+// * innerHTML
+//- Lấy hoặc đặt toàn bộ nội dung HTML của phần tử, bao gồm cả thẻ HTML.
+console.log(paragraph.innerHTML);
+

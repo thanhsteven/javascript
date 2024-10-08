@@ -13,3 +13,4 @@ console.log(spinner.innerText);
 // spinner.textContent = `<div class="demo">Hello HTML !</div>`;
 console.log(spinner.innerHTML);
 spinner.innerHTML = '<div class="demo">Hello HTML !</div>';
+
