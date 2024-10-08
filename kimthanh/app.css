@@ -30,3 +30,50 @@ img {
   display: block;
   max-width: 100%;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.description {
+  color: #555;
+  font-size: 16px;
+  margin: 20px 0;
+  line-height: 1.2rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#item-list {
+  list-style: none;
+  margin-bottom: 15px;
+}
+#item-list li {
+  padding-block: 2px;
+}
+
+.link-item {
+  cursor: pointer;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+

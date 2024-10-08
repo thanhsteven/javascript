@@ -39,3 +39,4 @@ console.log(idNode);
 
 // * Hay dùng nhất là document.querySelector(tag, class, id)
 // * Tương tự luôn là document.querySelectorAll(tag, class, id)
+
