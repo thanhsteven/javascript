@@ -81,3 +81,26 @@ console.log(paragraph.innerText);
 //- Lấy hoặc đặt toàn bộ nội dung HTML của phần tử, bao gồm cả thẻ HTML.
 console.log(paragraph.innerHTML);
 
+// * className
+//- Dùng để lấy hoặc thiết lập toàn bộ tên lớp CSS của một phần tử dưới dạng chuỗi.
+//- Khi bạn gán một giá trị cho className, toàn bộ chuỗi tên lớp trước đó sẽ bị thay thế.
+let container = document.querySelector(".container");
+// container.className = "container";
+console.log(container.className);
+
+// * classList
+//- Có thể thêm hoặc xóa một lớp mà không thay đổi các lớp hiện tại của nó.
+container.classList.remove("flex");
+container.classList.remove("flex-direction");
+container.classList.remove("align-item");
+container.classList.remove("justify-content");
+console.log(container);
+
+h1Title.classList.add("heading-one");
+console.log(h1Title);
+
+console.log(h1Title.classList.contains("heading-one"));
+
+h1Title.classList.toggle("is-active");
+console.log(h1Title);
+

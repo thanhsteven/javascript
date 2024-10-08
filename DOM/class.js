@@ -17,3 +17,4 @@ container.classList.toggle("container");
 const title = document.querySelector(".title");
 console.log(title.className);
 title.className = "title";
+
