@@ -103,4 +103,3 @@ console.log(h1Title.classList.contains("heading-one"));
 
 h1Title.classList.toggle("is-active");
 console.log(h1Title);
-
