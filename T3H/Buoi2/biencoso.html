@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biến cơ sở</title>
+  </head>
+  <style></style>
+  <body></body>
+  <script>
+    // Khai báo biến
+    var hoten = "";
+    let so1 = 4.5;
+    var a1 = null;
+    // console.log(typeof a1);
+    // console.log(typeof hoten);
+    // console.log(typeof so1);
+
+    // Đối tượng
+    var sinhvien = {};
+    var danhsach = [];
+    // console.log(typeof sinhvien);
+    // console.log(typeof danhsach);
+
+    // Phân biệt từ khóa Let và Var
+    let so = 1;
+    so = so + 1;
+    // let so = 10; //-> Lỗi vì biến so đã khai báo rồi
+    console.log(so);
+
+    var so2 = 2;
+    so2 = so2 + 3;
+    var so2 = 8;
+    console.log(so2); //-> Không lỗi
+    // ! Vậy Var thì được cập nhật lại tên biến còn let thì không
+
+    // Khai báo biến toàn cục
+    // Biến ngoài hàm (function) là biến toàn cục
+    // Biến trong hàm (function) là biến cục bộ
+    function bienCucBo() {
+      number = number + 1;
+      return number;
+    }
+
+    let number = 10; // Gọi là biến toàn cục
+    let ketqua = bienCucBo();
+
+    console.log(ketqua);
+    console.log(number);
+
+    function bienToanCuc() {
+      let bien = 12;
+      bien = bien + 1;
+      return bien;
+    }
+
+    let numberA = 11;
+    let kqBienToanCuc = bienToanCuc();
+
+    console.log(numberA);
+    console.log(kqBienToanCuc);
+  </script>
+</html>
