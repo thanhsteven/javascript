@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiểm tra số chẵn lẻ</title>
+  </head>
+  <style>
+    #Th_Ketqua {
+      margin-top: 20px;
+    }
+    #so {
+      padding: 8px;
+      border-radius: 4px;
+      border-width: 1px;
+    }
+    #Th_Kiemtra {
+      padding: 5px 10px;
+    }
+  </style>
+  <body>
+    <p>Nhập số cần kiểm tra: <input type="text" id="Th_so" /></p>
+    <button id="Th_Kiemtra">Kiểm tra</button>
+    <div id="Th_Ketqua"></div>
+  </body>
+  <script src="../js/thuvien.js"></script>
+  <script>
+    Th_Kiemtra.onclick = () => {
+      let number = document.querySelector("#Th_so").value.trim();
+      // Kiểm tra dữ liệu hợp lệ
+      if (number == "") {
+        Th_Ketqua.innerHTML = "Nhập số cần kiểm tra";
+        Th_so.focus();
+        return false;
+      }
+      // Dạng chuỗi
+      if (isNaN(number)) {
+        Th_Ketqua.innerHTML = "Nhập số cần kiểm dưới dạng số";
+        Th_so.focus();
+        return false;
+      }
+
+      let ketqua = checkEvenOdd(number);
+      if (ketqua) {
+        Th_Ketqua.innerHTML = "Đây là số chẵn";
+      } else {
+        Th_Ketqua.innerHTML = "Đây là số lẻ";
+      }
+    };
+  </script>
+</html>
