@@ -29,12 +29,27 @@
     <button id="Th_DongY">Tính tổng</button>
     <div id="Th_Ketqua"></div>
   </body>
+  <script src="../js/thuvien.js"></script>
   <script>
     document.querySelector("#Th_DongY").onclick = () => {
       let a = document.querySelector("#A").value;
       let b = document.querySelector("#B").value;
+      // Kiểm tra dữ liệu rỗng
+      if (a == "" || b == "") {
+        alert("Vui lòng nhập số A và B");
+        Th_Ketqua.innerHTML = "Vui lòng nhập số A và B";
+        document.querySelector("#A").focus();
+        return false;
+      }
+      if (isNaN(a) || isNaN(b)) {
+        Th_Ketqua.innerHTML = "Nhập số hạng 1 là dạng số";
+        alert("Nhập A và B là dạng số");
+        document.querySelector("#A").focus();
+        return false;
+      }
       let tong = Number(a) + Number(b);
-      Th_Ketqua.innerHTML = `Kết quả là: ${tong}`;
+      let tong2 = tongHaiSo(a, b);
+      Th_Ketqua.innerHTML = `Kết quả của ${a} + ${b} = ${tong2}`;
     };
   </script>
 </html>
