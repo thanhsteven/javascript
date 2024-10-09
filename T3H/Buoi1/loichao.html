@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lời chào</title>
+  </head>
+  <style>
+    body {
+      padding: 20px;
+    }
+    input,
+    button {
+      padding: 10px;
+      border-radius: 4px;
+      border-width: 1px;
+    }
+  </style>
+  <body>
+    <p>Nhập họ tên: <input type="text" name="" id="Th_Hoten" /></p>
+    <button id="Th_DongY">Xuất</button>
+    <hr />
+    <div id="Th_Ketqua"></div>
+  </body>
+  <script>
+    document.querySelector("#Th_DongY").onclick = function () {
+      let hoTen = Th_Hoten.value;
+      let cauChao = "Chào bạn " + hoTen;
+      Th_Ketqua.innerHTML = cauChao;
+      console.log(hoTen);
+    };
+  </script>
+</html>

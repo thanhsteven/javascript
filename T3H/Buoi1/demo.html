@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 20px;
+    }
+    p {
+      margin-block: 10px;
+    }
+    button {
+      padding: 10px;
+      margin-block: 15px;
+      border-radius: 4px;
+      border-width: 1px;
+      cursor: pointer;
+    }
+    input {
+      min-height: 20px;
+      padding: 10px;
+      border-radius: 4px;
+      border-width: 1px;
+    }
+  </style>
+  <body>
+    <h1 id="Th_tieu_de">Xin chào</h1>
+    <p id="Th_loi_chao">Xin chào cô chú xin chào các bạn</p>
+    <p id="Th_loi_chao_2">Chào cái L... què gì chào quài dậy</p>
+    <button id="Th_dong_y">Đồng ý</button>
+    <div class="form">
+      <input type="text" name="" id="Th_ho_ten" value="Javascript" />
+      <button id="btn">Đồng ý</button>
+    </div>
+  </body>
+  <script>
+    Th_dong_y.onclick = () => {
+      console.log("Xin chào");
+      // Cách 1
+      let p = document.getElementById("Th_loi_chao");
+      console.log(p.innerHTML);
+      p.innerHTML = "Chào cô chú đi con !";
+      // Cách 2
+      let p2 = document.querySelector("#Th_loi_chao_2");
+      p2.innerHTML = "<strong>Xin chào lần 2</strong>";
+      console.log(p2.innerHTML);
+    };
+    btn.onclick = function () {
+      let hoten = Th_ho_ten;
+      hoten.value = "Trần Anh Tuấn";
+      console.log(hoten.value);
+    };
+  </script>
+</html>
