@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tổng Hai Số</title>
+  </head>
+  <style>
+    body {
+      padding: 20px;
+    }
+    button {
+      padding: 8px 12px;
+      border-width: 1px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input {
+      padding: 6px;
+    }
+    #Th_Ketqua {
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <h1>Tổng 2 số</h1>
+    <p>Nhập số hạng 1: <input type="text" name="" id="A" /></p>
+    <p>Nhập số hạng 2: <input type="text" name="" id="B" /></p>
+    <button id="Th_DongY">Tính tổng</button>
+    <div id="Th_Ketqua"></div>
+  </body>
+  <script>
+    document.querySelector("#Th_DongY").onclick = () => {
+      let a = document.querySelector("#A").value;
+      let b = document.querySelector("#B").value;
+      let tong = Number(a) + Number(b);
+      Th_Ketqua.innerHTML = `Kết quả là: ${tong}`;
+    };
+  </script>
+</html>
