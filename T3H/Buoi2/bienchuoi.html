@@ -13,16 +13,16 @@
 
     // Chiều dài của một chuỗi
     let chieuDai = hoten.length;
-    console.log(chieuDai);
+    console.log("Chiều dài chuỗi: " + chieuDai);
 
-    // console.log(hoten.toUpperCase());
-    // console.log(hoten.toLowerCase());
-    // console.log(hoten.toLocaleUpperCase());
+    console.log(hoten.toUpperCase());
+    console.log(hoten.toLowerCase());
 
     // Lấy ký tự đầu tiên
-    // console.log(hoten[0]);
+    console.log("Ký tự đầu tiên: " + hoten[0]);
     // Lấy ký tự cuối
-    // console.log(hoten[chieuDai - 1]);
+    console.log("Ký tự cuối: " + hoten[chieuDai - 1]);
+
     // Kiểm tra chuỗi con có trong chuỗi cha
     // includes có phân biệt chữ hoa với chữ thường
     let gtTim = "t";
@@ -32,8 +32,27 @@
     // Tìm chuỗi con trong chuỗi tra và nằm ở vị trí thứ mấy
     let vitridau = hoten.toLowerCase().indexOf(gtTim.toLowerCase());
     let vitricuoi = hoten.toLowerCase().lastIndexOf(gtTim.toLowerCase());
-    console.log(vitridau);
-    console.log(vitricuoi);
+    console.log("Vị trí đầu: " + vitridau);
+    console.log("Vị trí cuối: " + vitricuoi);
+
+    // Chuyển 1 Chuỗi thành 1 Mảng
+    let arrString = hoten.split(" ");
+    console.log(arrString);
+
+    // Thay thế phần tử trong mảng
+    console.log(hoten.replace("Trung", "Chung"));
+
+    // Cắt chuỗi
+    console.log(hoten.substr(14, 3));
+
+    // Đối tượng chuyển sang kiểu JSON
+    let hocvien = {
+      maso: "A001",
+      hoten: "Nguyễn Huỳnh Minh Châu",
+    };
+    let chuoiJSON = JSON.stringify(hocvien);
+    console.log(chuoiJSON);
+
+    // Từ chuỗi JSON chuyển sang thành đối tượng
   </script>
 </html>
-

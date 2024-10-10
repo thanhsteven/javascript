@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập xuất điểm</title>
+  </head>
+  <style>
+    #Th_ketqua {
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <h1>Tính điểm trung bình</h1>
+    <p>Nhập các điểm số: <input type="text" name="" id="Th_Diemso" /></p>
+    <button id="Th_Dongy">Tính điểm</button>
+    <div id="Th_ketqua"></div>
+  </body>
+  <script>
+    document.querySelector("#Th_Dongy").onclick = function () {
+      let diemso = document.querySelector("#Th_Diemso").value.trim();
+      let arrDiem = diemso.split(" ");
+      let diemTong = 0;
+      let soluong = arrDiem.length;
+      if (soluong < 3) {
+        alert("Vui lòng nhập thêm điểm");
+        document.querySelector("#Th_Diemso").focus();
+        return;
+      }
+      for (let i = 0; i < arrDiem.length; i++) {
+        diemTong += Number(arrDiem[i]++);
+      }
+      let diemTB = Number(diemTong / soluong);
+      document.querySelector(
+        "#Th_ketqua"
+      ).innerHTML = `Điểm trung bình = ${diemTB}`;
+    };
+  </script>
+</html>
