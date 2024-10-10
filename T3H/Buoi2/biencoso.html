@@ -32,32 +32,28 @@
     so2 = so2 + 3;
     var so2 = 8;
     console.log(so2); //-> Không lỗi
-    // ! Vậy Var thì được cập nhật lại tên biến còn let thì không
+    //=> Vậy Var thì được cập nhật lại tên biến còn let thì không
 
-    // Khai báo biến toàn cục
-    // Biến ngoài hàm (function) là biến toàn cục
+    // Khai báo biến
     // Biến trong hàm (function) là biến cục bộ
+    let numberC = 10; // Gọi là biến toàn cục
     function bienCucBo() {
-      number = number + 1;
-      return number;
+      numberC = numberC + 1;
+      return numberC;
     }
+    let numberD = bienCucBo();
+    console.log("Số bên ngoài = " + numberC);
+    console.log("Số bên trong = " + numberD);
 
-    let number = 10; // Gọi là biến toàn cục
-    let ketqua = bienCucBo();
-
-    console.log(ketqua);
-    console.log(number);
-
+    // Biến ngoài hàm (function) là biến toàn cục
+    let numberA = 12;
     function bienToanCuc() {
-      let bien = 12;
-      bien = bien + 1;
-      return bien;
+      let numberE = 10;
+      numberE = numberE + 1;
+      return numberE;
     }
-
-    let numberA = 11;
-    let kqBienToanCuc = bienToanCuc();
-
-    console.log(numberA);
-    console.log(kqBienToanCuc);
+    let numberB = bienToanCuc();
+    console.log("Số ngoài hàm = " + numberA);
+    console.log("Số trong hàm = " + numberB);
   </script>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biến chuỗi String</title>
+  </head>
+  <style></style>
+  <body></body>
+  <script>
+    let hoten = "Trung tâm tin học";
+    let objString = new String("Đại học khoa học tự nhiên");
+
+    // Chiều dài của một chuỗi
+    let chieuDai = hoten.length;
+    console.log(chieuDai);
+
+    // console.log(hoten.toUpperCase());
+    // console.log(hoten.toLowerCase());
+    // console.log(hoten.toLocaleUpperCase());
+
+    // Lấy ký tự đầu tiên
+    // console.log(hoten[0]);
+    // Lấy ký tự cuối
+    // console.log(hoten[chieuDai - 1]);
+    // Kiểm tra chuỗi con có trong chuỗi cha
+    // includes có phân biệt chữ hoa với chữ thường
+    let gtTim = "t";
+    let kqTim = hoten.toLowerCase().includes(gtTim.toLowerCase());
+    console.log(kqTim);
+
+    // Tìm chuỗi con trong chuỗi tra và nằm ở vị trí thứ mấy
+    let vitridau = hoten.toLowerCase().indexOf(gtTim.toLowerCase());
+    let vitricuoi = hoten.toLowerCase().lastIndexOf(gtTim.toLowerCase());
+    console.log(vitridau);
+    console.log(vitricuoi);
+  </script>
+</html>
+
