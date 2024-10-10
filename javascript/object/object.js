@@ -33,3 +33,4 @@ console.log(student);
 // ! Cách xóa giá trị trong object
 delete student["is-developer"];
 console.log(student);
+

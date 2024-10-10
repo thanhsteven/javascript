@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập xuất họ tên</title>
+  </head>
+  <style>
+    #Th_Ho,
+    #Th_tenlot,
+    #Th_tenchinh {
+      margin-block: 10px;
+    }
+    #Th_cauchao {
+      color: red;
+    }
+  </style>
+  <body>
+    <h1>Nhập xuất họ tên</h1>
+    <p>Nhập họ và tên của bạn: <input type="text" name="" id="Th_Ten" /></p>
+    <button id="Th_Dongy">Phân tách</button>
+    <hr />
+    <div id="Th_Ho"></div>
+    <div id="Th_tenlot"></div>
+    <div id="Th_tenchinh"></div>
+    <div id="Th_cauchao"></div>
+  </body>
+  <script src="../js/thuvien.js"></script>
+  <script>
+    Th_Dongy.onclick = () => {
+      let fullName = document.querySelector("#Th_Ten").value.trim();
+      let arrName = fullName.split(" ");
+      let arrNewName = [];
+      for (let i = 0; i < arrName.length; i++) {
+        if (arrName[i] !== "") {
+          arrNewName.push(arrName[i]);
+        }
+      }
+      let lastName = capitalizeFirstLetter(arrNewName[0]);
+      let firstName = capitalizeFirstLetter(arrNewName[arrNewName.length - 1]);
+      let middleName = capitalizeFirstLetter(
+        arrNewName.slice(1, arrNewName.length - 1).join(" ")
+      );
+      Th_Ho.innerHTML = `Họ: ${lastName}`;
+      Th_tenlot.innerHTML = `Tên lót: ${middleName}`;
+      Th_tenchinh.innerHTML = `Tên chính: ${firstName}`;
+      Th_cauchao.innerHTML = `Chào bạn ${lastName} ${middleName} ${firstName}`;
+    };
+  </script>
+</html>
+

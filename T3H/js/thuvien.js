@@ -18,3 +18,14 @@ function checkInputType(value) {
 function checkEvenOdd(number) {
   return number % 2 == 0;
 }
+
+// * Hàm viết hoa chữ cái đầu trong chuỗi
+function capitalizeFirstLetter(string) {
+  let arrString = string.split("");
+  let firstChar = arrString[0].toUpperCase();
+  let anotherChar = arrString.slice(1, arrString.length).join("");
+  let result = firstChar.concat(anotherChar);
+  return result;
+}
+console.log(capitalizeFirstLetter("nguyễn huỳnh minh châu"));
+
