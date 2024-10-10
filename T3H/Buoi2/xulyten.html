@@ -36,9 +36,9 @@
           arrNewName.push(arrName[i]);
         }
       }
-      let lastName = capitalizeFirstLetter(arrNewName[0]);
-      let firstName = capitalizeFirstLetter(arrNewName[arrNewName.length - 1]);
-      let middleName = capitalizeFirstLetter(
+      let lastName = viethoakytudau(arrNewName[0]);
+      let firstName = viethoakytudau(arrNewName[arrNewName.length - 1]);
+      let middleName = viethoakytudau(
         arrNewName.slice(1, arrNewName.length - 1).join(" ")
       );
       Th_Ho.innerHTML = `Họ: ${lastName}`;

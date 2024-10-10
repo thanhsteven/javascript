@@ -35,3 +35,4 @@ console.log(useCallback(456, 123, printMax));
 // ! Callback
 // * Đây được coi là 1 function có được gọi dưới dạng callback, function Callback là 1 function được truyền vào dưới dạng là 1 parameter.
 // * function này sử dụng trong function khác dưới dạng parameter.
+
