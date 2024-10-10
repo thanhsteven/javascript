@@ -26,12 +26,12 @@
     let so = 1;
     so = so + 1;
     // let so = 10; //-> Lỗi vì biến so đã khai báo rồi
-    console.log(so);
+    // console.log(so);
 
     var so2 = 2;
     so2 = so2 + 3;
     var so2 = 8;
-    console.log(so2); //-> Không lỗi
+    // console.log(so2); //-> Không lỗi
     //=> Vậy Var thì được cập nhật lại tên biến còn let thì không
 
     // Khai báo biến
@@ -42,8 +42,8 @@
       return numberC;
     }
     let numberD = bienCucBo();
-    console.log("Số bên ngoài = " + numberC);
-    console.log("Số bên trong = " + numberD);
+    // console.log("Số bên ngoài = " + numberC);
+    // console.log("Số bên trong = " + numberD);
 
     // Biến ngoài hàm (function) là biến toàn cục
     let numberA = 12;
@@ -53,7 +53,17 @@
       return numberE;
     }
     let numberB = bienToanCuc();
-    console.log("Số ngoài hàm = " + numberA);
-    console.log("Số trong hàm = " + numberB);
+    // console.log("Số ngoài hàm = " + numberA);
+    // console.log("Số trong hàm = " + numberB);
+
+    // Biến cục bộ
+    let bien1 = 18;
+    function timbien() {
+      bien1 = bien1 * 10;
+      return bien1;
+    }
+    let bien2 = timbien();
+    console.log("Biến 1 = " + bien1);
+    console.log("Biến 2 = " + bien2);
   </script>
 </html>
