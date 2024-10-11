@@ -1,25 +1,4 @@
-// * Tổng hai số
-function tongHaiSo(a, b) {
-  return Number(a) + Number(b);
-}
-
-// * Hàm kiểm tra input
-function checkInputType(value) {
-  if (typeof value === "string") {
-    console.log("Vui lòng nhập con số");
-  } else if (isNaN(value)) {
-    console.log("Vui lòng nhập số");
-  } else {
-    console.log("Đầu vào hợp lệ");
-  }
-}
-
-// * Kiểm tra số chẳn lẻ
-function checkEvenOdd(number) {
-  return number % 2 == 0;
-}
-
-// * Hàm viết hoa chữ cái đầu trong chuỗi
+// * Hàm viết hoa chữ cái đầu
 function capitalizeWord(string) {
   if (string.length == 0) return false;
   let strArr = string.split(" ");
@@ -70,4 +49,37 @@ function captializeSentences(string) {
   let firstChar = arrFilter[0].charAt(0).toUpperCase();
   let otherChar = arrFilter.join(" ").slice(1);
   return firstChar + otherChar;
+}
+
+// * Hàm chuyển dấu tiếng việt
+function removeVietnameseTones(str) {
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/Đ/g, "D")
+    .replace(/[^a-zA-Z0-9 ]/g, "");
+}
+
+// * Hàm chuyển String thành url
+function convertStringToUrl(string) {
+  if (string.length == 0) return false;
+  let arrStr = string.split(" ");
+  let arrFilter = arrStr.filter(function (element) {
+    return element !== "";
+  });
+  let arrMap = arrFilter.map(function (element) {
+    return removeVietnameseTones(element);
+  });
+  return arrMap.join("-");
+}
+
+// * Hàm tách keyword Google Ads
+function keywordAnalysis(string) {
+  if (string.length == 0) return false;
+  let arrStr = string.split(",");
+  let arrMap = arrStr.map(function (element) {
+    return captializeSentences(element);
+  });
+  return arrMap;
 }

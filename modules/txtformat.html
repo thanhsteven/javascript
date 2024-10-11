@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Định dạng văn bản</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      #Th_vanban {
+        width: 80%;
+        padding: 4px 10px;
+        margin-top: 20px;
+        line-height: 36px;
+        border-radius: 4px;
+        border-width: 1px;
+      }
+      #Th_ketqua {
+        margin-top: 20px;
+      }
+      button {
+        padding: 4px 8px;
+        cursor: pointer;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Định dạng văn bản</h1>
+    <p>Nhập văn bản: <input type="text" name="" id="Th_vanban" /></p>
+    <div>
+      <button id="uppercase">VIẾT IN</button>
+      <button id="lowercase">viết thường</button>
+      <button id="capitalize_sentences">Viết hoa đầu câu</button>
+      <button id="capitalize_words">Viết hoa chữ cái đầu</button>
+      <button id="convertURL">Chuyển sang url</button>
+      <button id="keyword_analysis">Tách keyword Google Ads</button>
+    </div>
+    <div id="Th_ketqua"></div>
+    <script src="./main.js"></script>
+    <script>
+      // Viết in hoa toàn bộ
+      uppercase.onclick = () => {
+        let string = document.querySelector("#Th_vanban").value.trim();
+        let upperCaseString = uppercaseWord(string);
+        Th_ketqua.innerHTML = upperCaseString;
+      };
+      // Viết thường toàn bộ
+      lowercase.onclick = () => {
+        let string = document.querySelector("#Th_vanban").value.trim();
+        let lowerCaseString = lowerWord(string);
+        Th_ketqua.innerHTML = lowerCaseString;
+      };
+      // Viết hoa đầu câu
+      capitalize_sentences.onclick = () => {
+        let string = document.querySelector("#Th_vanban").value.trim();
+        let captialWord = captializeSentences(string);
+        Th_ketqua.innerHTML = captialWord;
+      };
+      // Viết hoa chữ cái đầu
+      capitalize_words.onclick = () => {
+        let string = document.querySelector("#Th_vanban").value.trim();
+        let captialSen = capitalizeWord(string);
+        Th_ketqua.innerHTML = captialSen;
+      };
+      // Chuyển sang dạng URL
+      convertURL.onclick = () => {
+        let string = document.querySelector("#Th_vanban").value.trim();
+        let url = convertStringToUrl(string);
+        Th_ketqua.innerHTML = url;
+      };
+      // Tách keyword Google Ads
+      keyword_analysis.onclick = () => {
+        let string = document.querySelector("#Th_vanban").value.trim();
+        let arrKey = keywordAnalysis(string);
+        let result = "";
+        for (let i = 0; i < arrKey.length; i++) {
+          result += arrKey[i] + "\n";
+        }
+        Th_ketqua.innerHTML = result;
+      };
+    </script>
+  </body>
+</html>
