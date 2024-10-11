@@ -76,10 +76,10 @@ function convertStringToUrl(string) {
   if (string.length == 0) return false;
   let arrStr = string.split(" ");
   let arrFilter = arrStr.filter(function (element) {
-    return element !== "";
+    return element !== "" && element !== "-" && element !== "–";
   });
   let arrMap = arrFilter.map(function (element) {
-    return removeVietnameseTones(element);
+    return removeVietnameseTones(element).toLowerCase();
   });
   return arrMap.join("-");
 }
