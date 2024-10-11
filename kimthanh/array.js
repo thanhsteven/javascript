@@ -110,4 +110,3 @@ let someNumber = numberList.some(function (item) {
   return item < 12;
 });
 console.log(someNumber);
-
