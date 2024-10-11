@@ -36,6 +36,9 @@
       <button id="capitalize_words">Viết hoa chữ cái đầu</button>
       <button id="convertURL">Chuyển sang url</button>
       <button id="keyword_analysis">Tách keyword Google Ads</button>
+      <button id="capitalizeGoogleAdsKeywords">
+        Tách keyword Google - Viết hoa ký tự đầu
+      </button>
     </div>
     <div id="Th_ketqua"></div>
     <script src="./main.js"></script>
@@ -55,7 +58,7 @@
       // Viết hoa đầu câu
       capitalize_sentences.onclick = () => {
         let string = document.querySelector("#Th_vanban").value.trim();
-        let captialWord = captializeSentences(string);
+        let captialWord = capitalizeSentences(string);
         Th_ketqua.innerHTML = captialWord;
       };
       // Viết hoa chữ cái đầu
@@ -70,16 +73,27 @@
         let url = convertStringToUrl(string);
         Th_ketqua.innerHTML = url;
       };
-      // Tách keyword Google Ads
+
+      // Tách keyword Google Ads - Viết hoa đầu câu
       keyword_analysis.onclick = () => {
         let string = document.querySelector("#Th_vanban").value.trim();
-        let arrKey = keywordAnalysis(string);
+        let arrKey = keywordAnalysis_capsen(string);
         let result = "";
         for (let i = 0; i < arrKey.length; i++) {
-          result += arrKey[i] + "\n";
+          result += arrKey[i] + "<br>";
         }
         Th_ketqua.innerHTML = result;
       };
+      // Tách keyword Google Ads - Viết hoa ký tự đầu
+      // capitalizeGoogleAdsKeywords.onclick = () => {
+      //   let string = document.querySelector("#Th_vanban").value.trim();
+      //   let arrKey = capitalizeWord(string);
+      //   let result = "";
+      //   for (let i = 0; i < arrKey.length; i++) {
+      //     result += arrKey[i] + "<br>";
+      //   }
+      //   Th_ketqua.innerHTML = result;
+      // };
     </script>
   </body>
 </html>
