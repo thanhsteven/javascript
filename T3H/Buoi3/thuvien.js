@@ -1,9 +1,19 @@
+// * Hàm Chuẩn hoá chuỗi - thầy
 function chuan_hoa_chuoi(chuoi) {
   chuoi_tam = chuoi.trim();
   do {
     chuoi_tam = chuoi_tam.replace("  ", " ");
     var vt = chuoi_tam.indexOf("  ");
   } while (vt >= 0);
+  return chuoi_tam;
+}
+
+// * Hàm chuẩn hoá chuỗi - Thành - cách 1
+function thanh_chuan_hoa_chuoi(chuoi) {
+  let chuoi_tam = chuoi.trim();
+  while (chuoi_tam.indexOf("  ") >= 0) {
+    chuoi_tam = chuoi_tam.replace("  ", " ");
+  }
   return chuoi_tam;
 }
 
@@ -16,3 +26,4 @@ function Doc_tap_tin(tapTin) {
   let Chuoi_ket_qua = Xu_ly_HTTP.responseText.trim();
   return Chuoi_ket_qua;
 }
+

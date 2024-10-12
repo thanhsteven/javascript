@@ -112,3 +112,4 @@ function capitalizeGGadsKeywords(string) {
   });
   return arrMap2;
 }
+
