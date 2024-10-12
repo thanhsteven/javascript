@@ -8,19 +8,38 @@
       h1 {
         font-size: 20px;
       }
+      p {
+        margin-block: 8px;
+      }
     </style>
   </head>
   <body>
     <h1>Đọc danh sách điện thoại</h1>
     <button id="xuat_danh_sach">Xuất danh sách</button>
-    <div id="Th_ma_sp"></div>
-    <div id="Th_ten_sp"></div>
-    <div id="Th_don_gia"></div>
-    <div id="Th_tinh_trang"></div>
+    <br />
+    <div id="Th_ketqua"></div>
     <script src="./thuvien.js"></script>
     <script>
-      let taptin = "dsDienthoai.txt";
-      let noiDungDoc;
+      xuat_danh_sach.onclick = () => {
+        let tapTin = "dsDienthoai.txt";
+        let danhsach = Doc_tap_tin(tapTin);
+        let mang_sp = danhsach.split("*\n");
+        let ketqua = "";
+        for (let i = 0; i < mang_sp.length; i++) {
+          let sanpham = mang_sp[i].split(" | ");
+          let tinhtrang = sanpham[3] == "true" ? "Còn hàng" : "Hết hàng";
+          ketqua += `
+            <hr>
+            <div>
+              <p>Mã sản phẩm: ${sanpham[0]}</p>
+              <p>Tên sản phẩm: ${thanh_chuan_hoa_chuoi(sanpham[1])}</p>
+              <p>Giá bán: ${sanpham[2]}</p>
+              <p>Tình trạng: ${tinhtrang}</p>
+              </div>
+          `;
+        }
+        Th_ketqua.innerHTML = ketqua;
+      };
     </script>
   </body>
 </html>

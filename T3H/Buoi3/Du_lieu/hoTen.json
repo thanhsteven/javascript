@@ -1,0 +1,11 @@
+{
+  "hoten": "Nguyễn Huỳnh Minh Châu",
+  "hsLuong": 4.5,
+  "gioitinh": true,
+  "diem": [5, 6, 7],
+  "lop": {
+    "maso": "A001",
+    "tenlop": "Lập trình viên Javascript"
+  }
+}
+

@@ -1,1 +1,11 @@
-1 | Android     1 | 5000000 | true*
+1 | Android      2 | 5000000 | true*
+2 | iOS    1 | 10000000 | false*
+3 | Windows    2 | 7500000 | true*
+4 | Linux      3 | 4200000 | true*
+5 | macOS 2 | 9500000 | false*
+6 | Ubuntu    1 | 6500000 | true*
+7 | iPadOS 2 | 8500000 | true*
+8 | ChromeOS    3 | 4000000 | false*
+9 | Android 1 | 7800000 | false*
+10 | Windows    3 | 6200000 | true*
+11 | macOS   1 | 9900000 | true*
