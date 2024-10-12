@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyfill</title>
+</head>
+
+<body>
+    <h1>Polyfill</h1>
+
+    <script>
+        // Polyfill
+        // Là cách mà bạn tự tạo ra một function giúp cho các trình duyệt cũ
+        // có thể chạy được những cái function mà trình duyệt mới hỗ trợ.
+
+        // Khi nào cần sử dụng nó ?
+        // Một số trình duyệt cũ sẽ không hỗ trợ nó.
+        //=> Vì vậy muốn sử dụng phải chèn đoạn mã này vào.
+
+        // Sử dụng đoạn mã này để thay thế cho trình duyệt cũ
+        if (!String.prototype.includes) {
+            String.prototype.includes = function (search, start) {
+                'Use Strict';
+                if (search instanceof RegExp) {
+                    throw TypeError('First Argument must not be a RegExp');
+                };
+                if (start === undefined) { start = 0; };
+                return this.indexOf(search, start) !== -1;
+            };
+        };
+    </script>
+</body>
+
+</html>

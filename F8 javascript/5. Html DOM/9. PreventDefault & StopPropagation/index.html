@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        display: none;
+    }
+    input:focus ~ ul {
+        display: block;
+    }
+</style>
+<body>
+
+    <h2>PreventDefault and StopPropagation</h2>
+
+    <a name="Hoc lap trinh" href="https://f8.edu.vn">Fullstack</a>
+    <hr>
+    <a name="Google" href="https://google.com.vn">Tim kiem</a>
+    <hr>
+
+    <input placeholder="Tìm kiếm">
+    <ul>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>Dark</li>
+    </ul>
+    <hr>
+
+    <div>
+        DIV
+        <button>Click me!</button>
+    </div>
+    <!-- 
+        - Click vào div thì nó hiện ra DIV
+        - Click vào button click me thì nó hiện ra click me và cả div
+        
+        => Đây là kết quả của sự kiện NỔI BỌT
+        => Giống như bong bóng, nó sẽ dần bắt sự kiện lan ra ngoài tới thẻ cha
+    -->
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

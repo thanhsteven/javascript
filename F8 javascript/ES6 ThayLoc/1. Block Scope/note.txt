@@ -1,0 +1,15 @@
+*1. Khai báo biến bằng var thì không có block scope.
+*2. Khai báo biến vằng let thì có khái niệm block scope.
+*3. Biến khai báo bằng let trong block thì ngoài block không truy xuất được.
+*4. Trong hàm, let và var khai báo tương tự nhau (function scope)
+*5. Global Scope khác với global variable
+	- let và var nằm ở ngoài block thì thuộc global scope.
+	- var nằm ở ngoài block thì thuộc global variabel. Nghĩa là có thể truy xuất thông qua window.tenbien
+*6. Có 3 loại scope: global scope, block scope, function scope
+*7. Trong cùng một block chỉ cho phép var được khai báo lại. Còn sự kết hợp giữa var/let, let/var hoặc let/let đều không được cho phép.
+
+
+- var bị giới hạn bởi function scope.
+- let và const bị giới hạn bởi block scope.
+- Function scope là phạm vi hoạt động nằm trong function.
+- Block scope là phạm vi hoạt động nằm trong một cặp ngoặc nhọn được tạo ra bởi if, for, while.

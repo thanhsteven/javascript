@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Hell</title>
+</head>
+
+<body>
+    <h1>Promise Pain</h1>
+    <h1>Callback Hell</h1>
+    <script>
+        // Callback hell : Nỗi đau khi sử dụng Callback
+        // Pyramid of doom : Tổng quan khi viết code
+        // Vi du:
+        setTimeout(function () {
+            console.log('Viec 1');
+            setTimeout(function () {
+                console.log('Viec 2');
+                setTimeout(function () {
+                    console.log('Viec 3');
+                    setTimeout(function () {
+                        console.log('Viec 4');
+                        setTimeout(function () {
+                            console.log('Viec 5');
+                            setTimeout(function () {
+                                console.log('Viec 6');
+                                setTimeout(function () {
+                                    console.log('Viec 7');
+                                    setTimeout(function () {
+                                        console.log('Viec 8');
+                                    }, 1000);
+                                }, 1000);
+                            }, 1000);
+                        }, 1000);
+                    }, 1000);
+                }, 1000);
+            }, 1000);
+        }, 1000);
+    </script>
+</body>
+
+</html>

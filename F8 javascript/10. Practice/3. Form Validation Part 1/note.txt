@@ -1,0 +1,9 @@
+- Lấy ra thẻ form của trang --> OK
+- Lấy thẻ input để bắt sự kiện --> OK
+- Bắt sự kiện onblur -> click chuột ra ngoài input --> OK
+- Yêu cầu nhập vào trường thông tin
+- Hiển thị thông báo lỗi
+- Bắt sự kiện oninput, gỡ lỗi.
+
+
+- Kiểm tra từng rule xem lỗi nào có trước thì báo và dừng lại.

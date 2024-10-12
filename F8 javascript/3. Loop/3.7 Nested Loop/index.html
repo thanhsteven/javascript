@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Vòng lặp lồng nhau - Nested loop
+        var myArr = [[1, 2], [3, 4], [5, 6]];
+
+        for (var i = 0; i < myArr.length; i++) {
+            console.log(myArr[i]);
+            for (var j = 0; j < myArr[i].length; j++) {
+                console.log(myArr[i][j]);
+            };
+        };
+
+        for (var key in myArr) {
+            for (var key2 in myArr[key]) {
+                console.log(myArr[key][key2]);
+            };
+        };
+
+    </script>
+</body>
+
+</html>

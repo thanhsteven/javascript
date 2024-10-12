@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built - In function</title>
+</head>
+
+<body>
+    <script>
+        // Giới thiệu hàm built-in:
+        // 1. Alert
+        // 2. Console
+        // 3. Confirm
+        // 4. Prompt
+        // 5. Set TimeOut
+        // 6. Set Interval
+
+        // Xuất hiện hộp thư thông báo
+        alert("Xin chào");
+
+        // * Xuất hiện nút cancel và ok.
+        confirm("Xác nhận đủ tuổi");
+
+        // * Xuất hiện thêm ô input để nhập giá trị vào.
+        prompt("Xác nhận số tuổi của bạn");
+
+        // * Thực thi 1 đoạn code của bạn sau một khoảng thời gian được tính bằng ms và chỉ thực hiện 1 lần thôi, không lặp lại.
+        setTimeout(function() {
+            alert("Xin chào");
+        },1000);
+
+        // * Thực thi 1 đoạn code nhưng cứ cách 1 khoảng thời gian thì nó lại thực hiện 1 lần và thực hiện liên tục không ngừng.
+        setInterval(function () {
+            alert("Tạm biệt");
+        }, 1000);
+    </script>
+</body>
+
+</html>

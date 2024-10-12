@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiền Tố - Hậu Tố</title>
+</head>
+
+<body>
+    <script>
+        var a = 69;
+        var b = a++;
+        console.log(a, b);
+        a = 70, b = 69
+
+        var a = 69;
+        var b = --a;
+        console.log(a, b);
+        a = 68, b = 68
+
+        var number = 10
+
+        var c = ++number * 3 - number-- * 2;
+        // 11 * 3 - 10 * 2 = 13
+
+        var d = number++ * 2 - --number * 3;
+        // 10 * 3 - 10 * 3 = 0
+
+        var e = number++ * 2 - ++number - --number + 5 * 7 - number++;
+        // 10 * 2 - 12 - 11 + 5 * 7 - 11 = 21
+
+        var f = number++ + 4 * --number + number++ * 2 - 5 * number--;
+        // 10 + 4 * 10 + 10 * 2 - 5 * 11
+        
+        var j = ++number - 4 - number-- * 2 + number++ - 6 * number++;
+        // 11 - 4 - 11 * 2 + 10 - 6 * 11 = 
+        
+        console.log("number =",number)
+        
+        console.log("c =",c)
+        console.log("d =",d)
+        console.log("e =",e)
+        console.log("f =",f)
+        console.log("j =",j)
+    </script>
+</body>
+
+</html>

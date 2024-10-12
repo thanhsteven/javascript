@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For/of Loop</title>
+</head>
+<body>
+    <script>
+        // For of : Sử dụng khi muốn lấy ra 1 phần tử của 1 mảng, hoặc là lấy ra từng chữ cái của 1 chuỗi.
+        // Không sử dụng được với object.
+
+        // Ứng dụng với mảng
+        var languages = ['javascript','php','angular','dart'];
+        for (var value of languages) {
+            console.log(value);
+        };
+
+        // Ứng dụng với chuỗi
+        var language = 'javascript';
+        for (value of language) {
+            console.log(value);
+        };
+
+        // Trong trường hợp là 1 Object
+        // Nó sẽ báo lỗi.
+        // Có 1 mẹo sau:
+        var myInfo = {
+            name: 'Kim Thanh',
+            age: 25,
+            address: 'HCM, VN',
+        };
+
+        // Biến nó thành 1 Array
+        console.log(Object.keys(myInfo));
+        
+        for (value of Object.keys(myInfo)) {
+            console.log(`${value} : ${myInfo[value]}`);
+        };
+
+    </script>
+</body>
+</html>

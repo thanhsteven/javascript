@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đối Tượng Date</title>
+</head>
+<body>
+    <script>
+        // Khai báo đối tượng Date.
+        // Cách 1 --> ra kiểu dữ liệu là Object.
+        var date = new Date();
+
+        // Cách 2 --> ra kiểu dữ liệu là String.
+        var date2 = Date();
+
+        console.log('Đây là date, thuộc dạng object: ',date);
+        console.log('Đây là date2, thuộc dạng string: ',date2);
+
+        // Lấy Năm
+        var year = date.getFullYear();
+        console.log(year);
+        
+        // Lấy Tháng
+        // Trả kết quả từ 0 - 11. Tháng 1 là 0 và 11 là tháng 12
+        var month = date.getMonth();
+        console.log(month);
+        
+        // Để cho đúng với lịch của mình thì + 1.
+        var monthVN = date.getMonth() + 1;
+        console.log(monthVN);
+
+        // Lấy Ngày
+        var day = date.getDay();
+        console.log(day);
+    </script>
+</body>
+</html>

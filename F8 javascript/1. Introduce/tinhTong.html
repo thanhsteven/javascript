@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="Th_tong" data="5" value="6">tinh</button>
+
+    <script type="text/javascript">
+        Th_tong.onclick = () => {
+            var a = Th_tong.getAttribute("data");
+            console.log(a);
+
+            var b = Th_tong.value;
+            console.log(b);
+
+            tinh_tong(a, b);
+        };
+
+        function tinh_tong(a, b) {
+            var tong = 0;
+            tong = Number(a) + Number(b);
+            console.log(tong);
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lệnh Switch Case</title>
+</head>
+<body>
+    <script>
+        var date = 2;
+        switch (date) {
+            // Dùng từ khóa là case : nghĩa là trường hợp.
+            // Sau case là dấu :
+            case 2:
+            // Thực thi dòng lệnh trong trường hợp case = 2.
+                console.log('Hôm nay là thứ 2');
+                break; // Thoát khỏi vòng
+            case 3:
+                console.log('Hôm nay là thứ 3');
+                break;
+            case 4:
+                console.log('Hôm nay là thứ 4');
+                break;
+        };
+
+        // ? Tại sao phải dùng break để thoát khỏi vòng lặp ?
+        // Vì tính chất của thằng switch này khác so với thằng if else.
+        // Tính từ cái case mà trả kết quả true, thì nó sẽ lọt vào tất cả case ở sau đó luôn.
+        // Bắt đầu từ case đúng trở về sau thì nó đều nhận và thực thi dòng code ở các case sau đó.
+        // Chạy đến khi gặp break thì dừng và thoát khỏi switch.
+
+        // Vì tính chất này nên ta hoàn toàn có thể sử dụng như sau:
+        var date = 3;
+        switch (date) {
+            case 2:
+            case 3:
+            case 4:
+                console.log('Hôm nay là thứ 2, 3, 4');
+                break;
+            case 5: 
+                console.log('Hôm nay là thứ 5');
+                break;
+            default:
+                console.log('Không Biết');
+        };
+
+        // Default theo nguyên tắc là phải viết ở trường hợp cuối cùng.
+        // Không cần sử dụng break vì là cuối cùng rồi.
+    </script>
+    <!-- 
+        ! Khi nào sử dụng If Else ? Khi nào dùng Switch Case
+        .Dùng if trong trường hợp chỉ cần so sánh đúng sai thôi. Trong điều kiện if thì thường xuất hiện các dạng toán tử <,>,==,!=,...
+        .Còn trong trường hợp được cho trước các giá trị, những trường hợp cho trước rồi thì ta dùng Switch Case.
+        .Trường hợp nào nhiều hơn 3 case thì dùng switch case.
+     -->
+</body>
+</html>
