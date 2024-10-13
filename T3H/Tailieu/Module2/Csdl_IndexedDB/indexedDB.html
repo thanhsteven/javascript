@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSDL IndexedDB</title>
+</head>
+
+<body>
+    <script src="./node_modules/idb/lib/idb.js"></script>
+    <script src="./js/Xu_ly_IndexedDB.js"></script>
+    <script>
+        if (('indexedDB' in window)) {
+            console.log('Trinh duyet khong ho tro IndexedDB');
+            Tao_Co_so_Du_lieu_indexedDB();
+
+            // Them
+            let dt1 = {
+                Ma_so: "DT01",
+                Ten: "Dien thoai 01",
+                Gia: 1000,
+            };
+
+            let dt2 = {
+                Ma_so: "DT02",
+                Ten: "Dien thoai 02",
+                Gia: 2000,
+            };
+
+            idbDienthoai.set(dt1.Ma_so, dt1);
+            idbDienthoai.set(dt2.Ma_so, dt2);
+            
+            idbDienthoai.get("DT02").then(result => {
+                console.log(result);
+            });
+
+            // idbDienthoai.delete("DT02").then(result => {
+            //     console.log(result);
+            // });
+
+            // idbDienthoai.clear().then(result => {
+            //     console.log(result);
+            // });
+
+            // idbDienthoai.keys().then(result => {
+            //     console.log(result);
+            // });
+
+            // idbDienthoai.getAll().then(result => {
+            //     console.log(result);
+            // });
+
+        } else {
+            console.log('Trinh duyet co ho tro IndexedDB');
+        };
+    </script>
+</body>
+
+</html>

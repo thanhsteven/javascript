@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Danh sách Mặt Hàng</title>
+    <!-- Require Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    .CHON {
+        background-color: silver;
+    }
+
+    .card-background-image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 100%;
+    }
+</style>
+
+<body>
+    <div class="container-fluid my-2" id="Th_Cua_hang"></div>
+
+    <div class="container-fluid">
+        <div class="btn btn-outline-danger btn-block" id="Th_Thong_bao">
+            KHUNG THÔNG BÁO
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <fieldset class="border m-2 p-2 text-info">
+            <legend class="text-danger">DANH SÁCH MẶT HÀNG</legend>
+
+            <button id="Th_Home" class="btn btn-outline-primary">Tất cả</button>
+            <button id="Th_Ca_phe" class="btn btn-outline-primary">CÀ PHÊ</button>
+            <button id="Th_Mon_an" class="btn btn-outline-primary">MÓN ĂN</button>
+
+            <div class="fixed-top text-right mr-4 mt-5" id="Th_Mua_hang">
+                <span class="text-white bg-danger btn border border-danger">
+                    <u id="Th_Gio_hang">0</u>
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </span>
+            </div>
+
+            <hr>
+
+            <div class="container-fluid">
+                <div class="float-left">
+                    Nhập Giá trị tìm:
+                    <input type="text" id="Th_gtTim">
+                    <button id="Th_Tim" class="btn btn-primary">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <select class="btn btn-outline-danger" id="Th_Sap_xep">
+                        <option value="0">-- Sắp xếp theo --</option>
+                        <option value="1">Sắp xếp theo Tên (A->Z)</option>
+                        <option value="2">Sắp xếp theo Tên (Z->A)</option>
+                        <option value="3">Sắp xếp theo Giá (A->Z)</option>
+                        <option value="4">Sắp xếp theo Giá (Z->A)</option>
+                    </select>
+
+                    <select class="btn btn-outline-danger" id="Th_Loc_gia">
+                        <option value="0-50000000">-- Chọn giá bán --</option>
+                        <option value="0-5000000">Dưới 5 triệu</option>
+                        <option value="5000000-10000000">Từ 5 triệu đến 10 triệu</option>
+                        <option value="10000000-20000000">Từ 10 triệu đến 20 triệu</option>
+                        <option value="20000000-50000000">Trên 20 triệu</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="container-fluid">
+        <fieldset class="border m-2 p-2">
+            <legend>DANH SÁCH MẶT HÀNG</legend>
+            <div id="Th_Danh_sach"></div>
+        </fieldset>
+    </div>
+
+    <!-- Optional Javascript -->
+    <!-- Jquery first, then Popper JS, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <script src="Xu_ly/thu_vien.js"></script>
+
+    <!-- Cua Hang -->
+    <script type="text/javascript">
+        let Cua_hang = api_Cua_hang();
+        Xuat_Thong_tin_Cua_hang(Cua_hang, Th_Cua_hang);
+    </script>
+
+    <!-- Xuat San Pham -->
+    <script type="text/javascript">
+        // Tham so
+        var Tham_so_url = "dsMathang";
+        var loai_san_pham = "Mat_hang";
+        // Xuat San Pham
+        let Ds_mat_hang = api_Danh_sach_san_pham();
+        Xuat_Danh_sach_san_pham(Ds_mat_hang, Th_Danh_sach);
+        var Ds_ung_dung = Ds_mat_hang;
+    </script>
+
+    <!-- Tat ca San Pham -->
+    <script type="text/javascript">
+        Th_Home.onclick = () => {
+            Th_gtTim.value = "";
+            Xuat_Danh_sach_san_pham(Ds_mat_hang, Th_Danh_sach);
+        };
+    </script>
+
+    <!-- San pham Cafe -->
+    <script type="text/javascript">
+        Th_Ca_phe.onclick = () => {
+            Th_gtTim.value = "";
+            var Ds_ung_dung = [];
+            Ds_ung_dung = Ds_mat_hang.filter(x => x.Nhom_Mat_hang.Ma_so === "CA_PHE");
+            Xuat_Danh_sach_san_pham(Ds_ung_dung, Th_Danh_sach);
+            // Tim trong Cafe
+            Th_Tim.onclick = () => {
+                let gt_tim = Th_gtTim.value.trim();
+                if (gt_tim == "") {
+                    Th_Thong_bao.innerHTML =
+                        `Vui lòng điền giá trị cần tìm trong danh sách <strong>CAFE</strong>`;
+                    Th_gtTim.focus();
+                    return false;
+                };
+                let Ds_cafe = Ds_ung_dung.filter(x => x.Ten.toLowerCase().includes(gt_tim.toLowerCase()));
+                Xuat_Danh_sach_san_pham(Ds_cafe, Th_Danh_sach);
+                if (Ds_cafe.length == 0) {
+                    Th_Thong_bao.innerHTML =
+                        `Không tìm thấy sản phẩm chứa <strong>${gt_tim}</strong> 
+                        trong Danh sách <strong>CAFE</strong>`;
+                    Th_gtTim.focus();
+                    return false;
+                };
+            };
+            // Enter trong Cafe
+            Th_gtTim.onkeyup = () => {
+                if (event.keyCode == 13) {
+                    let gt_tim = event.target.value.trim();
+                    if (gt_tim == "") {
+                        Th_Thong_bao.innerHTML =
+                            `Vui lòng điền giá trị cần tìm trong danh sách <strong>CAFE</strong>`;
+                        Th_gtTim.focus();
+                        return false;
+                    };
+                    let Ds_cafe = Ds_ung_dung.filter(x => x.Ten.toLowerCase().includes(gt_tim.toLowerCase()));
+                    Xuat_Danh_sach_san_pham(Ds_cafe, Th_Danh_sach);
+                    if (Ds_cafe.length == 0) {
+                        Th_Thong_bao.innerHTML =
+                            `Không tìm thấy sản phẩm chứa <strong>${gt_tim}</strong> 
+                            trong Danh sách <strong>CAFE</strong>`;
+                        Th_gtTim.focus();
+                        return false;
+                    };
+                };
+            };
+        };
+    </script>
+
+    <!-- San pham Mon An -->
+    <script type="text/javascript">
+        Th_Mon_an.onclick = () => {
+            var Ds_ung_dung = [];
+            Th_gtTim.value = "";
+            Ds_ung_dung = Ds_mat_hang.filter(x => x.Nhom_Mat_hang.Ma_so === "MON_AN");
+            Xuat_Danh_sach_san_pham(Ds_ung_dung, Th_Danh_sach);
+            // Tim trong Danh sach Mon An
+            Th_Tim.onclick = () => {
+                let gt_tim = Th_gtTim.value.trim();
+                if (gt_tim == "") {
+                    Th_Thong_bao.innerHTML =
+                        `Vui lòng điền giá trị cần tìm trong danh sách <strong>MÓN ĂN</strong>`;
+                    Th_gtTim.focus();
+                    return false;
+                };
+                let Ds_mon_an = Ds_ung_dung.filter(x => x.Ten.toLowerCase().includes(gt_tim.toLowerCase()));
+                Xuat_Danh_sach_san_pham(Ds_mon_an, Th_Danh_sach);
+                if (Ds_mon_an.length == 0) {
+                    Th_Thong_bao.innerHTML =
+                        `Không tìm thấy sản phẩm chứa <strong>${gt_tim}</strong> 
+                        trong Danh sách <strong>MÓN ĂN</strong>`;
+                    Th_gtTim.focus();
+                    return false;
+                };
+            };
+            // Enter trong Android
+            Th_gtTim.onkeyup = () => {
+                if (event.keyCode == 13) {
+                    let gt_tim = event.target.value.trim();
+                    if (gt_tim == "") {
+                        Th_Thong_bao.innerHTML =
+                            `Vui lòng điền giá trị cần tìm trong danh sách <strong>MÓN ĂN</strong>`;
+                        Th_gtTim.focus();
+                        return false;
+                    };
+                    let Ds_mon_an = Ds_ung_dung.filter(x => x.Ten.toLowerCase().includes(gt_tim.toLowerCase()));
+                    Xuat_Danh_sach_san_pham(Ds_mon_an, Th_Danh_sach);
+                    if (Ds_mon_an.length == 0) {
+                        Th_Thong_bao.innerHTML =
+                            `Không tìm thấy sản phẩm chứa <strong>${gt_tim}</strong> 
+                            trong Danh sách <strong>MÓN ĂN</strong>`;
+                        Th_gtTim.focus();
+                        return false;
+                    };
+                };
+            };
+        };
+    </script>
+
+    <!-- Loc san pham -->
+    <script type="text/javascript">
+        Th_Loc_gia.onchange = () => {
+            let gt_loc = Th_Loc_gia.value;
+            let ds_loc = gt_loc.split("-");
+            let gt_dau = Number(ds_loc[0]);
+            let gt_cuoi = Number(ds_loc[1]);
+            var Ds_loc = Ds_mat_hang.filter(x => x.Don_gia_Ban >= gt_dau && x.Don_gia_Ban <= gt_cuoi);
+            Xuat_Danh_sach_san_pham(Ds_loc, Th_Danh_sach);
+        };
+    </script>
+
+    <!-- Sap xep san pham -->
+    <script type="text/javascript">
+        Th_Sap_xep.onchange = () => {
+            let gia_tri = Th_Sap_xep.value;
+            switch (Number(gia_tri)) {
+                case 1: Sap_Tang_theo_Ten(); break;
+                case 2: Sap_Giam_theo_Ten(); break;
+                case 3: Sap_Tang_Gia(); break;
+                case 4: Sap_Giam_Gia(); break;
+                default: Xuat_Danh_sach_san_pham(Ds_ung_dung, Th_Danh_sach);
+            };
+        };
+    </script>
+
+    <!-- Ham Sap Xep -->
+    <script type="text/javascript">
+        function Sap_Tang_theo_Ten() {
+            Ds_ung_dung.sort((a, b) => a.Ten.localeCompare(b.Ten));
+            Xuat_Danh_sach_san_pham(Ds_ung_dung, Th_Danh_sach);
+        };
+        function Sap_Giam_theo_Ten() {
+            Ds_ung_dung.sort((a, b) => b.Ten.localeCompare(a.Ten));
+            Xuat_Danh_sach_san_pham(Ds_ung_dung, Th_Danh_sach);
+        };
+        function Sap_Tang_Gia() {
+            Ds_ung_dung.sort((a, b) => { return parseInt(a.Don_gia_Ban) - parseInt(b.Don_gia_Ban) });
+            Xuat_Danh_sach_san_pham(Ds_ung_dung, Th_Danh_sach);
+        };
+        function Sap_Giam_Gia() {
+            Ds_ung_dung.sort((a, b) => { return parseInt(b.Don_gia_Ban) - parseInt(a.Don_gia_Ban) });
+            Xuat_Danh_sach_san_pham(Ds_ung_dung, Th_Danh_sach);
+        };
+    </script>
+
+    <!-- Tim Kiem -->
+    <script type="text/javascript">
+        Th_Tim.onclick = () => {
+            let gt_tim = Th_gtTim.value.trim();
+            if (gt_tim == "") {
+                Th_Thong_bao.innerHTML = `<strong>Vui lòng điền giá trị cần tìm</strong>`;
+                Th_gtTim.focus();
+                return false;
+            };
+            Ds_ung_dung = Ds_ung_dung.filter(x => x.Ten.toLowerCase().includes(gt_tim.toLowerCase()));
+            Xuat_Danh_sach_san_pham(Ds_ung_dung, Th_Danh_sach);
+            if (Ds_ung_dung.length == 0) {
+                Th_Thong_bao.innerHTML = `Không tìm thấy sản phẩm chứa <strong>${gt_tim}</strong> trong Danh sách`;
+                Th_gtTim.focus();
+                return false;
+            };
+        };
+    </script>
+
+    <!-- Function Enter -->
+    <script type="text/javascript">
+        function enter_Timkiem(event) {
+            if (event.keyCode == 13) {
+                let gt_tim = event.target.value.trim();
+                if (gt_tim == "") {
+                    Th_Thong_bao.innerHTML = `<strong>Vui lòng điền giá trị cần tìm</strong>`;
+                    Th_gtTim.focus();   
+                    return false;
+                };
+                Ds_ung_dung = Ds_mat_hang.filter(x => x.Ten.toLowerCase().includes(gt_tim.toLowerCase()));
+                Xuat_Danh_sach_san_pham(Ds_ung_dung, Th_Danh_sach);
+                if (Ds_ung_dung.length == 0) {
+                    Th_Thong_bao.innerHTML = `Không tìm thấy sản phẩm chứa <strong>${gt_tim}</strong> trong Danh sách`;
+                    Th_gtTim.focus();
+                    return false;
+                };
+            };
+        };
+    </script>
+
+</body>
+
+</html>

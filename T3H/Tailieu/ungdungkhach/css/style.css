@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    
+}
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.khung{
+    width: 20%;
+    float: left;
+    padding:5px;
+
+}
+.khung_sp{
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+}
+.khung_sp img{
+    width: 100%;
+    height: auto;
+}
+.khungCN{
+    padding:0 5px;
+    text-align: center;
+}
+.giohang{
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+.float-left{
+    float: left;
+    width: 65%;
+    padding:10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table,tr,td{
+    border: 1px solid;
+    vertical-align: middle;
+    padding: 5px;
+}
+.float-rigth{
+    float: left;
+    width: 35%;
+    padding-right: 50px;
+}
+
+label {
+    font-weight: bold;
+
+}
+
+input[type="text"] {
+    width: 20rem;
+    border: none;
+    border-bottom: 1px solid #f63
+}
+.text-right{
+    text-align: right;
+}
+.xoa{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}

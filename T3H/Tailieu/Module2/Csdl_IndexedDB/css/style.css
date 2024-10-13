@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.khung{
+    width: 20%;
+    float: left;
+    padding:5px;
+
+}
+.khung img{
+    width: 100%;
+    height: auto;
+}

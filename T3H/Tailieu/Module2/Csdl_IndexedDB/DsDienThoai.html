@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Điện Thoại</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div>
+        Chọn xem chi tiết :
+        <select name="" id="Th_Chon"></select>
+
+        Nhập key cần xóa : <input type="text" name="" id="Th_key" list="lst">
+        <button id="Th_Xoa">Xóa Key</button>
+        <datalist id="lst"></datalist>
+    </div>
+
+    <hr>
+
+    <div id="Th_dsDienthoai"></div>
+
+    <script src="./node_modules/idb/lib/idb.js"></script>
+    <script src="./js/Xu_ly_IndexedDB.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/format.js"></script>
+    <script src="./js/libs.js"></script>
+    <script>
+        if (('indexedDB' in window)) {
+            Tao_Co_so_Du_lieu_indexedDB();
+            apiDienThoai().then(dsDienThoai => {
+                Tao_Du_lieu_indexedDB(dsDienThoai);
+
+                // idbDienthoai.keys().then(result => {
+                //     Th_Chon.innerHTML = Xuat_Danh_sach_Chon_key(result);
+                // });
+
+                idbDienthoai.getAll().then(result => {
+                    Th_Chon.innerHTML = Xuat_Danh_sach_Chon(result);
+                    Th_dsDienthoai.innerHTML = Xuat_Dien_thoai(result);
+                });
+            });
+        };
+
+        Th_Xoa.onclick = () => {
+            let key = Th_key.value;
+            idbDienthoai.delete(key).then(result => {
+                idbDienthoai.getAll().then(result => {
+                    Th_Chon.innerHTML = Xuat_Danh_sach_Chon(result);
+                    Th_dsDienthoai.innerHTML = Xuat_Dien_thoai(result);
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

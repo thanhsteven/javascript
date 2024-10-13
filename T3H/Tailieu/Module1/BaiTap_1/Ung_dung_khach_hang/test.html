@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Danh sách Điện thoại </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    .CHON {
+        background-color: silver;
+    }
+
+    .card-background-image {
+        margin-top: 8px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 160px;
+    }
+</style>
+
+<body>
+    <div class="container-fluid" id="Th_Cua_hang"></div>
+    
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+      </div>
+      
+    <div class="container-fluid">
+        <div class="btn btn-outline-danger btn-block" id="Th_Thong_bao">
+            KHUNG THÔNG BÁO
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <fieldset class="border m-2 p-2 text-info">
+            <legend class="text-danger">DANH SÁCH ĐIỆN THOẠI</legend>
+
+            <button id="Th_Home" class="btn btn-outline-primary">Tất cả</button>
+            <button id="Th_Android" class="btn btn-outline-primary">Android</button>
+            <button id="Th_Iphone" class="btn btn-outline-primary">Iphone</button>
+
+            <div class="fixed-top text-right mr-2 mt-5" id="Th_Mua_hang">
+                <span class="text-white bg-danger btn border border-danger">
+                    <u id="Th_Gio_hang">0</u>
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </span>
+            </div>
+            <hr>
+            <div class="container-fluid">
+                <div class="float-left">
+                    Nhập Giá trị tìm:
+                    <input type="text" id="Th_gtTim">
+                    <button id="Th_Tim" class="btn btn-primary">
+                        <i class="fa fa-search-plus"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <select class="btn btn-outline-danger" id="Th_Sap_xep">
+                        <option value="0">-- Sắp xếp theo --</option>
+                        <option value="1">Sắp xếp theo Tên (A->Z)</option>
+                        <option value="2">Sắp xếp theo Tên (Z->A)</option>
+                        <option value="3">Sắp xếp theo Giá (A->Z)</option>
+                        <option value="4">Sắp xếp theo Giá (Z->A)</option>
+                    </select>
+
+                    <select class="btn btn-outline-danger" id="Th_Loc_gia">
+                        <option value="0-50000000">-- Chọn giá bán --</option>
+                        <option value="0-5000000">Dưới 5 triệu</option>
+                        <option value="5000000-10000000">Từ 5 triệu đến 10 triệu</option>
+                        <option value="10000000-20000000">Từ 10 triệu đến 20 triệu</option>
+                        <option value="20000000-50000000">Trên 20 triệu</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="container-fluid">
+        <fieldset class="border m-2 p-2">
+            <legend>DANH SÁCH ĐIỆN THOẠI</legend>
+
+            <div id="Th_Danh_sach"></div>
+        </fieldset>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="Xu_ly/Xu_ly_3L.js"></script>
+
+    <!-- API cửa hàng -->
+    <script type="text/javascript">
+        var Dia_chi_Dich_vu = "http://localhost:8080";
+        // API cửa hàng
+        function api_CuaHang() {
+            let Dia_chi_Xu_ly = "dsCuahang";
+            let Xu_ly_HTTP = new XMLHttpRequest();
+            Xu_ly_HTTP.open("GET", `${Dia_chi_Dich_vu}/${Dia_chi_Xu_ly}`, false);
+            Xu_ly_HTTP.send();
+            let Chuoi_ket_qua = Xu_ly_HTTP.responseText.trim();
+            return JSON.parse(Chuoi_ket_qua);
+        };
+        let Cua_hang = api_CuaHang();
+    </script>
+
+    <!-- Xuất thông tin cửa hàng -->
+    <script type="text/javascript">
+        function Xuat_Thong_tin_Cua_hang(Cua_hang, Th_Cua_hang) {
+            let Chuoi_HTML =
+                `<img src="${Dia_chi_Dich_vu}/${Cua_hang.Ma_so}.png"/>
+            <div class="text-center btn btn-outline-primary">${Cua_hang.Ten}
+                <br>
+                <small>${Cua_hang.Dia_chi}</small>
+            </div>`;
+            Th_Cua_hang.innerHTML = Chuoi_HTML;
+        };
+        Xuat_Thong_tin_Cua_hang(Cua_hang, Th_Cua_hang);
+    </script>
+
+    <!-- API Danh Sách Điện Thoại -->
+    <script type="text/javascript">
+        var Tham_so_url = "dsDienthoai"
+        function apiDanhsachDienthoai() {
+            var Du_lieu = {};
+            var Xu_ly_HTTP = new XMLHttpRequest();
+            var Tham_so = Tham_so_url;
+            var Dia_chi_Xu_ly = `${Dia_chi_Dich_vu}/${Tham_so}`;
+            Xu_ly_HTTP.open("GET", Dia_chi_Xu_ly, false);
+            Xu_ly_HTTP.send("");
+            var Chuoi_JSON = Xu_ly_HTTP.responseText;
+            if (Chuoi_JSON != "")
+                Du_lieu = JSON.parse(Chuoi_JSON);
+            return Du_lieu;
+        };
+        let Danh_sach_Dien_thoai = apiDanhsachDienthoai();
+    </script>
+
+    <!-- Xuất Danh Sách Điện Thoại -->
+    <script type="text/javascript">
+        var loai_san_pham = "Dien_thoai";
+        Xuat_Danh_sach_san_pham(Danh_sach_Dien_thoai, Th_Danh_sach);
+    </script>
+
+    <!-- Xử lý Button Tất cả Điện Thoại -->
+    <script type="text/javascript">
+        // Xuất tất cả điện thoại
+        Th_Home.onclick = () => {
+            Xuat_Danh_sach_Dien_thoai(Danh_sach_Dien_thoai, Th_Danh_sach);
+        };
+
+        // Tìm sản phẩm trong tất cả điện thoại
+        Th_Tim.onclick = () => {
+            var gt_tim = Th_gtTim.value.trim();
+            var tim_dt = Danh_sach_Dien_thoai.filter(x => x.Ten.toLowerCase().includes(gt_tim.toLowerCase()));
+            Xuat_Danh_sach_Dien_thoai(tim_dt, Th_Danh_sach);
+        };
+
+        // Lọc sản phẩm theo giá trong tất cả sản phẩm
+        document.getElementById('Th_Loc_gia').addEventListener('change', function () {
+            let gia_tri_loc = this.value;
+
+            if (gia_tri_loc === "0-5000000") {
+                let loc_theo_gia = Danh_sach_Dien_thoai.filter(item => item.Don_gia_Ban < Number(5000000));
+                loc_theo_gia.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                Xuat_Danh_sach_Dien_thoai(loc_theo_gia, Th_Danh_sach);
+            }
+            else if (gia_tri_loc === "5000000-10000000") {
+                let loc_theo_gia = Danh_sach_Dien_thoai.filter((item) => { return item.Don_gia_Ban > Number(5000000) && item.Don_gia_Ban < Number(10000000) });
+                loc_theo_gia.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                Xuat_Danh_sach_Dien_thoai(loc_theo_gia, Th_Danh_sach);
+            }
+            else if (gia_tri_loc === "10000000-20000000") {
+                let loc_theo_gia = Danh_sach_Dien_thoai.filter((item) => { return item.Don_gia_Ban > Number(10000000) && item.Don_gia_Ban < Number(20000000) });
+                loc_theo_gia.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                Xuat_Danh_sach_Dien_thoai(loc_theo_gia, Th_Danh_sach);
+            }
+            else if (gia_tri_loc === "20000000-50000000") {
+                let loc_theo_gia = Danh_sach_Dien_thoai.filter((item) => { return item.Don_gia_Ban > Number(20000000) });
+                loc_theo_gia.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                Xuat_Danh_sach_Dien_thoai(loc_theo_gia, Th_Danh_sach);
+            };
+        });
+
+        // Sắp xếp theo tên sản phẩm 
+        document.getElementById('Th_Sap_xep').addEventListener('change', function () {
+            let gt_sort = this.value;
+            console.log(typeof gt_sort);
+            if (gt_sort === '1') {
+                let sap_xep_ten = Danh_sach_Dien_thoai.sort((a, b) => a.Ten.localeCompare(b.Ten));
+                Xuat_Danh_sach_Dien_thoai(sap_xep_ten, Th_Danh_sach);
+            }
+            else if (gt_sort === '2') {
+                let sap_xep_ten = Danh_sach_Dien_thoai.sort((a, b) => b.Ten.localeCompare(a.Ten));
+                Xuat_Danh_sach_Dien_thoai(sap_xep_ten, Th_Danh_sach);
+            }
+            else if (gt_sort === '3') {
+                let sap_xep_gia = Danh_sach_Dien_thoai.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                Xuat_Danh_sach_Dien_thoai(sap_xep_gia, Th_Danh_sach);
+            }
+            else if (gt_sort === '4') {
+                let sap_xep_gia = Danh_sach_Dien_thoai.sort((a, b) => { return Number(b.Don_gia_Ban) - Number(a.Don_gia_Ban) });
+                Xuat_Danh_sach_Dien_thoai(sap_xep_gia, Th_Danh_sach);
+            }
+        });
+    </script>
+
+    <!-- Xử lý ở Danh sách ANDROID -->
+    <script type="text/javascript">
+        // Xuất danh sách Điện Thoại ANDROID
+        Th_Android.onclick = () => {
+            let list_Android = Danh_sach_Dien_thoai.filter(function (item) {
+                return item.Ma_so.includes("ANDROID");
+            });
+            Xuat_Danh_sach_Dien_thoai(list_Android, Th_Danh_sach);
+
+
+            // Tìm sản phẩm trong danh sách ANDROID
+            Th_Tim.onclick = () => {
+                let tim_dt = Th_gtTim.value.trim();
+                console.log(tim_dt);
+                if (tim_dt == "") {
+                    Th_Thong_bao.innerHTML = "Nhập tên sản phẩm cần tìm trong danh sách ANDROID";
+                    Th_gtTim.focus();
+                    return false;
+                };
+                let ds_tim_android = list_Android.filter(x => x.Ten.toLowerCase().includes(tim_dt.toLowerCase()));
+                console.log(ds_tim_android);
+                if (ds_tim_android.length > 0) {
+                    Xuat_Danh_sach_Dien_thoai(ds_tim_android, Th_Danh_sach);
+                } else {
+                    Th_Thong_bao.innerHTML =
+                        `Không tìm thấy sản phẩm có chứa <strong>${tim_dt}</strong> trong danh sách ANDROID`;
+                    Th_gtTim.focus();
+                };
+            };
+
+            // Sắp xếp theo tên sản phẩm trong Ds ANDROID
+            document.getElementById('Th_Sap_xep').addEventListener('change', function () {
+                let gt_sort = this.value;
+                console.log(typeof gt_sort);
+                if (gt_sort === '1') {
+                    let sap_xep_ten = list_Android.sort((a, b) => a.Ten.localeCompare(b.Ten));
+                    Xuat_Danh_sach_Dien_thoai(sap_xep_ten, Th_Danh_sach);
+                }
+                else if (gt_sort === '2') {
+                    let sap_xep_ten = list_Android.sort((a, b) => b.Ten.localeCompare(a.Ten));
+                    Xuat_Danh_sach_Dien_thoai(sap_xep_ten, Th_Danh_sach);
+                }
+                else if (gt_sort === '3') {
+                    let sap_xep_gia = list_Android.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                    Xuat_Danh_sach_Dien_thoai(sap_xep_gia, Th_Danh_sach);
+                }
+                else if (gt_sort === '4') {
+                    let sap_xep_gia = list_Android.sort((a, b) => { return Number(b.Don_gia_Ban) - Number(a.Don_gia_Ban) });
+                    Xuat_Danh_sach_Dien_thoai(sap_xep_gia, Th_Danh_sach);
+                }
+            });
+
+            // Lọc sản phẩm theo giá trong Ds ANDROID
+            document.getElementById('Th_Loc_gia').addEventListener('change', function () {
+                let valueOption = this.value;
+
+                if (valueOption === "0-5000000") {
+                    let loc_gia_android = list_Android.filter((item) => { return item.Don_gia_Ban < Number(5000000) });
+                    loc_gia_android.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                    Xuat_Danh_sach_Dien_thoai(loc_gia_android, Th_Danh_sach);
+                }
+                else if (valueOption === "5000000-10000000") {
+                    let loc_gia_android = list_Android.filter((item) => {
+                        return item.Don_gia_Ban > Number(5000000) &&
+                            item.Don_gia_Ban < Number(10000000)
+                    }); loc_gia_android.sort((a, b) => {
+                        return Number(a.Don_gia_Ban) -
+                            Number(b.Don_gia_Ban)
+                    });
+                    Xuat_Danh_sach_Dien_thoai(loc_gia_android, Th_Danh_sach);
+                }
+                else if (valueOption === "10000000-20000000") {
+                    let loc_gia_android = list_Android.filter((item) => {
+                        return item.Don_gia_Ban > Number(10000000) &&
+                            item.Don_gia_Ban < Number(20000000)
+                    }); loc_gia_android.sort((a, b) => {
+                        return Number(a.Don_gia_Ban) -
+                            Number(b.Don_gia_Ban)
+                    });
+                    Xuat_Danh_sach_Dien_thoai(loc_gia_android, Th_Danh_sach);
+                }
+                else if (valueOption === "20000000-50000000") {
+                    let loc_gia_android = list_Android.filter((item) => { return item.Don_gia_Ban > Number(20000000) });
+                    loc_gia_android.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                    console.log(loc_gia_android);
+                    Xuat_Danh_sach_Dien_thoai(loc_gia_android, Th_Danh_sach);
+                };
+            });
+        };
+
+    </script>
+
+    <!-- Xử lý ở Danh Sách IPHONE -->
+    <script type="text/javascript">
+        Th_Iphone.onclick = () => {
+            // Xuất danh sách Điện Thoại Iphone
+            let Danh_sach_Iphone = Danh_sach_Dien_thoai.filter(x => x.Ma_so.includes("IPHONE"));
+            Xuat_Danh_sach_Dien_thoai(Danh_sach_Iphone, Th_Danh_sach);
+
+            // Tìm sp trong danh sách Iphone
+            Th_Tim.onclick = () => {
+                let tim_dt = Th_gtTim.value.trim();
+                // console.log(tim_dt);
+                if (tim_dt == "") {
+                    Th_Thong_bao.innerHTML = "Nhập tên sản phẩm cần tìm trong danh sách Iphone";
+                    Th_gtTim.focus();
+                    return false;
+                };
+                let ds_tim_iphone = Danh_sach_Iphone.filter(x => x.Ten.toLowerCase().includes(tim_dt.toLowerCase()));
+                // console.log(ds_tim_iphone);
+                if (ds_tim_iphone.length > 0) {
+                    Xuat_Danh_sach_Dien_thoai(ds_tim_iphone, Th_Danh_sach);
+                } else {
+                    Th_Thong_bao.innerHTML =
+                        `Không tìm thấy sản phẩm có chứa <strong>${tim_dt}</strong> trong danh sách Iphone`;
+                    Th_gtTim.focus();
+                };
+            };
+
+            // Sắp xếp theo tên sản phẩm trong Ds IPHONE
+            document.getElementById('Th_Sap_xep').addEventListener('change', function () {
+                let gt_sort = this.value;
+
+                if (gt_sort === '1') {
+                    let sap_xep_ten = Danh_sach_Iphone.sort((a, b) => a.Ten.localeCompare(b.Ten));
+                    Xuat_Danh_sach_Dien_thoai(sap_xep_ten, Th_Danh_sach);
+                }
+                else if (gt_sort === '2') {
+                    let sap_xep_ten = Danh_sach_Iphone.sort((a, b) => b.Ten.localeCompare(a.Ten));
+                    Xuat_Danh_sach_Dien_thoai(sap_xep_ten, Th_Danh_sach);
+                }
+                else if (gt_sort === '3') {
+                    let sap_xep_gia = Danh_sach_Iphone.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                    Xuat_Danh_sach_Dien_thoai(sap_xep_gia, Th_Danh_sach);
+                }
+                else if (gt_sort === '4') {
+                    let sap_xep_gia = Danh_sach_Iphone.sort((a, b) => { return Number(b.Don_gia_Ban) - Number(a.Don_gia_Ban) });
+                    Xuat_Danh_sach_Dien_thoai(sap_xep_gia, Th_Danh_sach);
+                }
+            });
+
+            // Lọc sản phẩm theo giá trong Ds Iphone
+            document.getElementById('Th_Loc_gia').addEventListener('change', function () {
+                let valueOption = this.value;
+
+                if (valueOption === "0-5000000") {
+                    let loc_gia_iphone = Danh_sach_Iphone.filter(item => { return item.Don_gia_Ban < Number(5000000) });
+                    loc_gia_iphone.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                    Xuat_Danh_sach_Dien_thoai(loc_gia_iphone, Th_Danh_sach);
+                }
+                else if (valueOption === "5000000-10000000") {
+                    let loc_gia_iphone = Danh_sach_Iphone.filter((item) => {
+                        return item.Don_gia_Ban > Number(5000000) &&
+                            item.Don_gia_Ban < Number(10000000)
+                    }); loc_gia_iphone.sort((a, b) => {
+                        return Number(a.Don_gia_Ban)
+                            - Number(b.Don_gia_Ban)
+                    });
+                    Xuat_Danh_sach_Dien_thoai(loc_gia_iphone, Th_Danh_sach);
+                }
+                else if (valueOption === "10000000-20000000") {
+                    let loc_gia_iphone = Danh_sach_Iphone.filter((item) => {
+                        return item.Don_gia_Ban > Number(10000000)
+                            && item.Don_gia_Ban < Number(20000000)
+                    }); loc_gia_iphone.sort((a, b) => {
+                        return
+                        Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban)
+                    });
+                    Xuat_Danh_sach_Dien_thoai(loc_gia_iphone, Th_Danh_sach);
+                }
+                else if (valueOption === "20000000-50000000") {
+                    let loc_gia_iphone = Danh_sach_Iphone.filter((item) => {
+                        return item.Don_gia_Ban >
+                            Number(20000000)
+                    });
+                    loc_gia_iphone.sort((a, b) => { return Number(a.Don_gia_Ban) - Number(b.Don_gia_Ban) });
+                    Xuat_Danh_sach_Dien_thoai(loc_gia_iphone, Th_Danh_sach);
+                };
+            });
+        };
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Tivi</title>
+    <style>
+        #Th_Ds {
+            margin: 0 auto;
+        }
+
+        .khung {
+            width: 200px;
+            height: 400px;
+            float: left;
+            border: 1px solid green;
+            padding: 12px;
+            box-sizing: border-box;
+            margin: 4px;
+        }
+
+        h1 {
+            text-align: center;
+            color: chocolate;
+            font-weight: 600;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dánh sách Ti vi</h1>
+    <button id="Th_danh_sach">Xuất danh sách</button>
+    <hr>
+    <div id="Th_Ds"></div>
+
+    <script src="js/thuvien.js"></script>
+    <script>
+        Th_danh_sach.onclick = () => {
+            let dsTivi = apiDanh_sach_Tivi();
+            Th_Ds.innerHTML = Xuat_danh_sach(dsTivi);
+        };
+
+        function Xuat_danh_sach(danhsach) {
+            let html = ``;
+            for (let i = 0; i <= danhsach.length - 1; i++) {
+                html += `
+                <div class="khung">
+                        <img src="${urlServer}/${danhsach[i].Ma_so}.png">
+                        <h4>Tên: ${danhsach[i].Ten}</h4>
+                        <p>Giá Bán: ${danhsach[i].Don_gia_Ban}</p>
+                        <p>Ký Hiệu: ${danhsach[i].Ma_so}</p>
+                        <p>Nhãn Hiệu: ${danhsach[i].Nhom_Tivi.Ten}</p>
+                    </div>
+                `;
+            }
+            return html;
+        };
+    </script>
+</body>
+
+</html>

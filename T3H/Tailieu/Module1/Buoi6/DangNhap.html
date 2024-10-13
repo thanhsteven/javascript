@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Đăng Nhập hệ thống</h1>
+    <p>user: <input type="text" id="Th_user"></p>
+    <p>password: <input type="password" id="Th_pwd"></p>
+    <button id="Th_dang_nhap">Login</button>
+
+    <script src="js/thuvien.js"></script>
+    <script>
+        Th_dang_nhap.onclick = () => {
+            let user = Th_user.value;
+            let pwd = Th_pwd.value;
+            let thongTin = {
+                "user" : user,
+                "pwd" : pwd
+            };
+
+            console.log(thongTin);
+        }
+    </script>
+</body>
+</html>

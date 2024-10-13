@@ -1,0 +1,889 @@
+[
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a36"
+        },
+        "Ten": "Smart Tivi Samsung 43 inch",
+        "Ma_so": "TIVI_3",
+        "Ky_hieu": "UA43M5500",
+        "Don_gia_Ban": 12390000,
+        "Don_gia_Nhap": 10390000,
+        "So_luong_Ton": 9,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Samsung",
+            "Ma_so": "SAMSUNG"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a37"
+        },
+        "Ten": "Smart Tivi Panasonic 40 inch",
+        "Ma_so": "TIVI_6",
+        "Ky_hieu": "TH-40DS490V",
+        "Don_gia_Ban": 7390000,
+        "Don_gia_Nhap": 15400000,
+        "So_luong_Ton": 90,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a39"
+        },
+        "Ten": "Smart Tivi LG 4K 49 inch",
+        "Ma_so": "TIVI_7",
+        "Ky_hieu": "49UJ633T",
+        "Don_gia_Ban": 17400000,
+        "Don_gia_Nhap": 5640000,
+        "So_luong_Ton": 10,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "02-01-2018",
+                "So_luong": 1,
+                "Don_gia": 17400000,
+                "Tien": 17400000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "LG",
+            "Ma_so": "LG"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a3a"
+        },
+        "Ten": "Smart Tivi LG 43 inch",
+        "Ma_so": "TIVI_5",
+        "Ky_hieu": "43LJ553T",
+        "Don_gia_Ban": 9900000,
+        "Don_gia_Nhap": 7900000,
+        "So_luong_Ton": 80,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "04-01-2018",
+                "So_luong": 1,
+                "Don_gia": 9900000,
+                "Tien": 9900000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            },
+            {
+                "Ngay": "04-01-2018",
+                "So_luong": 1,
+                "Don_gia": 9900000,
+                "Tien": 9900000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "LG",
+            "Ma_so": "LG"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a3b"
+        },
+        "Ten": "Internet Tivi Samsung 32 inch",
+        "Ma_so": "TIVI_8",
+        "Ky_hieu": "UA32J4303",
+        "Don_gia_Ban": 6890000,
+        "Don_gia_Nhap": 4890000,
+        "So_luong_Ton": 11,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Samsung",
+            "Ma_so": "SAMSUNG"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a3c"
+        },
+        "Ten": "Internet Tivi Sony 40 Inch",
+        "Ma_so": "TIVI_9",
+        "Ky_hieu": "KDL-40W660E",
+        "Don_gia_Ban": 10900000,
+        "Don_gia_Nhap": 8900000,
+        "So_luong_Ton": 10,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a38"
+        },
+        "Ten": "Smart Tivi Cong Samsung 49 inch",
+        "Ma_so": "TIVI_1",
+        "Ky_hieu": "UA49MU6500",
+        "Don_gia_Ban": 29900000,
+        "Don_gia_Nhap": 18100000,
+        "So_luong_Ton": 81,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [
+            {
+                "Ngay": "02-01-2018",
+                "So_luong": 2,
+                "Don_gia": 18000000,
+                "Tien": 36000000,
+                "Nhan_vien": {
+                    "Ho_ten": "Nguyễn thị bé Nhỏ",
+                    "Ma_so": "NV_1"
+                }
+            }
+        ],
+        "Nhom_Tivi": {
+            "Ten": "Samsung",
+            "Ma_so": "SAMSUNG"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a3e"
+        },
+        "Ten": "Internet Tivi Sony 4K 43 inch",
+        "Ma_so": "TIVI_4",
+        "Ky_hieu": "KD-43X7000E",
+        "Don_gia_Ban": 14500000,
+        "Don_gia_Nhap": 10500000,
+        "So_luong_Ton": 65,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "04-01-2018",
+                "So_luong": 1,
+                "Don_gia": 14500000,
+                "Tien": 14500000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a3f"
+        },
+        "Ten": "Internet Tivi Sony 40 inch",
+        "Ma_so": "TIVI_10",
+        "Ky_hieu": "KDL-40W650D",
+        "Don_gia_Ban": 9990000,
+        "Don_gia_Nhap": 7990000,
+        "So_luong_Ton": 72,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "28-12-2017",
+                "So_luong": 2,
+                "Don_gia": 9990000,
+                "Tien": 19980000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            },
+            {
+                "Ngay": "28-12-2017",
+                "So_luong": 1,
+                "Don_gia": 9990000,
+                "Tien": 9990000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            },
+            {
+                "Ngay": "28-12-2017",
+                "So_luong": 4,
+                "Don_gia": 9990000,
+                "Tien": 39960000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            },
+            {
+                "Ngay": "02-01-2018",
+                "So_luong": 1,
+                "Don_gia": 9990000,
+                "Tien": 9990000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            },
+            {
+                "Ngay": "04-01-2018",
+                "So_luong": 2,
+                "Don_gia": 9990000,
+                "Tien": 19980000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            },
+            {
+                "Ngay": "08-01-2018",
+                "So_luong": 2,
+                "Don_gia": 9990000,
+                "Tien": 19980000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            },
+            {
+                "Ngay": "04-04-2018",
+                "So_luong": 2,
+                "Don_gia": 9990000,
+                "Tien": 19980000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            },
+            {
+                "Ngay": "08-04-2018",
+                "So_luong": 1,
+                "Don_gia": 9990000,
+                "Tien": 9990000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            },
+            {
+                "Ngay": "07-05-2018",
+                "So_luong": 2,
+                "Don_gia": 9990000,
+                "Tien": 19980000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [
+            {
+                "Ngay": "04-01-2018",
+                "So_luong": 2,
+                "Don_gia": 7990000,
+                "Tien": 15980000,
+                "Nhan_vien": {
+                    "Ho_ten": "Nguyên văn bé Xíu",
+                    "Ma_so": "NV_3"
+                }
+            }
+        ],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a3d"
+        },
+        "Ten": "Android Tivi Sony 65 inch",
+        "Ma_so": "TIVI_2",
+        "Ky_hieu": "KD-65X9000E/S",
+        "Don_gia_Ban": 59900000,
+        "Don_gia_Nhap": 50900000,
+        "So_luong_Ton": 2,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a41"
+        },
+        "Ten": "Smart Tivi TCL 32 inch",
+        "Ma_so": "TIVI_12",
+        "Ky_hieu": "L32S6100",
+        "Don_gia_Ban": 5780000,
+        "Don_gia_Nhap": 4580000,
+        "So_luong_Ton": 60,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [
+            {
+                "Ngay": "02-01-2018",
+                "So_luong": 5,
+                "Don_gia": 4580000,
+                "Tien": 22900000,
+                "Nhan_vien": {
+                    "Ho_ten": "Nguyễn thị bé Nhỏ",
+                    "Ma_so": "NV_1"
+                }
+            }
+        ],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a40"
+        },
+        "Ten": "Smart Tivi Samsung 40 inch",
+        "Ma_so": "TIVI_11",
+        "Ky_hieu": "UA40K5300",
+        "Don_gia_Ban": 8640000,
+        "Don_gia_Nhap": 7540000,
+        "So_luong_Ton": 62,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Samsung",
+            "Ma_so": "SAMSUNG"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a42"
+        },
+        "Ten": "Internet Tivi LED SONY 32 Inch",
+        "Ma_so": "TIVI_13",
+        "Ky_hieu": "KDL_32W600D",
+        "Don_gia_Ban": 11290000,
+        "Don_gia_Nhap": 9590000,
+        "So_luong_Ton": 10,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "28-12-2017",
+                "So_luong": 2,
+                "Don_gia": 11290000,
+                "Tien": 22580000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            },
+            {
+                "Ngay": "08-04-2018",
+                "So_luong": 1,
+                "Don_gia": 11290000,
+                "Tien": 11290000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a43"
+        },
+        "Ten": "Internet Tivi LED SONY 48 Inch",
+        "Ma_so": "TIVI_14",
+        "Ky_hieu": "KDL_48W650D",
+        "Don_gia_Ban": 9480000,
+        "Don_gia_Nhap": 8480000,
+        "So_luong_Ton": 80,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "04-01-2018",
+                "So_luong": 2,
+                "Don_gia": 9480000,
+                "Tien": 18960000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a44"
+        },
+        "Ten": "Internet Tivi LED SONY 55 Inch",
+        "Ma_so": "TIVI_15",
+        "Ky_hieu": "KDL_55W650D",
+        "Don_gia_Ban": 12930000,
+        "Don_gia_Nhap": 11330000,
+        "So_luong_Ton": 95,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a45"
+        },
+        "Ten": "Smart Tivi OLED SONY 55 Inch",
+        "Ma_so": "TIVI_16",
+        "Ky_hieu": "KD_55A1",
+        "Don_gia_Ban": 9170000,
+        "Don_gia_Nhap": 7870000,
+        "So_luong_Ton": 28,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "02-01-2018",
+                "So_luong": 2,
+                "Don_gia": 9170000,
+                "Tien": 18340000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a46"
+        },
+        "Ten": "Smart Tivi OLED SONY 65 Inch",
+        "Ma_so": "TIVI_17",
+        "Ky_hieu": "KD_65A1",
+        "Don_gia_Ban": 15000000,
+        "Don_gia_Nhap": 11090000,
+        "So_luong_Ton": 27,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a47"
+        },
+        "Ten": "Smart Tivi LED 4K SONY 49 inch",
+        "Ma_so": "TIVI_18",
+        "Ky_hieu": "KD_49X7500E",
+        "Don_gia_Ban": 10420000,
+        "Don_gia_Nhap": 8520000,
+        "So_luong_Ton": 33,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a48"
+        },
+        "Ten": "Smart Tivi LED 4K SONY 65 Inch",
+        "Ma_so": "TIVI_19",
+        "Ky_hieu": "KD_65X9300E",
+        "Don_gia_Ban": 5520000,
+        "Don_gia_Nhap": 3720000,
+        "So_luong_Ton": 65,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "28-12-2017",
+                "So_luong": 2,
+                "Don_gia": 5520000,
+                "Tien": 11040000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a49"
+        },
+        "Ten": "Smart Tivi LED 4K SONY 75 Inch",
+        "Ma_so": "TIVI_20",
+        "Ky_hieu": "KD_75X9400E",
+        "Don_gia_Ban": 7340000,
+        "Don_gia_Nhap": 5640000,
+        "So_luong_Ton": 19,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a4a"
+        },
+        "Ten": "Smart Tivi SONY Ultra HD 55 Inch",
+        "Ma_so": "TIVI_21",
+        "Ky_hieu": "KD_55X8500E",
+        "Don_gia_Ban": 5780000,
+        "Don_gia_Nhap": 4580000,
+        "So_luong_Ton": 71,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a4b"
+        },
+        "Ten": "Smart Tivi SONY Ultra HD 75 Inch",
+        "Ma_so": "TIVI_22",
+        "Ky_hieu": "KD_75X8500E",
+        "Don_gia_Ban": 11480000,
+        "Don_gia_Nhap": 10380000,
+        "So_luong_Ton": 61,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a4c"
+        },
+        "Ten": "Internet Tivi SONY Ultra HD 48 inch",
+        "Ma_so": "TIVI_23",
+        "Ky_hieu": "KDL_49W750E",
+        "Don_gia_Ban": 12345678,
+        "Don_gia_Nhap": 4780000,
+        "So_luong_Ton": 13,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a4d"
+        },
+        "Ten": "Internet Tivi SONY Ultra HD 55 inch",
+        "Ma_so": "TIVI_24",
+        "Ky_hieu": "KD_55X7000E",
+        "Don_gia_Ban": 8640000,
+        "Don_gia_Nhap": 7540000,
+        "So_luong_Ton": 66,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a4e"
+        },
+        "Ten": "TV SamSung",
+        "Ma_so": "TIVI_25",
+        "Ky_hieu": "49X8000E",
+        "Don_gia_Ban": 11290000,
+        "Don_gia_Nhap": 9590000,
+        "So_luong_Ton": 75,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Samsung",
+            "Ma_so": "SAMSUNG"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a4f"
+        },
+        "Ten": "TV Sony",
+        "Ma_so": "TIVI_26",
+        "Ky_hieu": "32DS500V",
+        "Don_gia_Ban": 9480000,
+        "Don_gia_Nhap": 8480000,
+        "So_luong_Ton": 28,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Sony",
+            "Ma_so": "SONY"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a50"
+        },
+        "Ten": "TV LG",
+        "Ma_so": "TIVI_27",
+        "Ky_hieu": "43DS600V",
+        "Don_gia_Ban": 12930000,
+        "Don_gia_Nhap": 11330000,
+        "So_luong_Ton": 78,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "28-12-2017",
+                "So_luong": 2,
+                "Don_gia": 12930000,
+                "Tien": 25860000,
+                "Nhan_vien": {
+                    "Ho_ten": "Tô thị bé Bé",
+                    "Ma_so": "NV_2"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [
+            {
+                "Ngay": "04-01-2018",
+                "So_luong": 2,
+                "Don_gia": 11330000,
+                "Tien": 22660000,
+                "Nhan_vien": {
+                    "Ho_ten": "Nguyên văn bé Xíu",
+                    "Ma_so": "NV_3"
+                }
+            }
+        ],
+        "Nhom_Tivi": {
+            "Ten": "LG",
+            "Ma_so": "LG"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a51"
+        },
+        "Ten": "TV Toshiba",
+        "Ma_so": "TIVI_28",
+        "Ky_hieu": "32DS510V",
+        "Don_gia_Ban": 12490000,
+        "Don_gia_Nhap": 11090000,
+        "So_luong_Ton": 79,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a52"
+        },
+        "Ten": "TV Sharp",
+        "Ma_so": "TIVI_29",
+        "Ky_hieu": "49DS630V",
+        "Don_gia_Ban": 9170000,
+        "Don_gia_Nhap": 7870000,
+        "So_luong_Ton": 5,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a53"
+        },
+        "Ten": "TV Asanzo 3",
+        "Ma_so": "TIVI_30",
+        "Ky_hieu": "49DS600V",
+        "Don_gia_Ban": 5520000,
+        "Don_gia_Nhap": 3720000,
+        "So_luong_Ton": 94,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a54"
+        },
+        "Ten": "TV TCL",
+        "Ma_so": "TIVI_31",
+        "Ky_hieu": "55DX650V",
+        "Don_gia_Ban": 7340000,
+        "Don_gia_Nhap": 5640000,
+        "So_luong_Ton": 97,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a55"
+        },
+        "Ten": "TV Panasonic",
+        "Ma_so": "TIVI_32",
+        "Ky_hieu": "32DS500V",
+        "Don_gia_Ban": 11480000,
+        "Don_gia_Nhap": 10380000,
+        "So_luong_Ton": 6,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a56"
+        },
+        "Ten": "TV Skyworth",
+        "Ma_so": "TIVI_33",
+        "Ky_hieu": "40E400V",
+        "Don_gia_Ban": 5780000,
+        "Don_gia_Nhap": 4780000,
+        "So_luong_Ton": 18,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a57"
+        },
+        "Ten": "TV Philips",
+        "Ma_so": "TIVI_34",
+        "Ky_hieu": "49LH570T",
+        "Don_gia_Ban": 10420000,
+        "Don_gia_Nhap": 8520000,
+        "So_luong_Ton": 63,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "04-01-2018",
+                "So_luong": 1,
+                "Don_gia": 10420000,
+                "Tien": 10420000,
+                "Nhan_vien": {
+                    "Ho_ten": "Nguyên văn bé Xíu",
+                    "Ma_so": "NV_3"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a58"
+        },
+        "Ten": "TV BELCO",
+        "Ma_so": "TIVI_35",
+        "Ky_hieu": "32LE280X",
+        "Don_gia_Ban": 8640000,
+        "Don_gia_Nhap": 7540000,
+        "So_luong_Ton": 67,
+        "Danh_sach_Phieu_Ban": [
+            {
+                "Ngay": "28-12-2017",
+                "So_luong": 1,
+                "Don_gia": 8640000,
+                "Tien": 8640000,
+                "Nhan_vien": {
+                    "Ho_ten": "Nguyên văn bé Xíu",
+                    "Ma_so": "NV_3"
+                }
+            },
+            {
+                "Ngay": "04-01-2018",
+                "So_luong": 2,
+                "Don_gia": 8640000,
+                "Tien": 17280000,
+                "Nhan_vien": {
+                    "Ho_ten": "Nguyên văn bé Xíu",
+                    "Ma_so": "NV_3"
+                }
+            }
+        ],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "5d5c5ff28032171fd0884a59"
+        },
+        "Ten": "TV Darling",
+        "Ma_so": "TIVI_36",
+        "Ky_hieu": "E32DF2200",
+        "Don_gia_Ban": 5780000,
+        "Don_gia_Nhap": 4580000,
+        "So_luong_Ton": 4,
+        "Danh_sach_Phieu_Ban": [],
+        "Danh_sach_Phieu_Nhap": [],
+        "Nhom_Tivi": {
+            "Ten": "Khác",
+            "Ma_so": "KHAC"
+        }
+    }
+]

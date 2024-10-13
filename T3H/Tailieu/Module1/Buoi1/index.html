@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 1</title>
+    <style>
+        div {
+            height: 28px;
+            line-height: 28px;
+        };
+    </style>
+</head>
+
+<body>
+    <h1>Kiểm tra số chẳn lẻ</h1>
+    <p>Nhập số cần kiểm tra: <input type="text" name="" id="Th_so"></p>
+    <button id="Th_kiem_tra">Kiểm Tra</button>
+    <button class="Th_lam_lai">Làm lại</button>
+    <br>
+    <div id="Th_kq"></div>
+
+    <hr>
+
+    <h1>Xuất câu chào</h1>
+    <p>Nhập họ tên của bạn: <input type="text" id="Th_hoten"></p>
+    <button id="Th_cau_chao">Xuất</button>
+    <button class="Th_lam_lai">Làm lại</button>
+
+    <hr>
+
+    <h1>Tổng 2 số</h1>
+    <p>Nhập số hạng A: <input type="text" id="numberA"></p>
+    <p>Nhập số hạng B: <input type="text" id="numberB"></p>
+    <p>Kết quả <input type="text" id="Th_phep_tinh" readonly></p>
+    <div class="btn_group">
+        <button id="Th_tinh_tong" data="+">Tính tổng</button>
+        <button id="Th_tinh_hieu" data="-">Tính hiệu</button>
+        <button id="Th_tinh_tich" data="*">Tính tích</button>
+        <button id="Th_tinh_thuong" data="/">Tính thương</button>
+    </div>
+    <p>Viết hàm thông thường</p>
+    <button id="Th_cach_tinh">Tính bình thường</button>
+    <button class="Th_lam_lai">Làm lại</button>
+    <hr>
+
+    <script src="js/thu_vien.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

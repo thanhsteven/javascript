@@ -1,0 +1,12 @@
+{
+  "name": "dich_vu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Dich_vu.js",
+  "scripts": {
+    "start": "node Dich_vu.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

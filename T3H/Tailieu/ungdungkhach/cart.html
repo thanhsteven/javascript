@@ -1,0 +1,95 @@
+<script>
+    if (sessionStorage.getItem('carts') == undefined) {
+        window.location = "."
+    }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="Th_Cua_hang"></div>
+    <hr>
+    <h1>Giỏ hàng của bạn</h1>
+    <button>Đặt hàng</button>
+    <button onclick="window.location='.'">Mua hàng tiếp</button>
+    <button id="Th_XoaCarts" onclick="sessionStorage.removeItem('carts');window.location='.'">Xóa giỏ hàng</button>
+    <hr>
+    <div>
+        <div class="float-left">
+            <table>
+                <tr style="text-align: center; background-color: chocolate; color: white;">
+                    <td>Hình </td>
+                    <td>Tên </td>
+                    <td>Số lượng</td>
+                    <td>Đơn giá Bán</td>
+                    <td>Thành tiền</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tbody id="Th_Carts">
+
+                </tbody>
+                
+            </table>
+        </div>
+        <div class="float-rigth">
+            <table>
+                <caption>
+                    <h3>THÔNG TIN GIAO HÀNG</h3>
+                </caption>
+                <tr>
+                    <td><label for="Th_Ho_ten">Họ tên: </label></td>
+                    <td><input type="text" id="Th_Ho_ten"></td>
+                </tr>
+                <tr>
+                    <td><label for="Th_Email">Email: </label></td>
+                    <td><input type="text" id="Th_Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="Th_Dien_thoai">Điện thoại: </label></td>
+                    <td><input type="text" id="Th_Dien_thoai"></td>
+                </tr>
+                <tr>
+                    <td><label for="Th_Dia_chi">Địa chỉ Giao hàng:</label></td>
+                    <td><input type="text" id="Th_Dia_chi"></td>
+                </tr>
+                <tr>
+                    <td><label for="Th_Ngay_Giao_hang">Ngày Giao hàng:</label></td>
+                    <td><input type="date" id="Th_Ngay_Giao_hang"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/format.js"></script>
+    <script src="js/libs.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        
+        apiCuahang().then(result => {
+
+            cuaHang = result;
+            console.log(cuaHang);
+            Th_Cua_hang.innerHTML = Xuat_Cua_hang(cuaHang);
+            carts = JSON.parse(sessionStorage.getItem("carts"))
+            Xuat_Dien_thoai_Mua(carts,Th_Carts)
+            apiDienthoai().then(result => {
+                dsDienthoai = result;
+            })
+            
+        }).catch(err => {
+            console.log(err);
+        })
+    </script>
+</body>
+
+</html>

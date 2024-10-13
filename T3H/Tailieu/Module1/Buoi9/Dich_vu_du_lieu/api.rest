@@ -1,0 +1,17 @@
+GET http://localhost:8080/dsHocsinh
+###
+
+GET http://localhost:8080/dsDienthoai
+###
+
+GET http://localhost:8080/dsMathang
+###
+
+GET http://localhost:8080/dsTivi
+###
+
+GET http://localhost:8080/ANDROID_1.png
+###
+
+GET http://localhost:8080/noImage.png
+###

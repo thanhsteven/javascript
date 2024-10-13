@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách các loại</title>
+    <style>
+        h1 {
+            color: orange;
+        }
+        .khung {
+            width: 200px;
+            height: 400px;
+            border: 2px solid green;
+            box-sizing: border-box;
+            float: left;
+            margin: 4px;
+            padding: 12px;
+            border-radius: 4px;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Danh sách các loại sản phẩm</h1>
+    <button id="Th_dien_thoai">Xuất danh sách Điện Thoại</button>
+    <button id="Th_tivi">Xuất danh sách tivi</button>
+    <button id="Th_mat_hang">Xuất danh sách mặt hàng</button>
+
+    <hr>
+
+    <div id="Th_ds"></div>
+
+    <script src="js/thuvien.js"></script>
+    <script>
+        Th_dien_thoai.onclick = () => {
+            let dsDienThoai = api_Danh_sach_Dien_Thoai();
+            Th_ds.innerHTML = Xuat_danh_sach(dsDienThoai);
+        };
+        function Xuat_danh_sach(danhsach) {
+            let html = "";
+            for (let i = 0; i <= danhsach.length - 1; i++) {
+                html += `
+                    <div class="khung">
+                        <img src="${urlServer}/${danhsach[i].Ma_so}.png">
+                        <h4>Tên: ${danhsach[i].Ten}</h4>
+                        <p>Mã số: ${danhsach[i].Ma_so}</p>
+                        <p>Đơn giá: ${danhsach[i].Don_gia_Ban}</p>
+                        <p>Nhóm sản phẩm: ${danhsach[i].Nhom_Dien_thoai.Ten}</p>
+                    </div>
+                `;
+            };
+            return html;
+        };
+
+        Th_tivi.onclick = () => {
+            let dsTivi = api_Danh_sach_Tivi();
+            Th_ds.innerHTML = Xuat_danh_sach_tivi(dsTivi);
+        };
+        function Xuat_danh_sach_tivi(danhsach) {
+            let html = "";
+            for (let i = 0; i <= danhsach.length - 1; i++) {
+                html += `
+                    <div class="khung">
+                        <img src="${urlServer}/${danhsach[i].Ma_so}.png">
+                        <h4>Tên: ${danhsach[i].Ten}</h4>
+                        <p>Mã số: ${danhsach[i].Ma_so}</p>
+                        <p>Đơn giá: ${danhsach[i].Don_gia_Ban}</p>
+                        <p>Nhóm sản phẩm: ${danhsach[i].Nhom_Tivi.Ten}</p>
+                    </div>
+                `;
+            };
+            return html;
+        };
+
+        Th_mat_hang.onclick = () => {
+            let dsMatHang = api_Danh_sach_Mat_Hang();
+            Th_ds.innerHTML = Xuat_danh_sach_Mat_hang(dsMatHang);
+        };
+        function Xuat_danh_sach_Mat_hang(danhsach) {
+            let html = "";
+            for (let i = 0; i <= danhsach.length - 1; i++) {
+                html += `
+                    <div class="khung">
+                        <img src="${urlServer}/${danhsach[i].Ma_so}.png">
+                        <h4>Tên: ${danhsach[i].Ten}</h4>
+                        <p>Mã số: ${danhsach[i].Ma_so}</p>
+                        <p>Đơn giá: ${danhsach[i].Don_gia_Ban}</p>
+                        <p>Nhóm sản phẩm: ${danhsach[i].Nhom_Mat_hang.Ten}</p>
+                    </div>
+                `;
+            };
+            return html;
+        };
+    </script>
+</body>
+
+</html>
