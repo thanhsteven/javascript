@@ -1,0 +1,37 @@
+GET http://localhost:8080
+###
+
+GET http://localhost:8080/dsHocsinh
+###
+
+GET http://localhost:8080/dsMatHang
+###
+
+GET http://localhost:8080/dsMatHang
+###
+
+GET http://localhost:8080/dsMatHang
+###
+
+GET http://localhost:8080/dsDienthoai
+###
+
+GET http://localhost:8080/dsTivi
+###
+
+GET http://localhost:8080/dsNguoiDung
+###
+
+GET http://localhost:8080/MON_AN_7.png
+###
+
+GET http://localhost:8080/MON_AN_8.png
+###
+
+POST http://localhost:8080/Dangnhap
+
+{
+    "user" : "kimthanh",
+    "pass" : 123456
+}
+###

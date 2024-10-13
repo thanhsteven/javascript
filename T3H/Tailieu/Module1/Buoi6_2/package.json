@@ -1,10 +1,10 @@
 {
-  "name": "buoi6",
+  "name": "buoi6_1",
   "version": "1.0.0",
   "description": "",
   "main": "Dich_vu.js",
   "scripts": {
-    "start": "node ./Dich_vu.js"
+    "start": "node Dich_vu.js"
   },
   "keywords": [],
   "author": "",

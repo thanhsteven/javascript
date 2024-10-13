@@ -1,37 +1,34 @@
 GET http://localhost:8080
 ###
 
-GET http://localhost:8080/dsHocsinh
+GET http://localhost:8080/dsDienThoai
 ###
 
 GET http://localhost:8080/dsMatHang
 ###
 
-GET http://localhost:8080/dsMatHang
-###
-
-GET http://localhost:8080/dsMatHang
-###
-
-GET http://localhost:8080/dsDienthoai
+GET http://localhost:8080/dsHocSinh
 ###
 
 GET http://localhost:8080/dsTivi
 ###
 
-GET http://localhost:8080/dsNguoiDung
-###
+POST http://localhost:8080/Cap_nhat_Tivi
 
-GET http://localhost:8080/MON_AN_7.png
-###
-
-GET http://localhost:8080/MON_AN_8.png
+{
+    "Ma_so" : "Tivi001",
+    "Don_gia_Ban" : 500000
+}
 ###
 
 POST http://localhost:8080/Dangnhap
 
 {
     "user" : "kimthanh",
-    "pass" : 123456
+    "pwd" : 123456
 }
 ###
+
+GET http://localhost:8080/MON_AN_7.png
+###
+
