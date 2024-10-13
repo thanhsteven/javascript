@@ -84,6 +84,15 @@ function convertStringToUrl(string) {
   return arrMap.join("-");
 }
 
+// * Hàm chuẩn hoá chuỗi - Loại bỏ khoảng trắng không hợp lệ
+function chuan_hoa_chuoi(chuoi) {
+  let chuoi_tam = chuoi.trim();
+  while (chuoi_tam.indexOf("  ") >= 0) {
+    chuoi_tam = chuoi_tam.replace("  ", " ");
+  }
+  return chuoi_tam;
+}
+
 // ! Hàm tách keyword Google Ads - Viết hoa ký tự đầu !
 function keywordAnalysis_capword(string) {
   if (string.length == 0) return false;
