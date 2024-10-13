@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đọc Danh sách điện thoại JSON</title>
+    <style>
+      h1 {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Đọc xuất danh sách điện thoại</h1>
+    <button id="Th_Xuat_file">Xuất danh sách</button>
+    <div id="Ketqua"></div>
+    <script>
+      Th_Xuat_file.onclick = () => {
+        // Lấy file JSON
+        let duong_dan_du_lieu = "../Tailieu/Module1/Buoi3/dulieu";
+        let taptin = "dsDienThoai.json";
+        function doc_tap_tin(taptin) {
+          let path = `${duong_dan_du_lieu}/${taptin}`;
+          let truyxuatHTTP = new XMLHttpRequest();
+          truyxuatHTTP.open("GET", `${path}`, false);
+          truyxuatHTTP.send();
+          let ketqua = truyxuatHTTP.responseText.trim();
+          return ketqua;
+        }
+        // Xử lý file JSON
+        let noidung = doc_tap_tin(taptin);
+        let objArr = JSON.parse(noidung);
+        let showDs = "";
+        for (let i = 0; i < objArr.length; i++) {
+          let sanpham = objArr[i];
+          console.log(objArr[i]);
+          showDs += `
+          <hr>
+          <p>Tên điện thoại: ${sanpham.Ten}</p>
+          <p>Đơn giá nhập: ${sanpham.Don_gia_Nhap}</p>
+          <p>Đơn giá bán: ${sanpham.Don_gia_Ban}</p>
+          <p>Hệ điều hành: ${sanpham.Nhom.Ten}</p>
+        `;
+        }
+        Ketqua.innerHTML = showDs;
+      };
+    </script>
+  </body>
+</html>
+
