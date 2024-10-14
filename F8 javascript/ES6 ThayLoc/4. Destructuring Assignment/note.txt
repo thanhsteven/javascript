@@ -1,2 +1,0 @@
-1. Trên object, biến bên trái phải giống với tên thuộc tính bên phải
-2. Nếu không dùng từ khóa let/var/const thì cần bọc desctruting trong ()

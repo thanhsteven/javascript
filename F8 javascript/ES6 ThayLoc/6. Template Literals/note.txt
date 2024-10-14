@@ -1,3 +1,0 @@
-Dùng dấu dấu nháy ngược `` để hỗ trợ:
-1. không cần dấu + khi xuống dòng
-2. Chèn biến vào chuỗi (dùng dấu ${})
