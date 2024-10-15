@@ -174,11 +174,11 @@ function viet_hoa_chu_cai_dau_google_ads(tu_khoa) {
   let chuoi_ket_qua = chuoi_map.join("");
   return chuoi_ket_qua;
 }
-console.log(
-  viet_hoa_chu_cai_dau_google_ads(
-    "thủy tinh việt, công ty chai lọ thủy tinh, thủy tinh miso, công ty thủy tinh, luminarc việt nam, thủy tinh việt nam, công ty sản xuất chai thủy tinh, công ty sản xuất chai thủy tinh đựng rượu, làm thủy tinh theo yêu cầu, cơ sở sản xuất thủy tinh "
-  )
-);
+// console.log(
+//   viet_hoa_chu_cai_dau_google_ads(
+//     "thủy tinh việt, công ty chai lọ thủy tinh, thủy tinh miso, công ty thủy tinh, luminarc việt nam, thủy tinh việt nam, công ty sản xuất chai thủy tinh, công ty sản xuất chai thủy tinh đựng rượu, làm thủy tinh theo yêu cầu, cơ sở sản xuất thủy tinh "
+//   )
+// );
 
 // ! Hàm tách keyword Google Ads - Viết hoa chữ cái đầu !
 function capitalizeGGadsKeywords(string) {
