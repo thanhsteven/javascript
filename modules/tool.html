@@ -82,11 +82,11 @@
       // Tách keyword Google Ads - Viết hoa ký tự đầu
       capitalizeWord_GGADs.onclick = () => {
         let string = document.querySelector("#Bo_tu_khoa").value.trim();
-        let arrKey = viet_hoa_ky_tu_dau_gg_ads(string);
-        console.log(arrKey);
-        // let result = "";
-        // Th_ketqua_GG_Ads.innerHTML = result;
+        console.log(string);
+        let result = viet_hoa_chu_cai_dau_google_ads(string);
+        Th_ketqua_GG_Ads.innerHTML = result;
       };
     </script>
   </body>
 </html>
+
