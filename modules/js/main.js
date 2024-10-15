@@ -84,7 +84,7 @@ function convertStringToUrl(string) {
   return arrMap.join("-");
 }
 
-// * Hàm chuẩn hoá chuỗi - Loại bỏ khoảng trắng không hợp lệ
+// * Hàm chuẩn hoá chuỗi - rút gọn
 function chuan_hoa_chuoi(chuoi) {
   let chuoi_tam = chuoi.trim();
   while (chuoi_tam.indexOf("  ") >= 0) {
@@ -93,8 +93,26 @@ function chuan_hoa_chuoi(chuoi) {
   return chuoi_tam;
 }
 
-// ! Hàm tách keyword Google Ads - Viết hoa ký tự đầu !
-function keywordAnalysis_capword(string) {
+// * Viết hoa ký tự đầu
+function viet_hoa_ky_tu_dau_gg_ads(chuoi) {
+  let chuoi_tam = chuoi.trim();
+  let chuoi_arr = chuoi_tam.split(",");
+  let chuoi_xoa_khoang_trang = [];
+  chuoi_arr.forEach(function (element) {
+    chuoi_xoa_khoang_trang.push(element.trim());
+  });
+  let chuoi_map = chuoi_xoa_khoang_trang.map(function (element) {
+    let arrElement = element.split(" ");
+    let arrElementMap = arrElement.map(function (word) {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    });
+    return arrElementMap.join(" ");
+  });
+  return `${chuoi_map.join(" ")} <br>`;
+}
+
+// Hàm tách keyword Google Ads - Viết hoa ký tự đầu
+function capitalizeFirstSen_GG(string) {
   if (string.length == 0) return false;
   let arrStr = string.split(",");
   let arrMap = arrStr.map(function (element) {
@@ -111,7 +129,7 @@ function capitalizeGGadsKeywords(string) {
     return element.trim();
   });
   let arrMap2 = arrMap.map(function (element) {
-    let arrE = element.split(" "); // chai 500ml thủy tinh
+    let arrE = element.split(" ");
     let arrE2 = arrE.split(" ");
 
     let firstChar = arrE2[0].charAt(0).toUpperCase();
@@ -121,4 +139,3 @@ function capitalizeGGadsKeywords(string) {
   });
   return arrMap2;
 }
-

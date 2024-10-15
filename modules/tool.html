@@ -3,33 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Định dạng văn bản</title>
-    <style>
-      body {
-        padding: 20px;
-      }
-      #Th_vanban {
-        width: 80%;
-        padding: 4px 10px;
-        margin-top: 20px;
-        line-height: 36px;
-        border-radius: 4px;
-        border-width: 1px;
-      }
-      #Th_ketqua {
-        margin-top: 20px;
-      }
-      button {
-        padding: 4px 8px;
-        cursor: pointer;
-        margin: 10px;
-        border-radius: 4px;
-        border-width: 1px;
-      }
-    </style>
+    <title>Tools cho Marketer</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>Định dạng văn bản</h1>
+    <!-- - Dành cho Chuỗi thông thường -->
+    <h2>Định dạng văn bản</h2>
     <p>Nhập văn bản: <input type="text" name="" id="Th_vanban" /></p>
     <div>
       <button id="uppercase">VIẾT IN</button>
@@ -37,14 +16,26 @@
       <button id="capitalize_sentences">Viết hoa đầu câu</button>
       <button id="capitalize_words">Viết Hoa Chữ Cái Đầu</button>
       <button id="convertURL">Chuyển chuỗi sang url</button>
-      <!-- <button id="keyword_analysis">Tách keyword Google Ads</button>
-      <button id="capitalizeGoogleAdsKeywords">
-        Tách keyword Google - Viết hoa ký tự đầu
-      </button> -->
+      <div class="ketqua">
+        <p>Kết quả:</p>
+        <p id="Th_ketqua"></p>
+      </div>
+      <hr />
+      <!-- - Dành cho Google Ads -->
+      <h2>Định dạng từ khóa Google Ads</h2>
+      <div>
+        <p>Nhập bộ từ khóa Google Ads:</p>
+        <textarea name="" id="Bo_tu_khoa"></textarea>
+      </div>
+      <button id="capitalizeFirstLetter_GGADs">Viết hoa đầu câu</button>
+      <button id="capitalizeWord_GGADs">Viết hoa ký tự đầu</button>
+      <div class="ketqua">
+        <p>Kết quả:</p>
+        <p id="Th_ketqua_GG_Ads"></p>
+      </div>
     </div>
     <hr />
-    <div id="Th_ketqua"></div>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
     <script>
       // Viết in hoa toàn bộ
       uppercase.onclick = () => {
@@ -78,25 +69,24 @@
       };
 
       // Tách keyword Google Ads - Viết hoa đầu câu
-      // keyword_analysis.onclick = () => {
-      //   let string = document.querySelector("#Th_vanban").value.trim();
-      //   let arrKey = keywordAnalysis_capsen(string);
-      //   let result = "";
-      //   for (let i = 0; i < arrKey.length; i++) {
-      //     result += arrKey[i] + "<br>";
-      //   }
-      //   Th_ketqua.innerHTML = result;
-      // };
+      capitalizeFirstLetter_GGADs.onclick = () => {
+        let string = document.querySelector("#Bo_tu_khoa").value.trim();
+        let arrKey = capitalizeFirstSen_GG(string);
+        let result = "";
+        for (let i = 0; i < arrKey.length; i++) {
+          result += arrKey[i] + "<br>";
+        }
+        Th_ketqua_GG_Ads.innerHTML = result;
+      };
+
       // Tách keyword Google Ads - Viết hoa ký tự đầu
-      // capitalizeGoogleAdsKeywords.onclick = () => {
-      //   let string = document.querySelector("#Th_vanban").value.trim();
-      //   let arrKey = capitalizeWord(string);
-      //   let result = "";
-      //   for (let i = 0; i < arrKey.length; i++) {
-      //     result += arrKey[i] + "<br>";
-      //   }
-      //   Th_ketqua.innerHTML = result;
-      // };
+      capitalizeWord_GGADs.onclick = () => {
+        let string = document.querySelector("#Bo_tu_khoa").value.trim();
+        let arrKey = viet_hoa_ky_tu_dau_gg_ads(string);
+        console.log(arrKey);
+        // let result = "";
+        // Th_ketqua_GG_Ads.innerHTML = result;
+      };
     </script>
   </body>
 </html>

@@ -64,6 +64,11 @@ console.log("----- New Array 2 -----");
 let animals = ["cat", "dog", "elephant", "tiger", "zebra", "kangaroo"];
 
 // * Hàm forEach() trong JavaScript được sử dụng để thực hiện một hàm (callback) trên mỗi phần tử của mảng. Nó lặp qua từng phần tử của mảng và không trả về giá trị (undefined). forEach() là một phương thức của mảng và được sử dụng khi bạn muốn thực hiện một thao tác trên mỗi phần tử mà không cần trả về một mảng mới.
+let numbers = [1, 2, 3, 4, 5];
+numbers.forEach(function (num) {
+  console.log(num);
+});
+
 // ? Sử dụng forEach thì không có return nhé
 let forEachAnimals = animals.forEach(function (item) {
   return "Đây là con " + item.toString();
@@ -110,4 +115,3 @@ let someNumber = numberList.some(function (item) {
   return item < 12;
 });
 console.log(someNumber);
-

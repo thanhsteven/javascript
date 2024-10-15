@@ -63,4 +63,3 @@ let text4 = "JavaScript is awesome";
 console.log(text4.substr(0, 10));
 // - substring(start, [end])
 console.log(text4.substring(10));
-
