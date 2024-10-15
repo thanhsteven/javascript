@@ -20,4 +20,3 @@ let hv2 = hv1;
 console.log(hv2);
 console.log(hv2.Thongtin());
 console.log(hv2.Hocbong);
-
