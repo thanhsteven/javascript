@@ -54,7 +54,26 @@
       <p>Kết quả:</p>
       <p id="Th_so_tu_van_ban"></p>
     </div>
-
+    <hr />
+    <!-- - Chuyển number thành text -->
+    <h2>Đổi số tiền thành chữ</h2>
+    <div>
+      <p><span>Nhập giá trị số (đ)</span></p>
+      <p>
+        <input
+          type="text"
+          id="Th_con_so"
+          oninput="formatInput(this)"
+          placeholder="Nhập số tiền"
+        />
+      </p>
+    </div>
+    <button id="Th_chuyen_doi_so_tien">Đổi số tiền thành chữ</button>
+    <div>
+      <p>Kết quả:</p>
+      <p id="Th_so_tien"></p>
+    </div>
+    <hr />
     <!-- ! Javascript -->
     <script src="./js/main2.js"></script>
     <script src="./js/main.js"></script>
@@ -148,6 +167,16 @@
         let result = `Văn bản có ${dem.so_tu} từ và ${dem.so_ky_tu} ký tự`;
         Th_so_tu_van_ban.innerHTML = result;
       };
+      // Định dạng số tiền
+      // Hàm định dạng lại số tiền
+      function formatInput(input) {
+        let value = input.value.replace(/\./g, "");
+        value = formatNumber(value);
+        input.value = value;
+      }
+      function formatNumber(value) {
+        return value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      }
     </script>
   </body>
 </html>

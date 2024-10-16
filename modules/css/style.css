@@ -53,3 +53,9 @@ textarea {
   padding-left: 15px;
   padding-top: 15px;
 }
+input {
+  width: 90%;
+  border-radius: 6px;
+  border-width: 1px;
+  padding: 8px;
+}
