@@ -204,10 +204,12 @@ function dem_so_luong_tu(van_ban) {
     so_ky_tu: so_ky_tu,
   };
 }
-// console.log(
-//   dem_so_luong_tu(
-//     "iSOGIFT cung cấp giải pháp Quà tặng doanh nghiệp và Bao bì đóng gói cho ngành F&B. Với những sản phẩm chất lượng, từng chi tiết nhỏ đều được chúng tôi chăm chút một cách tỉ mỉ từ khâu lựa chọn chất lượng sản phẩm cho đến trải nghiệm nhận quà của khách hàng. Với iSOGIFT, bạn có thể tùy chỉnh thiết kế và chất liệu theo yêu cầu, đảm bảo rằng mỗi món quà không chỉ thể hiện được phong cách của doanh nghiệp bạn mà còn mang đến sự trân trọng, để lại ấn tượng riêng cho khách hàng và đối tác của bạn."
-//   )
-// );
 
-// * Hàm chuẩn hóa con số
+Th_bo_tu_khoa.onclick = () => {
+  let chuoi_tu_khoa = document.querySelector("#Th_bo_tu_khoa").innerText;
+  console.log(chuoi_tu_khoa);
+};
+
+function doi_sanh_tu_khoa_google_ads(chuoi_tu_khoa) {
+  return chuoi_tu_khoa;
+}
