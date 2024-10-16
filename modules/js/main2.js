@@ -18,14 +18,6 @@ function bo_dau_tieng_viet(chuoi) {
     .replace(/[^a-zA-Z0-9 ]/g, "");
 }
 
-// * Hàm viết hoa đầu câu
-function viet_hoa_dau_cau(chuoi) {
-  let chuoi_tam = chuan_hoa_chuoi(chuoi);
-  let chuoi_ket_qua =
-    chuoi_tam.charAt(0).toUpperCase() + chuoi_tam.slice(1).toLowerCase();
-  return chuoi_ket_qua;
-}
-
 // * HÀM VIẾT IN HOA TOÀN BỘ
 function viet_in_hoa_toan_bo(chuoi) {
   let chuoi_tam = chuan_hoa_chuoi(chuoi);
@@ -36,6 +28,14 @@ function viet_in_hoa_toan_bo(chuoi) {
 function viet_thuong_toan_bo(chuoi) {
   let chuoi_tam = chuan_hoa_chuoi(chuoi);
   return chuoi_tam.toLowerCase();
+}
+
+// * Hàm viết hoa đầu câu
+function viet_hoa_dau_cau(chuoi) {
+  let chuoi_tam = chuan_hoa_chuoi(chuoi);
+  let chuoi_ket_qua =
+    chuoi_tam.charAt(0).toUpperCase() + chuoi_tam.slice(1).toLowerCase();
+  return chuoi_ket_qua;
 }
 
 // * Hàm Viết Hoa Ký Tự Đầu
