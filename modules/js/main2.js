@@ -91,3 +91,9 @@ function dem_so_luong_tu(van_ban) {
     so_ky_tu: so_ky_tu,
   };
 }
+
+// * Hàm viết số tiền
+function dinh_dang_so(number) {
+  let chuoi_so = number.toString().replace(/\D/g, "");
+  return chuoi_so.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
