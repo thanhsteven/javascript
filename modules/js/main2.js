@@ -80,3 +80,14 @@ function viet_hoa_ky_tu_dau_google_ads(chuoi) {
   });
   return chuoi_ket_qua.join(" ");
 }
+
+// * Hàm đếm số lượng từ và số ký tự trong văn bản
+function dem_so_luong_tu(van_ban) {
+  let van_ban_chuan = chuan_hoa_chuoi(van_ban);
+  let so_ky_tu = van_ban_chuan.length;
+  let so_tu = van_ban_chuan.split(" ").length;
+  return {
+    so_tu: so_tu,
+    so_ky_tu: so_ky_tu,
+  };
+}
