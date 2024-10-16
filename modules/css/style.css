@@ -33,15 +33,16 @@ button {
   padding: 6px 10px;
   margin: 10px;
   border-radius: 6px;
-  border-width: 1px;
+  border: unset;
   margin-inline: unset;
-  margin-right: 15px;
+  margin-right: 10px;
   cursor: pointer;
-  background-color: blue;
-  color: #fff;
+  background-color: #23b700;
+  color: #333;
 }
 button:hover {
   background-color: red;
+  color: #fff;
 }
 textarea {
   width: 90%;

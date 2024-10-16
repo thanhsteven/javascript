@@ -32,7 +32,7 @@
       <!-- - Dành cho Google Ads -->
       <h2>Định dạng từ khóa Google Ads</h2>
       <div>
-        <p>Nhập bộ từ khóa Google Ads:</p>
+        <p><span>Nhập bộ từ khóa Google Ads:</span></p>
         <textarea name="" id="Bo_tu_khoa"></textarea>
       </div>
       <button id="viet_hoa_dau_cau_google">Viết hoa đầu câu</button>
@@ -43,6 +43,18 @@
       </div>
     </div>
     <hr />
+    <h2>Đếm từ trong văn bản</h2>
+    <div>
+      <p><span>Nhận nội dung văn bản</span></p>
+      <textarea name="" id="Th_van_ban"></textarea>
+    </div>
+    <button id="Btn_dem_so_tu">Đếm số từ</button>
+    <div>
+      <p>Kết quả:</p>
+      <p id="Th_so_tu_van_ban"></p>
+    </div>
+
+    <!-- ! Javascript -->
     <script src="./js/main2.js"></script>
     <script src="./js/main.js"></script>
     <script>
@@ -87,6 +99,12 @@
         let string = document.querySelector("#Bo_tu_khoa").value.trim();
         let result = viet_hoa_ky_tu_dau_google_ads(string);
         Th_ketqua_GG_Ads.innerHTML = result;
+      };
+      // Đếm số từ trong văn bản
+      Btn_dem_so_tu.onclick = () => {
+        let string = document.querySelector("#Th_van_ban").value.trim();
+        let result = string;
+        Th_so_tu_van_ban.innerHTML = result;
       };
     </script>
   </body>
