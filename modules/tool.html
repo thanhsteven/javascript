@@ -27,14 +27,15 @@
         <p>Nhập bộ từ khóa Google Ads:</p>
         <textarea name="" id="Bo_tu_khoa"></textarea>
       </div>
-      <button id="capitalizeFirstLetter_GGADs">Viết hoa đầu câu</button>
-      <button id="capitalizeWord_GGADs">Viết hoa ký tự đầu</button>
+      <button id="viet_hoa_dau_cau_google">Viết hoa đầu câu</button>
+      <button id="viet_hoa_ky_tu_dau_google">Viết hoa ký tự đầu</button>
       <div class="ketqua">
         <p>Kết quả:</p>
         <p id="Th_ketqua_GG_Ads"></p>
       </div>
     </div>
     <hr />
+    <script src="./js/main2.js"></script>
     <script src="./js/main.js"></script>
     <script>
       // Viết in hoa toàn bộ
@@ -67,26 +68,18 @@
         let url = convertStringToUrl(string);
         Th_ketqua.innerHTML = url;
       };
-
       // Tách keyword Google Ads - Viết hoa đầu câu
-      capitalizeFirstLetter_GGADs.onclick = () => {
+      viet_hoa_dau_cau_google.onclick = () => {
         let string = document.querySelector("#Bo_tu_khoa").value.trim();
-        let arrKey = capitalizeFirstSen_GG(string);
-        let result = "";
-        for (let i = 0; i < arrKey.length; i++) {
-          result += arrKey[i] + "<br>";
-        }
+        let result = viet_hoa_dau_cau_google_ads(string);
         Th_ketqua_GG_Ads.innerHTML = result;
       };
-
       // Tách keyword Google Ads - Viết hoa ký tự đầu
-      capitalizeFirstLetter_GGADs.onclick = () => {
+      viet_hoa_ky_tu_dau_google.onclick = () => {
         let string = document.querySelector("#Bo_tu_khoa").value.trim();
-        console.log(string);
-        let result = viet_hoa_chu_cai_dau_google_ads(string);
+        let result = viet_hoa_ky_tu_dau_google_ads(string);
         Th_ketqua_GG_Ads.innerHTML = result;
       };
     </script>
   </body>
 </html>
-
