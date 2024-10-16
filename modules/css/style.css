@@ -1,5 +1,16 @@
 body {
   padding: 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+  color: purple;
+}
+span {
+  color: green;
+  font-weight: 700;
 }
 #Th_vanban {
   width: 80%;
@@ -16,16 +27,25 @@ body {
   margin-top: 20px;
 }
 button {
-  padding: 4px 8px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 10px;
   margin: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
   border-width: 1px;
   margin-inline: unset;
   margin-right: 15px;
   cursor: pointer;
+  background-color: blue;
+  color: #fff;
+}
+button:hover {
+  background-color: red;
 }
 textarea {
   width: 90%;
+  font-family: inherit;
   min-height: 150px;
   border-radius: 4px;
   border-width: 1px;
