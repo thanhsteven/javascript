@@ -68,9 +68,17 @@ input {
   align-items: center;
   gap: 20px;
 }
+@media screen and (max-width: 800px) {
+  .result-wrapper {
+    flex-direction: column;
+  }
+  .result-item {
+    width: 100%;
+  }
+}
 .result-item {
   min-width: 200px;
   flex-grow: 1;
-  flex-shrink: 0;
+  flex-shrink: 1;
   flex-basis: 200px;
 }
