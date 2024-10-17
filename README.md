@@ -43,3 +43,23 @@ git commit -m "Giải quyết xung đột"
 # Áp dụng lại stash (nếu đã stash trước đó)
 
 git stash pop
+
+- Bộ quà tặng ly thuỷ tinh
+- Quà tặng 20/10
+- Quà tặng 8/3
+- Quà tặng tân gia --> chưa
+- Quà tặng cuối năm
+- Quà tặng sinh nhật
+- Quà tặng doanh nghiệp
+- Quà biếu
+- Quà tặng sự kiện --> chưa
+- Quà tặng nhà giáo
+- Quà tặng đại hội
+- Quà tặng cựu chiến binh
+- Quà tặng hội doanh nghiệp
+- Quà tặng hội đồng hương
+
+Có 2 phần content về bộ ly thuỷ tinh bị trùng --> tìm cách ghép contetn lại tránh để trùng lặp nội dung theo đoạn.
+
+làm giao diện cho chai gốm sứ là landingpage gần giống với link https://services.haravan.com/products/du-an-awedding-website-design-by-haravan
+
