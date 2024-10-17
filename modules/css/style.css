@@ -8,6 +8,9 @@ body {
 h2 {
   color: purple;
 }
+h3 {
+  color: blue;
+}
 span {
   color: green;
   font-weight: 700;
@@ -58,4 +61,16 @@ input {
   border-radius: 6px;
   border-width: 1px;
   padding: 8px;
+}
+.result-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.result-item {
+  min-width: 200px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 200px;
 }
