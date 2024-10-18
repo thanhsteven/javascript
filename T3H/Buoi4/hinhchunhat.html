@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hình chữ nhật</title>
+  </head>
+  <body>
+    <h1>Hình chữ nhật</h1>
+    <p>Nhập chiều dài: <input type="text" id="Th_chieudai" /></p>
+    <p>Nhập chiều rộng: <input type="text" id="Th_chieurong" /></p>
+    <button id="Th_dongy">Tính diện tích và chu vi hình chữ nhật</button>
+    <hr />
+    <div id="Th_Thongtin">[Thông tin]</div>
+    <div id="Kq_dientich"></div>
+    <div id="Kq_chuvi"></div>
+    <script src="./app.js"></script>
+    <script>
+      Th_dongy.onclick = () => {
+        let dai = document.querySelector("#Th_chieudai").value;
+        let rong = document.querySelector("#Th_chieurong").value;
+        let hcn = new HCN(dai, rong);
+        Th_Thongtin.innerHTML = hcn.thongtin();
+        Kq_dientich.innerHTML = hcn.dientich();
+        Kq_chuvi.innerHTML = hcn.chuvi();
+      };
+    </script>
+  </body>
+</html>

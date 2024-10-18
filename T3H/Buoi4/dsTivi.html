@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách Ti vi</title>
+    <style>
+      #Th_khung {
+        width: 100%;
+        margin-left: -10px;
+      }
+      .khung {
+        width: 200px;
+        border: 1px solid rebeccapurple;
+        padding: 0px 12px;
+        border-radius: 8px;
+        float: left;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Danh sách Ti vi</h1>
+    <div id="Th_khung"></div>
+    <script src="../js/thuvien.js"></script>
+    <script>
+      let chuoiJson = Doc_tap_tin("dsTiVi.json");
+      let dsTiVi = JSON.parse(chuoiJson);
+      console.log(dsTiVi);
+      Th_khung.innerHTML = xuat_danh_sach_tivi(dsTiVi);
+
+      function xuat_danh_sach_tivi(ds) {
+        let html = ``;
+        for (let i = 0; i < ds.length; i++) {
+          html += `<div class="khung">
+          <h3>Tên: ${ds[i].Ten}</h3>
+          <p>Giá bán: ${ds[i].Don_gia_Ban}</p>
+          <p>Ký hiệu: ${ds[i].Ky_hieu}</p>
+          <p>Hãng sản xuất: ${ds[i].Nhom.Ten}</p>
+          </div>
+        `;
+        }
+
+        return html;
+      }
+    </script>
+  </body>
+</html>
