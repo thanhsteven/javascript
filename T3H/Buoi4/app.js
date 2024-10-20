@@ -45,3 +45,4 @@ class HCN {
 
 let hcn_1 = new HCN(6, 4);
 console.log(hcn_1.chuvi() + "\n" + hcn_1.dientich());
+
