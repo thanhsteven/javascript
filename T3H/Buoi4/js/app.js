@@ -47,4 +47,3 @@ Th_Ds_Thietbi.onclick = function () {
     result.innerHTML = itemMatHang;
   }
 };
-
