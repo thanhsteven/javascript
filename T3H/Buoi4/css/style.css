@@ -29,8 +29,15 @@ button {
 }
 .item {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
+  transform: translateY(0px);
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 p {
   font-size: 14px;
@@ -49,4 +56,3 @@ p {
   align-items: flex-start;
   row-gap: 10px;
 }
-
