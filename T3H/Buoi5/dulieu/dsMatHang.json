@@ -1,1358 +1,1358 @@
 [
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884aaf"
-        },
-        "Ten": "Cafe Expresso",
-        "Ma_so": "CA_PHE_1",
-        "Don_gia_Ban": 45000,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 45000,
-                "So_luong": 1,
-                "Tien": 45000
-            },
-            {
-                "Ngay": "2018-01-07T04:08:38.210Z",
-                "So_luong": 1,
-                "Don_gia": 45000,
-                "Tien": 45000
-            },
-            {
-                "Ngay": "2018-01-07T04:14:09.166Z",
-                "So_luong": 2,
-                "Don_gia": 45000,
-                "Tien": 90000
-            },
-            {
-                "Ngay": "2018-01-07T09:31:41.889Z",
-                "So_luong": 4,
-                "Don_gia": 45000,
-                "Tien": 180000
-            },
-            {
-                "Ngay": "2018-02-05T00:09:43.742Z",
-                "So_luong": 1,
-                "Don_gia": 45000,
-                "Tien": 45000
-            }
-        ]
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884aaf"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ab0"
-        },
-        "Ten": "Cafe Americano",
-        "Ma_so": "CA_PHE_2",
-        "Don_gia_Ban": 28800,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 28800,
-                "So_luong": 3,
-                "Tien": 86400
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 28800,
-                "So_luong": 1,
-                "Tien": 28800
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 28800,
-                "So_luong": 1,
-                "Tien": 28800
-            },
-            {
-                "Ngay": "2018-01-07T04:10:03.827Z",
-                "So_luong": 2,
-                "Don_gia": 28800,
-                "Tien": 57600
-            },
-            {
-                "Ngay": "2018-01-07T04:22:32.933Z",
-                "So_luong": 5,
-                "Don_gia": 28800,
-                "Tien": 144000
-            },
-            {
-                "Ngay": "2018-01-07T09:43:23.924Z",
-                "So_luong": 4,
-                "Don_gia": 28800,
-                "Tien": 115200
-            }
-        ]
+    "Ten": "Cafe Expresso",
+    "Ma_so": "CA_PHE_1",
+    "Don_gia_Ban": 45000,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ab1"
-        },
-        "Ten": "Cafe sữa",
-        "Ma_so": "CA_PHE_3",
-        "Don_gia_Ban": 20000,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 1,
-                "Tien": 20000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 1,
-                "Tien": 20000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 2,
-                "Tien": 40000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 3,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 2,
-                "Tien": 40000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 2,
-                "Tien": 40000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 4,
-                "Tien": 80000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 1,
-                "Tien": 20000
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 45000,
+        "So_luong": 1,
+        "Tien": 45000
+      },
+      {
+        "Ngay": "2018-01-07T04:08:38.210Z",
+        "So_luong": 1,
+        "Don_gia": 45000,
+        "Tien": 45000
+      },
+      {
+        "Ngay": "2018-01-07T04:14:09.166Z",
+        "So_luong": 2,
+        "Don_gia": 45000,
+        "Tien": 90000
+      },
+      {
+        "Ngay": "2018-01-07T09:31:41.889Z",
+        "So_luong": 4,
+        "Don_gia": 45000,
+        "Tien": 180000
+      },
+      {
+        "Ngay": "2018-02-05T00:09:43.742Z",
+        "So_luong": 1,
+        "Don_gia": 45000,
+        "Tien": 45000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ab0"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ab2"
-        },
-        "Ten": "Cafe Mocha",
-        "Ma_so": "CA_PHE_4",
-        "Don_gia_Ban": 50000,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 50000,
-                "So_luong": 4,
-                "Tien": 200000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 50000,
-                "So_luong": 3,
-                "Tien": 150000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 50000,
-                "So_luong": 4,
-                "Tien": 200000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 50000,
-                "So_luong": 2,
-                "Tien": 100000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 50000,
-                "So_luong": 1,
-                "Tien": 50000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 50000,
-                "So_luong": 2,
-                "Tien": 100000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 50000,
-                "So_luong": 4,
-                "Tien": 200000
-            },
-            {
-                "Ngay": "2018-01-07T04:20:03.764Z",
-                "So_luong": 1,
-                "Don_gia": 50000,
-                "Tien": 50000
-            }
-        ]
+    "Ten": "Cafe Americano",
+    "Ma_so": "CA_PHE_2",
+    "Don_gia_Ban": 28800,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ab4"
-        },
-        "Ten": "Cafe Cappuccino",
-        "Ma_so": "CA_PHE_5",
-        "Don_gia_Ban": 37600,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 1,
-                "Tien": 37600
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 1,
-                "Tien": 37600
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 2,
-                "Tien": 75200
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 3,
-                "Tien": 112800
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 1,
-                "Tien": 37600
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 4,
-                "Tien": 150400
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 1,
-                "Tien": 37600
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 4,
-                "Tien": 150400
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 28800,
+        "So_luong": 3,
+        "Tien": 86400
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 28800,
+        "So_luong": 1,
+        "Tien": 28800
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 28800,
+        "So_luong": 1,
+        "Tien": 28800
+      },
+      {
+        "Ngay": "2018-01-07T04:10:03.827Z",
+        "So_luong": 2,
+        "Don_gia": 28800,
+        "Tien": 57600
+      },
+      {
+        "Ngay": "2018-01-07T04:22:32.933Z",
+        "So_luong": 5,
+        "Don_gia": 28800,
+        "Tien": 144000
+      },
+      {
+        "Ngay": "2018-01-07T09:43:23.924Z",
+        "So_luong": 4,
+        "Don_gia": 28800,
+        "Tien": 115200
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ab1"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ab3"
-        },
-        "Ten": "Caramel Frappuccino",
-        "Ma_so": "CA_PHE_6",
-        "Don_gia_Ban": 39800,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 39800,
-                "So_luong": 3,
-                "Tien": 119400
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 39800,
-                "So_luong": 1,
-                "Tien": 39800
-            },
-            {
-                "Ngay": "2018-01-07T04:19:07.502Z",
-                "So_luong": 2,
-                "Don_gia": 39800,
-                "Tien": 79600
-            }
-        ]
+    "Ten": "Cafe sữa",
+    "Ma_so": "CA_PHE_3",
+    "Don_gia_Ban": 20000,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ab5"
-        },
-        "Ten": "Caramel Macchiato",
-        "Ma_so": "CA_PHE_7",
-        "Don_gia_Ban": 34200,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 34200,
-                "So_luong": 2,
-                "Tien": 68400
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 1,
+        "Tien": 20000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 1,
+        "Tien": 20000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 2,
+        "Tien": 40000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 3,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 2,
+        "Tien": 40000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 2,
+        "Tien": 40000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 4,
+        "Tien": 80000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 1,
+        "Tien": 20000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ab2"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ab6"
-        },
-        "Ten": "Mocha Frappuccino",
-        "Ma_so": "CA_PHE_8",
-        "Don_gia_Ban": 31600,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 31600,
-                "So_luong": 2,
-                "Tien": 63200
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 31600,
-                "So_luong": 2,
-                "Tien": 63200
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 31600,
-                "So_luong": 1,
-                "Tien": 31600
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 31600,
-                "So_luong": 3,
-                "Tien": 94800
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 31600,
-                "So_luong": 4,
-                "Tien": 126400
-            }
-        ]
+    "Ten": "Cafe Mocha",
+    "Ma_so": "CA_PHE_4",
+    "Don_gia_Ban": 50000,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ab7"
-        },
-        "Ten": "Frappuccino",
-        "Ma_so": "CA_PHE_9",
-        "Don_gia_Ban": 31400,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 31400,
-                "So_luong": 1,
-                "Tien": 31400
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 31400,
-                "So_luong": 1,
-                "Tien": 31400
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 31400,
-                "So_luong": 4,
-                "Tien": 125600
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 31400,
-                "So_luong": 2,
-                "Tien": 62800
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 31400,
-                "So_luong": 1,
-                "Tien": 31400
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 50000,
+        "So_luong": 4,
+        "Tien": 200000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 50000,
+        "So_luong": 3,
+        "Tien": 150000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 50000,
+        "So_luong": 4,
+        "Tien": 200000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 50000,
+        "So_luong": 2,
+        "Tien": 100000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 50000,
+        "So_luong": 1,
+        "Tien": 50000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 50000,
+        "So_luong": 2,
+        "Tien": 100000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 50000,
+        "So_luong": 4,
+        "Tien": 200000
+      },
+      {
+        "Ngay": "2018-01-07T04:20:03.764Z",
+        "So_luong": 1,
+        "Don_gia": 50000,
+        "Tien": 50000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ab4"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ab8"
-        },
-        "Ten": "Espresso Con Panna",
-        "Ma_so": "CA_PHE_10",
-        "Don_gia_Ban": 35800,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35800,
-                "So_luong": 3,
-                "Tien": 107400
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35800,
-                "So_luong": 2,
-                "Tien": 71600
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35800,
-                "So_luong": 1,
-                "Tien": 35800
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35800,
-                "So_luong": 1,
-                "Tien": 35800
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35800,
-                "So_luong": 2,
-                "Tien": 71600
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35800,
-                "So_luong": 3,
-                "Tien": 107400
-            },
-            {
-                "Ngay": "2018-01-07T04:18:15.195Z",
-                "So_luong": 3,
-                "Don_gia": 35800,
-                "Tien": 107400
-            },
-            {
-                "Ngay": "2018-01-07T09:31:34.683Z",
-                "So_luong": 2,
-                "Don_gia": 35800,
-                "Tien": 71600
-            },
-            {
-                "Ngay": "2018-01-07T09:35:51.624Z",
-                "So_luong": 3,
-                "Don_gia": 35800,
-                "Tien": 107400
-            }
-        ]
+    "Ten": "Cafe Cappuccino",
+    "Ma_so": "CA_PHE_5",
+    "Don_gia_Ban": 37600,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ab9"
-        },
-        "Ten": "Espresso Macchiato",
-        "Ma_so": "CA_PHE_11",
-        "Don_gia_Ban": 37600,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 2,
-                "Tien": 75200
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 1,
-                "Tien": 37600
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 4,
-                "Tien": 150400
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 2,
-                "Tien": 75200
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 37600,
-                "So_luong": 2,
-                "Tien": 75200
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 1,
+        "Tien": 37600
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 1,
+        "Tien": 37600
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 2,
+        "Tien": 75200
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 3,
+        "Tien": 112800
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 1,
+        "Tien": 37600
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 4,
+        "Tien": 150400
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 1,
+        "Tien": 37600
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 4,
+        "Tien": 150400
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ab3"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884aba"
-        },
-        "Ten": "Cafe Americano Đá",
-        "Ma_so": "CA_PHE_12",
-        "Don_gia_Ban": 27000,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 27000,
-                "So_luong": 2,
-                "Tien": 54000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 27000,
-                "So_luong": 4,
-                "Tien": 108000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 27000,
-                "So_luong": 1,
-                "Tien": 27000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 27000,
-                "So_luong": 2,
-                "Tien": 54000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 27000,
-                "So_luong": 4,
-                "Tien": 108000
-            },
-            {
-                "Ngay": "2018-01-07T04:09:56.582Z",
-                "So_luong": 3,
-                "Don_gia": 27000,
-                "Tien": 81000
-            }
-        ]
+    "Ten": "Caramel Frappuccino",
+    "Ma_so": "CA_PHE_6",
+    "Don_gia_Ban": 39800,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884abb"
-        },
-        "Ten": "Cafe Sữa Đá",
-        "Ma_so": "CA_PHE_13",
-        "Don_gia_Ban": 33800,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 33800,
-                "So_luong": 2,
-                "Tien": 67600
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 33800,
-                "So_luong": 2,
-                "Tien": 67600
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 39800,
+        "So_luong": 3,
+        "Tien": 119400
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 39800,
+        "So_luong": 1,
+        "Tien": 39800
+      },
+      {
+        "Ngay": "2018-01-07T04:19:07.502Z",
+        "So_luong": 2,
+        "Don_gia": 39800,
+        "Tien": 79600
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ab5"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884abc"
-        },
-        "Ten": "Mocha Đá",
-        "Ma_so": "CA_PHE_14",
-        "Don_gia_Ban": 35000,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35000,
-                "So_luong": 1,
-                "Tien": 35000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35000,
-                "So_luong": 2,
-                "Tien": 70000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35000,
-                "So_luong": 4,
-                "Tien": 140000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35000,
-                "So_luong": 2,
-                "Tien": 70000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 35000,
-                "So_luong": 2,
-                "Tien": 70000
-            }
-        ]
+    "Ten": "Caramel Macchiato",
+    "Ma_so": "CA_PHE_7",
+    "Don_gia_Ban": 34200,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884abd"
-        },
-        "Ten": "Caramel Macchiato Đá",
-        "Ma_so": "CA_PHE_15",
-        "Don_gia_Ban": 40000,
-        "Nhom_Mat_hang": {
-            "Ten": "Điện thoại",
-            "Ma_so": "CA_PHE"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 40000,
-                "So_luong": 3,
-                "Tien": 120000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 40000,
-                "So_luong": 2,
-                "Tien": 80000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 40000,
-                "So_luong": 4,
-                "Tien": 160000
-            },
-            {
-                "Ngay": "2018-01-07T09:31:47.570Z",
-                "So_luong": 5,
-                "Don_gia": 40000,
-                "Tien": 200000
-            },
-            {
-                "Ngay": "2018-02-05T00:10:14.789Z",
-                "So_luong": 2,
-                "Don_gia": 40000,
-                "Tien": 80000
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 34200,
+        "So_luong": 2,
+        "Tien": 68400
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ab6"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884abe"
-        },
-        "Ten": "Gà tắm nước mắm",
-        "Ma_so": "MON_AN_1",
-        "Don_gia_Ban": 17000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 17000,
-                "So_luong": 1,
-                "Tien": 17000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 17000,
-                "So_luong": 1,
-                "Tien": 17000
-            }
-        ]
+    "Ten": "Mocha Frappuccino",
+    "Ma_so": "CA_PHE_8",
+    "Don_gia_Ban": 31600,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884abf"
-        },
-        "Ten": "Hamburger gà Creole",
-        "Ma_so": "MON_AN_2",
-        "Don_gia_Ban": 20000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 2,
-                "Tien": 40000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 4,
-                "Tien": 80000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 3,
-                "Tien": 60000
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 31600,
+        "So_luong": 2,
+        "Tien": 63200
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 31600,
+        "So_luong": 2,
+        "Tien": 63200
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 31600,
+        "So_luong": 1,
+        "Tien": 31600
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 31600,
+        "So_luong": 3,
+        "Tien": 94800
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 31600,
+        "So_luong": 4,
+        "Tien": 126400
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ab7"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ac0"
-        },
-        "Ten": "Cơm Gà",
-        "Ma_so": "MON_AN_3",
-        "Don_gia_Ban": 29000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 29000,
-                "So_luong": 1,
-                "Tien": 29000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 29000,
-                "So_luong": 2,
-                "Tien": 58000
-            }
-        ]
+    "Ten": "Frappuccino",
+    "Ma_so": "CA_PHE_9",
+    "Don_gia_Ban": 31400,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ac1"
-        },
-        "Ten": "Khoai tây chiên",
-        "Ma_so": "MON_AN_4",
-        "Don_gia_Ban": 14000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 14000,
-                "So_luong": 1,
-                "Tien": 14000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 14000,
-                "So_luong": 3,
-                "Tien": 42000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 14000,
-                "So_luong": 1,
-                "Tien": 14000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 14000,
-                "So_luong": 2,
-                "Tien": 28000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 14000,
-                "So_luong": 2,
-                "Tien": 28000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 14000,
-                "So_luong": 2,
-                "Tien": 28000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 14000,
-                "So_luong": 1,
-                "Tien": 14000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 14000,
-                "So_luong": 2,
-                "Tien": 28000
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 31400,
+        "So_luong": 1,
+        "Tien": 31400
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 31400,
+        "So_luong": 1,
+        "Tien": 31400
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 31400,
+        "So_luong": 4,
+        "Tien": 125600
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 31400,
+        "So_luong": 2,
+        "Tien": 62800
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 31400,
+        "So_luong": 1,
+        "Tien": 31400
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ab8"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ac2"
-        },
-        "Ten": "Bắp cải trộn",
-        "Ma_so": "MON_AN_5",
-        "Don_gia_Ban": 5000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 5000,
-                "So_luong": 1,
-                "Tien": 5000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 5000,
-                "So_luong": 1,
-                "Tien": 5000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 5000,
-                "So_luong": 1,
-                "Tien": 5000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 5000,
-                "So_luong": 2,
-                "Tien": 10000
-            },
-            {
-                "Ngay": "2018-01-07T04:10:09.397Z",
-                "So_luong": 5,
-                "Don_gia": 5000,
-                "Tien": 25000
-            }
-        ]
+    "Ten": "Espresso Con Panna",
+    "Ma_so": "CA_PHE_10",
+    "Don_gia_Ban": 35800,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ac3"
-        },
-        "Ten": "Khoai tây nghiền",
-        "Ma_so": "MON_AN_6",
-        "Don_gia_Ban": 20000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 2,
-                "Tien": 40000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 2,
-                "Tien": 40000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 2,
-                "Tien": 40000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 2,
-                "Tien": 40000
-            },
-            {
-                "Ngay": "2018-01-07T04:15:51.887Z",
-                "So_luong": 3,
-                "Don_gia": 20000,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-07T04:15:53.203Z",
-                "So_luong": 3,
-                "Don_gia": 20000,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-07T04:15:53.568Z",
-                "So_luong": 3,
-                "Don_gia": 20000,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-07T04:15:53.798Z",
-                "So_luong": 3,
-                "Don_gia": 20000,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-07T04:15:53.989Z",
-                "So_luong": 3,
-                "Don_gia": 20000,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-07T04:15:54.171Z",
-                "So_luong": 3,
-                "Don_gia": 20000,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-07T04:15:54.361Z",
-                "So_luong": 3,
-                "Don_gia": 20000,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-07T04:15:54.546Z",
-                "So_luong": 3,
-                "Don_gia": 20000,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-07T04:15:54.764Z",
-                "So_luong": 3,
-                "Don_gia": 20000,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-07T04:18:35.259Z",
-                "So_luong": 4,
-                "Don_gia": 20000,
-                "Tien": 80000
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35800,
+        "So_luong": 3,
+        "Tien": 107400
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35800,
+        "So_luong": 2,
+        "Tien": 71600
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35800,
+        "So_luong": 1,
+        "Tien": 35800
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35800,
+        "So_luong": 1,
+        "Tien": 35800
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35800,
+        "So_luong": 2,
+        "Tien": 71600
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35800,
+        "So_luong": 3,
+        "Tien": 107400
+      },
+      {
+        "Ngay": "2018-01-07T04:18:15.195Z",
+        "So_luong": 3,
+        "Don_gia": 35800,
+        "Tien": 107400
+      },
+      {
+        "Ngay": "2018-01-07T09:31:34.683Z",
+        "So_luong": 2,
+        "Don_gia": 35800,
+        "Tien": 71600
+      },
+      {
+        "Ngay": "2018-01-07T09:35:51.624Z",
+        "So_luong": 3,
+        "Don_gia": 35800,
+        "Tien": 107400
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ab9"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ac4"
-        },
-        "Ten": "Hamburger Gà Cajun",
-        "Ma_so": "MON_AN_7",
-        "Don_gia_Ban": 20000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 2,
-                "Tien": 40000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 20000,
-                "So_luong": 4,
-                "Tien": 80000
-            }
-        ]
+    "Ten": "Espresso Macchiato",
+    "Ma_so": "CA_PHE_11",
+    "Don_gia_Ban": 37600,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ac5"
-        },
-        "Ten": "Gà giòn không xương",
-        "Ma_so": "MON_AN_8",
-        "Don_gia_Ban": 12000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 12000,
-                "So_luong": 3,
-                "Tien": 36000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 12000,
-                "So_luong": 1,
-                "Tien": 12000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 12000,
-                "So_luong": 1,
-                "Tien": 12000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 12000,
-                "So_luong": 2,
-                "Tien": 24000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 12000,
-                "So_luong": 1,
-                "Tien": 12000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 12000,
-                "So_luong": 1,
-                "Tien": 12000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 12000,
-                "So_luong": 1,
-                "Tien": 12000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 12000,
-                "So_luong": 1,
-                "Tien": 12000
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 2,
+        "Tien": 75200
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 1,
+        "Tien": 37600
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 4,
+        "Tien": 150400
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 2,
+        "Tien": 75200
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 37600,
+        "So_luong": 2,
+        "Tien": 75200
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884aba"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ac6"
-        },
-        "Ten": "Cơm gà sốt đậu",
-        "Ma_so": "MON_AN_9",
-        "Don_gia_Ban": 30000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 30000,
-                "So_luong": 2,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 30000,
-                "So_luong": 2,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 30000,
-                "So_luong": 2,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 30000,
-                "So_luong": 4,
-                "Tien": 120000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 30000,
-                "So_luong": 3,
-                "Tien": 90000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 30000,
-                "So_luong": 2,
-                "Tien": 60000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 30000,
-                "So_luong": 4,
-                "Tien": 120000
-            }
-        ]
+    "Ten": "Cafe Americano Đá",
+    "Ma_so": "CA_PHE_12",
+    "Don_gia_Ban": 27000,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ac7"
-        },
-        "Ten": "Gà sốt phô mai",
-        "Ma_so": "MON_AN_10",
-        "Don_gia_Ban": 27000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 27000,
-                "So_luong": 3,
-                "Tien": 81000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 27000,
-                "So_luong": 4,
-                "Tien": 108000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 27000,
-                "So_luong": 2,
-                "Tien": 54000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 27000,
-                "So_luong": 2,
-                "Tien": 54000
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 27000,
+        "So_luong": 2,
+        "Tien": 54000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 27000,
+        "So_luong": 4,
+        "Tien": 108000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 27000,
+        "So_luong": 1,
+        "Tien": 27000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 27000,
+        "So_luong": 2,
+        "Tien": 54000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 27000,
+        "So_luong": 4,
+        "Tien": 108000
+      },
+      {
+        "Ngay": "2018-01-07T04:09:56.582Z",
+        "So_luong": 3,
+        "Don_gia": 27000,
+        "Tien": 81000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884abb"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ac8"
-        },
-        "Ten": "Gà sốt đậu",
-        "Ma_so": "MON_AN_11",
-        "Don_gia_Ban": 25000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 25000,
-                "So_luong": 1,
-                "Tien": 25000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 25000,
-                "So_luong": 2,
-                "Tien": 50000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 25000,
-                "So_luong": 2,
-                "Tien": 50000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 25000,
-                "So_luong": 3,
-                "Tien": 75000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 25000,
-                "So_luong": 4,
-                "Tien": 100000
-            }
-        ]
+    "Ten": "Cafe Sữa Đá",
+    "Ma_so": "CA_PHE_13",
+    "Don_gia_Ban": 33800,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884ac9"
-        },
-        "Ten": "Gà sốt cay",
-        "Ma_so": "MON_AN_12",
-        "Don_gia_Ban": 30000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 30000,
-                "So_luong": 1,
-                "Tien": 30000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 30000,
-                "So_luong": 2,
-                "Tien": 60000
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 33800,
+        "So_luong": 2,
+        "Tien": 67600
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 33800,
+        "So_luong": 2,
+        "Tien": 67600
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884abc"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614d8032171fd0884aca"
-        },
-        "Ten": "Gà sốt tiêu",
-        "Ma_so": "MON_AN_13",
-        "Don_gia_Ban": 10000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 10000,
-                "So_luong": 2,
-                "Tien": 20000
-            }
-        ]
+    "Ten": "Mocha Đá",
+    "Ma_so": "CA_PHE_14",
+    "Don_gia_Ban": 35000,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614e8032171fd0884acb"
-        },
-        "Ten": "Gà chiên Texas",
-        "Ma_so": "MON_AN_14",
-        "Don_gia_Ban": 29000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 29000,
-                "So_luong": 1,
-                "Tien": 29000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 29000,
-                "So_luong": 2,
-                "Tien": 58000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 29000,
-                "So_luong": 1,
-                "Tien": 29000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 29000,
-                "So_luong": 4,
-                "Tien": 116000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 29000,
-                "So_luong": 3,
-                "Tien": 87000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 29000,
-                "So_luong": 2,
-                "Tien": 58000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 29000,
-                "So_luong": 3,
-                "Tien": 87000
-            }
-        ]
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35000,
+        "So_luong": 1,
+        "Tien": 35000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35000,
+        "So_luong": 2,
+        "Tien": 70000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35000,
+        "So_luong": 4,
+        "Tien": 140000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35000,
+        "So_luong": 2,
+        "Tien": 70000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 35000,
+        "So_luong": 2,
+        "Tien": 70000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884abd"
     },
-    {
-        "_id": {
-            "$oid": "5d5c614e8032171fd0884acc"
-        },
-        "Ten": "Bánh nướng mật ong",
-        "Ma_so": "MON_AN_15",
-        "Don_gia_Ban": 22000,
-        "Nhom_Mat_hang": {
-            "Ten": "Món ăn",
-            "Ma_so": "MON_AN"
-        },
-        "Danh_sach_Ban_hang": [
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 22000,
-                "So_luong": 1,
-                "Tien": 22000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 22000,
-                "So_luong": 1,
-                "Tien": 22000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 22000,
-                "So_luong": 2,
-                "Tien": 44000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 22000,
-                "So_luong": 2,
-                "Tien": 44000
-            },
-            {
-                "Ngay": "2018-01-06T00:00:00+07:00",
-                "Don_gia": 22000,
-                "So_luong": 2,
-                "Tien": 44000
-            }
-        ]
-    }
+    "Ten": "Caramel Macchiato Đá",
+    "Ma_so": "CA_PHE_15",
+    "Don_gia_Ban": 40000,
+    "Nhom_Mat_hang": {
+      "Ten": "Điện thoại",
+      "Ma_so": "CA_PHE"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 40000,
+        "So_luong": 3,
+        "Tien": 120000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 40000,
+        "So_luong": 2,
+        "Tien": 80000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 40000,
+        "So_luong": 4,
+        "Tien": 160000
+      },
+      {
+        "Ngay": "2018-01-07T09:31:47.570Z",
+        "So_luong": 5,
+        "Don_gia": 40000,
+        "Tien": 200000
+      },
+      {
+        "Ngay": "2018-02-05T00:10:14.789Z",
+        "So_luong": 2,
+        "Don_gia": 40000,
+        "Tien": 80000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884abe"
+    },
+    "Ten": "Gà tắm nước mắm",
+    "Ma_so": "MON_AN_1",
+    "Don_gia_Ban": 17000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 17000,
+        "So_luong": 1,
+        "Tien": 17000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 17000,
+        "So_luong": 1,
+        "Tien": 17000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884abf"
+    },
+    "Ten": "Hamburger gà Creole",
+    "Ma_so": "MON_AN_2",
+    "Don_gia_Ban": 20000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 2,
+        "Tien": 40000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 4,
+        "Tien": 80000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 3,
+        "Tien": 60000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ac0"
+    },
+    "Ten": "Cơm Gà",
+    "Ma_so": "MON_AN_3",
+    "Don_gia_Ban": 29000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 29000,
+        "So_luong": 1,
+        "Tien": 29000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 29000,
+        "So_luong": 2,
+        "Tien": 58000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ac1"
+    },
+    "Ten": "Khoai tây chiên",
+    "Ma_so": "MON_AN_4",
+    "Don_gia_Ban": 14000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 14000,
+        "So_luong": 1,
+        "Tien": 14000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 14000,
+        "So_luong": 3,
+        "Tien": 42000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 14000,
+        "So_luong": 1,
+        "Tien": 14000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 14000,
+        "So_luong": 2,
+        "Tien": 28000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 14000,
+        "So_luong": 2,
+        "Tien": 28000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 14000,
+        "So_luong": 2,
+        "Tien": 28000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 14000,
+        "So_luong": 1,
+        "Tien": 14000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 14000,
+        "So_luong": 2,
+        "Tien": 28000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ac2"
+    },
+    "Ten": "Bắp cải trộn",
+    "Ma_so": "MON_AN_5",
+    "Don_gia_Ban": 5000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 5000,
+        "So_luong": 1,
+        "Tien": 5000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 5000,
+        "So_luong": 1,
+        "Tien": 5000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 5000,
+        "So_luong": 1,
+        "Tien": 5000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 5000,
+        "So_luong": 2,
+        "Tien": 10000
+      },
+      {
+        "Ngay": "2018-01-07T04:10:09.397Z",
+        "So_luong": 5,
+        "Don_gia": 5000,
+        "Tien": 25000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ac3"
+    },
+    "Ten": "Khoai tây nghiền",
+    "Ma_so": "MON_AN_6",
+    "Don_gia_Ban": 20000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 2,
+        "Tien": 40000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 2,
+        "Tien": 40000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 2,
+        "Tien": 40000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 2,
+        "Tien": 40000
+      },
+      {
+        "Ngay": "2018-01-07T04:15:51.887Z",
+        "So_luong": 3,
+        "Don_gia": 20000,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-07T04:15:53.203Z",
+        "So_luong": 3,
+        "Don_gia": 20000,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-07T04:15:53.568Z",
+        "So_luong": 3,
+        "Don_gia": 20000,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-07T04:15:53.798Z",
+        "So_luong": 3,
+        "Don_gia": 20000,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-07T04:15:53.989Z",
+        "So_luong": 3,
+        "Don_gia": 20000,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-07T04:15:54.171Z",
+        "So_luong": 3,
+        "Don_gia": 20000,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-07T04:15:54.361Z",
+        "So_luong": 3,
+        "Don_gia": 20000,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-07T04:15:54.546Z",
+        "So_luong": 3,
+        "Don_gia": 20000,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-07T04:15:54.764Z",
+        "So_luong": 3,
+        "Don_gia": 20000,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-07T04:18:35.259Z",
+        "So_luong": 4,
+        "Don_gia": 20000,
+        "Tien": 80000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ac4"
+    },
+    "Ten": "Hamburger Gà Cajun",
+    "Ma_so": "MON_AN_7",
+    "Don_gia_Ban": 20000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 2,
+        "Tien": 40000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 20000,
+        "So_luong": 4,
+        "Tien": 80000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ac5"
+    },
+    "Ten": "Gà giòn không xương",
+    "Ma_so": "MON_AN_8",
+    "Don_gia_Ban": 12000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 12000,
+        "So_luong": 3,
+        "Tien": 36000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 12000,
+        "So_luong": 1,
+        "Tien": 12000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 12000,
+        "So_luong": 1,
+        "Tien": 12000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 12000,
+        "So_luong": 2,
+        "Tien": 24000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 12000,
+        "So_luong": 1,
+        "Tien": 12000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 12000,
+        "So_luong": 1,
+        "Tien": 12000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 12000,
+        "So_luong": 1,
+        "Tien": 12000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 12000,
+        "So_luong": 1,
+        "Tien": 12000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ac6"
+    },
+    "Ten": "Cơm gà sốt đậu",
+    "Ma_so": "MON_AN_9",
+    "Don_gia_Ban": 30000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 30000,
+        "So_luong": 2,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 30000,
+        "So_luong": 2,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 30000,
+        "So_luong": 2,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 30000,
+        "So_luong": 4,
+        "Tien": 120000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 30000,
+        "So_luong": 3,
+        "Tien": 90000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 30000,
+        "So_luong": 2,
+        "Tien": 60000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 30000,
+        "So_luong": 4,
+        "Tien": 120000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ac7"
+    },
+    "Ten": "Gà sốt phô mai",
+    "Ma_so": "MON_AN_10",
+    "Don_gia_Ban": 27000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 27000,
+        "So_luong": 3,
+        "Tien": 81000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 27000,
+        "So_luong": 4,
+        "Tien": 108000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 27000,
+        "So_luong": 2,
+        "Tien": 54000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 27000,
+        "So_luong": 2,
+        "Tien": 54000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ac8"
+    },
+    "Ten": "Gà sốt đậu",
+    "Ma_so": "MON_AN_11",
+    "Don_gia_Ban": 25000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 25000,
+        "So_luong": 1,
+        "Tien": 25000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 25000,
+        "So_luong": 2,
+        "Tien": 50000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 25000,
+        "So_luong": 2,
+        "Tien": 50000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 25000,
+        "So_luong": 3,
+        "Tien": 75000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 25000,
+        "So_luong": 4,
+        "Tien": 100000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884ac9"
+    },
+    "Ten": "Gà sốt cay",
+    "Ma_so": "MON_AN_12",
+    "Don_gia_Ban": 30000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 30000,
+        "So_luong": 1,
+        "Tien": 30000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 30000,
+        "So_luong": 2,
+        "Tien": 60000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614d8032171fd0884aca"
+    },
+    "Ten": "Gà sốt tiêu",
+    "Ma_so": "MON_AN_13",
+    "Don_gia_Ban": 10000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 10000,
+        "So_luong": 2,
+        "Tien": 20000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614e8032171fd0884acb"
+    },
+    "Ten": "Gà chiên Texas",
+    "Ma_so": "MON_AN_14",
+    "Don_gia_Ban": 29000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 29000,
+        "So_luong": 1,
+        "Tien": 29000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 29000,
+        "So_luong": 2,
+        "Tien": 58000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 29000,
+        "So_luong": 1,
+        "Tien": 29000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 29000,
+        "So_luong": 4,
+        "Tien": 116000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 29000,
+        "So_luong": 3,
+        "Tien": 87000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 29000,
+        "So_luong": 2,
+        "Tien": 58000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 29000,
+        "So_luong": 3,
+        "Tien": 87000
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5d5c614e8032171fd0884acc"
+    },
+    "Ten": "Bánh nướng mật ong",
+    "Ma_so": "MON_AN_15",
+    "Don_gia_Ban": 22000,
+    "Nhom_Mat_hang": {
+      "Ten": "Món ăn",
+      "Ma_so": "MON_AN"
+    },
+    "Danh_sach_Ban_hang": [
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 22000,
+        "So_luong": 1,
+        "Tien": 22000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 22000,
+        "So_luong": 1,
+        "Tien": 22000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 22000,
+        "So_luong": 2,
+        "Tien": 44000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 22000,
+        "So_luong": 2,
+        "Tien": 44000
+      },
+      {
+        "Ngay": "2018-01-06T00:00:00+07:00",
+        "Don_gia": 22000,
+        "So_luong": 2,
+        "Tien": 44000
+      }
+    ]
+  }
 ]
