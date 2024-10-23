@@ -5,9 +5,7 @@ var fs = require("fs");
 var dich_vu = http.createServer(function (yeu_cau, dap_ung) {
   let method = yeu_cau.method;
   let url = yeu_cau.url;
-
   dap_ung.setHeader("Access-Control-Allow-Origin", "*");
-
   if (method == "GET") {
     if (url == "/dsHocSinh") {
       let ket_qua = ``;

@@ -1,225 +1,264 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Ứng dụng Biến Danh sách</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid">
-        <div class="btn btn-outline-danger btn-block" id="Th_Thong_bao">
-            KHUNG THÔNG BÁO
-        </div>
+      <div class="btn btn-outline-danger btn-block" id="Th_Thong_bao">
+        KHUNG THÔNG BÁO
+      </div>
     </div>
 
     <div class="container-fluid">
-        <fieldset class="border m-2 p-2">
-            <legend>DANH SÁCH HỌC VIÊN</legend>
-            <div id="Th_Danh_sach_Hoc_sinh"></div>
-        </fieldset>
+      <fieldset class="border m-2 p-2">
+        <legend>DANH SÁCH HỌC VIÊN</legend>
+        <div id="Th_Danh_sach_Hoc_sinh"></div>
+      </fieldset>
     </div>
 
     <div class="container-fluid">
-        <fieldset id="fieldset" class="border m-2 p-2">
-            <legend>CÁC THAO TÁC CƠ BẢN</legend>
-            Nhập tên học viên: <input type="text" id="Th_Ten" class="m-1" size="40" placeholder="Nhập tên học viên" />
-            <button id="Th_Them" class="btn btn-danger m-2">Thêm học viên</button>
-            <button id="Th_Xoa_Dau" class="btn btn-danger m-2">Xóa học viên Đầu</button>
-            <button id="Th_Xoa_Cuoi" class="btn btn-danger m-2">Xóa học viên Cuối</button>
+      <fieldset id="fieldset" class="border m-2 p-2">
+        <legend>CÁC THAO TÁC CƠ BẢN</legend>
+        Nhập tên học viên:
+        <input
+          type="text"
+          id="Th_Ten"
+          class="m-1"
+          size="40"
+          placeholder="Nhập tên học viên"
+        />
+        <button id="Th_Them" class="btn btn-danger m-2">Thêm học viên</button>
+        <button id="Th_Xoa_Dau" class="btn btn-danger m-2">
+          Xóa học viên Đầu
+        </button>
+        <button id="Th_Xoa_Cuoi" class="btn btn-danger m-2">
+          Xóa học viên Cuối
+        </button>
 
-            <hr />
+        <hr />
 
-            Nhập giá trị tìm : <input type="text" id="Th_gtTim" class="m-1" size="40" onkeyup=""
-                placeholder="Nhập giá trị tìm... Enter" />
-            <button id="Th_Tim" class="btn btn-info m-1">Tìm (find)</button>
-            <button id="Th_Loc" class="btn btn-info m-1">Lọc (filter)</button>
-            <button id="Th_BoLoc" class="btn btn-info m-1">Bỏ Lọc</button>
+        Nhập giá trị tìm :
+        <input
+          type="text"
+          id="Th_gtTim"
+          class="m-1"
+          size="40"
+          onkeyup=""
+          placeholder="Nhập giá trị tìm... Enter"
+        />
+        <button id="Th_Tim" class="btn btn-info m-1">Tìm (find)</button>
+        <button id="Th_Loc" class="btn btn-info m-1">Lọc (filter)</button>
+        <button id="Th_BoLoc" class="btn btn-info m-1">Bỏ Lọc</button>
 
-            <hr />
+        <hr />
 
-            Nhập giá trị Xóa : <input type="text" id="Th_gtXoa" class="m-1" size="40" placeholder="Nhập giá trị xóa" />
-            <button id="Th_Xoa" class="btn btn-primary m-1">Xóa học viên theo giá trị</button>
-        </fieldset>
+        Nhập giá trị Xóa :
+        <input
+          type="text"
+          id="Th_gtXoa"
+          class="m-1"
+          size="40"
+          placeholder="Nhập giá trị xóa"
+        />
+        <button id="Th_Xoa" class="btn btn-primary m-1">
+          Xóa học viên theo giá trị
+        </button>
+      </fieldset>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
-        let tenhocsinh = api_Danh_sach_hoc_sinh();
-        
-        // API danh sach hoc sinh
-        function api_Danh_sach_hoc_sinh() {
-            let urlServer = "http://localhost:8080";
-            let Dia_chi_Xu_ly = "dsHocsinh";
-            let Xu_ly_HTTP = new XMLHttpRequest();
-            Xu_ly_HTTP.open("GET", `${urlServer}/${Dia_chi_Xu_ly}`, false);
-            Xu_ly_HTTP.send();
-            let Chuoi_ket_qua = Xu_ly_HTTP.responseText.trim();
-            return JSON.parse(Chuoi_ket_qua);
-        };
+      let tenhocsinh = api_Danh_sach_hoc_sinh();
 
-        function Xuat_danh_sach(danhsach) {
-            let html = "";
-            for (let i = 0; i <= danhsach.length - 1; i++) {
-                let ten_hs = danhsach[i].Ho_ten;
-                let arr_ten = ten_hs.split(' ');
-                let ten = arr_ten[arr_ten.length - 1];
-                
-                html += `${ten},`;
-            };
-            return html;
-        };
+      // API danh sach hoc sinh
+      function api_Danh_sach_hoc_sinh() {
+        let urlServer = "http://localhost:8080";
+        let Dia_chi_Xu_ly = "dsHocsinh";
+        let Xu_ly_HTTP = new XMLHttpRequest();
+        Xu_ly_HTTP.open("GET", `${urlServer}/${Dia_chi_Xu_ly}`, false);
+        Xu_ly_HTTP.send();
+        let Chuoi_ket_qua = Xu_ly_HTTP.responseText.trim();
+        return JSON.parse(Chuoi_ket_qua);
+      }
 
-        // Khai báo danh sách học viên
-        // var Danh_sach = ["Hùng", "Hương", "Kiệt", "Huy", "Tuấn", "Thành"];
-        var Danh_sach = Xuat_danh_sach(tenhocsinh).split(',');
+      function Xuat_danh_sach(danhsach) {
+        let html = "";
+        for (let i = 0; i <= danhsach.length - 1; i++) {
+          let ten_hs = danhsach[i].Ho_ten;
+          let arr_ten = ten_hs.split(" ");
+          let ten = arr_ten[arr_ten.length - 1];
+
+          html += `${ten},`;
+        }
+        return html;
+      }
+
+      // Khai báo danh sách học viên
+      // var Danh_sach = ["Hùng", "Hương", "Kiệt", "Huy", "Tuấn", "Thành"];
+      var Danh_sach = Xuat_danh_sach(tenhocsinh).split(",");
+      Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
+
+      function Xuat_Danh_sach_Hoc_vien(ds, Th_Cha) {
+        Th_Cha.innerHTML = "";
+        ds.forEach((hv) => {
+          var The_hien = document.createElement("button");
+          The_hien.className = "btn btn-primary m-1";
+          The_hien.innerText = hv;
+          Th_Cha.appendChild(The_hien);
+
+          The_hien.onclick = () => {
+            Th_Thong_bao.innerHTML = `Tôi tên là: ${hv}`;
+          };
+        });
+      }
+
+      // Thêm học viên
+      Th_Them.onclick = () => {
+        var tenHocVien = Th_Ten.value.trim();
+        if (tenHocVien == "") {
+          Th_Thong_bao.innerHTML = "Vui lòng điền tên học viên";
+          Th_Ten.focus();
+          return false;
+        }
+        Danh_sach.push(tenHocVien);
         Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
+        document.querySelectorAll("input[type='text']").forEach((item) => {
+          item.value = "";
+        });
+      };
 
-        function Xuat_Danh_sach_Hoc_vien(ds, Th_Cha) {
-            Th_Cha.innerHTML = "";
-            ds.forEach(hv => {
-                var The_hien = document.createElement("button");
-                The_hien.className = "btn btn-primary m-1";
-                The_hien.innerText = hv;
-                Th_Cha.appendChild(The_hien);
+      // Xóa học viên đầu
+      Th_Xoa_Dau.onclick = () => {
+        Danh_sach.shift();
+        Th_Thong_bao.innerHTML = "Đã xóa học viên ĐẦU thành công";
+        Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
+      };
 
-                The_hien.onclick = () => {
-                    Th_Thong_bao.innerHTML = `Tôi tên là: ${hv}`;
-                };
-            });
-        };
+      // Xóa học viên cuối
+      Th_Xoa_Cuoi.onclick = () => {
+        Danh_sach.pop();
+        Th_Thong_bao.innerHTML = "Đã xóa học viên CUỐI thành công";
+        Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
+      };
 
-        // Thêm học viên
-        Th_Them.onclick = () => {
-            var tenHocVien = Th_Ten.value.trim();
-            if (tenHocVien == "") {
-                Th_Thong_bao.innerHTML = "Vui lòng điền tên học viên";
-                Th_Ten.focus();
-                return false;
-            };
-            Danh_sach.push(tenHocVien);
-            Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
-            document.querySelectorAll("input[type='text']").forEach(item => {
-                item.value = "";
-            });
-        };
+      // Tìm giá trị
+      Th_Tim.onclick = () => {
+        var gt_Tim = Th_gtTim.value.trim();
+        var kq_find = Danh_sach.find(
+          (x) => x.toLowerCase() == gt_Tim.toLowerCase()
+        );
+        var kq_vitri = Danh_sach.findIndex((x) => x == kq_find);
 
-        // Xóa học viên đầu
-        Th_Xoa_Dau.onclick = () => {
-            Danh_sach.shift();
-            Th_Thong_bao.innerHTML = "Đã xóa học viên ĐẦU thành công";
-            Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
-        };
-
-        // Xóa học viên cuối
-        Th_Xoa_Cuoi.onclick = () => {
-            Danh_sach.pop();
-            Th_Thong_bao.innerHTML = "Đã xóa học viên CUỐI thành công";
-            Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
-        };
-
-        // Tìm giá trị
-        Th_Tim.onclick = () => {
-            var gt_Tim = Th_gtTim.value.trim();
-            var kq_find = Danh_sach.find(x => x.toLowerCase() == gt_Tim.toLowerCase());
-            var kq_vitri = Danh_sach.findIndex(x => x == kq_find);
-
-            if (gt_Tim == "") {
-                Th_Thong_bao.innerHTML = "Vui lòng điền Tên học viên cần tìm";
-                Th_gtTim.focus();
-                return false;
-            }
-            else if (kq_find == undefined) {
-                Th_Thong_bao.innerHTML =
-                    `Không tìm thấy bạn <strong>${gt_Tim}</strong> trong danh sách`;
-                Th_gtTim.focus();
-                return false;
-            }
-            else {
-                Th_Thong_bao.innerHTML =
-                    `Bạn <strong>${gt_Tim}</strong> được tìm thấy ở vị trí thứ 
+        if (gt_Tim == "") {
+          Th_Thong_bao.innerHTML = "Vui lòng điền Tên học viên cần tìm";
+          Th_gtTim.focus();
+          return false;
+        } else if (kq_find == undefined) {
+          Th_Thong_bao.innerHTML = `Không tìm thấy bạn <strong>${gt_Tim}</strong> trong danh sách`;
+          Th_gtTim.focus();
+          return false;
+        } else {
+          Th_Thong_bao.innerHTML = `Bạn <strong>${gt_Tim}</strong> được tìm thấy ở vị trí thứ 
                     <strong>${kq_vitri + 1}</strong> trong danh sách`;
-                document.querySelectorAll("input[type='text']").forEach(item => {
-                    item.value = "";
-                });
-                return false;
-            };
-        };
+          document.querySelectorAll("input[type='text']").forEach((item) => {
+            item.value = "";
+          });
+          return false;
+        }
+      };
 
-        // Lọc tên học viên
-        Th_Loc.onclick = () => {
-            var gt_Tim = Th_gtTim.value.trim();
-            var kq_filter = Danh_sach.filter(x => x.toLowerCase() == gt_Tim.toLowerCase());
-            var kq_vitri = Danh_sach.findIndex(x => x.toLowerCase() == gt_Tim.toLowerCase());
+      // Lọc tên học viên
+      Th_Loc.onclick = () => {
+        var gt_Tim = Th_gtTim.value.trim();
+        var kq_filter = Danh_sach.filter(
+          (x) => x.toLowerCase() == gt_Tim.toLowerCase()
+        );
+        var kq_vitri = Danh_sach.findIndex(
+          (x) => x.toLowerCase() == gt_Tim.toLowerCase()
+        );
 
-            if (gt_Tim == "") {
-                Th_Thong_bao.innerHTML = "Vui lòng điền Tên học viên cần tìm";
-                Th_gtTim.focus();
-                return false;
-            }
-            else if (kq_filter.length == 0) {
-                Th_Thong_bao.innerHTML =
-                    `Bạn <strong>${gt_Tim}</strong> không có tên trong danh sách`;
-                Th_gtTim.focus();
-                return false;
-            }
-            else {
-                Th_Thong_bao.innerHTML =
-                    `Bạn <strong>${gt_Tim}</strong> có tên trong danh sách 
+        if (gt_Tim == "") {
+          Th_Thong_bao.innerHTML = "Vui lòng điền Tên học viên cần tìm";
+          Th_gtTim.focus();
+          return false;
+        } else if (kq_filter.length == 0) {
+          Th_Thong_bao.innerHTML = `Bạn <strong>${gt_Tim}</strong> không có tên trong danh sách`;
+          Th_gtTim.focus();
+          return false;
+        } else {
+          Th_Thong_bao.innerHTML = `Bạn <strong>${gt_Tim}</strong> có tên trong danh sách 
                     tại vị trí thứ <strong>${kq_vitri + 1}</strong>`;
-                document.querySelectorAll("input[type='text']").forEach(item => {
-                    item.value = "";
-                });
-                return false;
-            }
-        };
+          document.querySelectorAll("input[type='text']").forEach((item) => {
+            item.value = "";
+          });
+          return false;
+        }
+      };
 
-        // Bỏ lọc hoặc Reset lại
-        Th_BoLoc.onclick = () => {
-            Th_Thong_bao.innerHTML = "KHUNG THÔNG BÁO";
-            Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
-            document.querySelectorAll("input[type='text']").forEach(item => {
-                item.value = "";
-            });
-        };
+      // Bỏ lọc hoặc Reset lại
+      Th_BoLoc.onclick = () => {
+        Th_Thong_bao.innerHTML = "KHUNG THÔNG BÁO";
+        Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
+        document.querySelectorAll("input[type='text']").forEach((item) => {
+          item.value = "";
+        });
+      };
 
-        // Xóa học viên theo giá trị
-        Th_Xoa.onclick = () => {
-            var gt_Xoa = Th_gtXoa.value.trim();
-            var kq_vitri = Danh_sach.findIndex(x => x.toLowerCase() == gt_Xoa.toLowerCase());
+      // Xóa học viên theo giá trị
+      Th_Xoa.onclick = () => {
+        var gt_Xoa = Th_gtXoa.value.trim();
+        var kq_vitri = Danh_sach.findIndex(
+          (x) => x.toLowerCase() == gt_Xoa.toLowerCase()
+        );
 
-            if (kq_vitri == -1) {
-                Th_Thong_bao.innerHTML = `Không tìm thấy bạn <strong>${gt_Xoa}</strong> trong danh sách`;
-            } else {
-                Danh_sach.splice(kq_vitri, 1);
-                Th_Thong_bao.innerHTML = `Đã xóa bạn <strong>${gt_Xoa}</strong> trong danh sách`;
-                Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
+        if (kq_vitri == -1) {
+          Th_Thong_bao.innerHTML = `Không tìm thấy bạn <strong>${gt_Xoa}</strong> trong danh sách`;
+        } else {
+          Danh_sach.splice(kq_vitri, 1);
+          Th_Thong_bao.innerHTML = `Đã xóa bạn <strong>${gt_Xoa}</strong> trong danh sách`;
+          Xuat_Danh_sach_Hoc_vien(Danh_sach, Th_Danh_sach_Hoc_sinh);
 
-                document.querySelectorAll("input[type='text']").forEach(item => {
-                    item.value = "";
-                });
-            };
-        };
-
+          document.querySelectorAll("input[type='text']").forEach((item) => {
+            item.value = "";
+          });
+        }
+      };
     </script>
-</body>
-
+  </body>
 </html>
