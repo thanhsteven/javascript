@@ -1,0 +1,16 @@
+button {
+  padding: 12px;
+  color: #fff;
+  background-color: orangered;
+  border: unset;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+a {
+  padding: 10px;
+  background-color: black;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: unset;
+}

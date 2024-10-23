@@ -30,6 +30,10 @@
   text-transform: lowercase;
 }
 
+.container {
+  margin: 0 auto;
+}
+
 /* Modal */
 .modal {
   position: fixed;

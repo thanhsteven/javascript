@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 1</title>
+    <style>
+      .change {
+        background-color: orangered;
+        padding: 8px 12px;
+        border: unset;
+        border-radius: 6px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      body {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="change">Change Color</button>
+    <script>
+      const button = document.querySelector(".change");
+      button.addEventListener("click", handleChangeColor);
+
+      function generateColorCodes(n) {
+        const colors = [];
+        for (let i = 0; i < n; i++) {
+          const color =
+            "#" +
+            Math.floor(Math.random() * 16777215)
+              .toString(16)
+              .padStart(6, "0");
+          colors.push(color);
+        }
+        return colors;
+      }
+
+      function handleChangeColor() {
+        document.body.style.backgroundColor =
+          colors[Math.floor(Math.random() * generateColorCodes(5).length)];
+      }
+    </script>
+  </body>
+</html>
