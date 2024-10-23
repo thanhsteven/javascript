@@ -39,4 +39,3 @@ var dich_vu = http.createServer(function (yeu_cau, dap_ung) {
     dap_ung.end(`Server NodeJS - Method : ${method} - Url : ${url}`);
   }
 });
-
