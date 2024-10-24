@@ -23,13 +23,13 @@
       <!-- fa-times -->
     </header>
     <main>
-      <details>
+      <!-- <details>
         <summary>Danh sách các môn học</summary>
         <p>HTML CSS</p>
         <p>Javascript</p>
         <p>PYTHON</p>
         <p>VUEJS</p>
-      </details>
+      </details> -->
     </main>
     <ul class="menu">
       <li class="menu-item">
@@ -62,9 +62,14 @@
 
       document.addEventListener("click", handleClickOutMenu);
       function handleClickOutMenu(event) {
-        event.target;
-        console.log(event.target);
+        if (event.target.contains(menu) && menu.matches(".is-show")) {
+          menu.classList.remove("is-show");
+          toggle.classList.remove("fa-times");
+          toggle.classList.add("fa-bars");
+          console.log(event.target);
+        }
       }
     </script>
   </body>
 </html>
+

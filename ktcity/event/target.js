@@ -18,3 +18,4 @@ link.addEventListener("click", function (e) {
   // Lấy custom attribute data-abc
   console.log(e.target.dataset.name);
 });
+
