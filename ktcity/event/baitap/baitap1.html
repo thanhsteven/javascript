@@ -6,7 +6,7 @@
     <title>Bài tập 1</title>
     <style>
       .change {
-        background-color: orangered;
+        background-color: #000;
         padding: 8px 12px;
         border: unset;
         border-radius: 6px;
@@ -21,11 +21,17 @@
   </head>
   <body>
     <button class="change">Change Color</button>
+    <!-- - Javascript - -->
     <script>
       const button = document.querySelector(".change");
-      button.addEventListener("click", handleChangeColor);
+      const colors = tao_mau_ngau_nhien(10);
 
-      function generateColorCodes(n) {
+      button.addEventListener("click", handleChangeColor);
+      function handleChangeColor() {
+        document.body.style.backgroundColor = mau_ngau_nhien();
+      }
+      // Tạo array chứa các mã màu
+      function tao_mau_ngau_nhien(n) {
         const colors = [];
         for (let i = 0; i < n; i++) {
           const color =
@@ -37,10 +43,12 @@
         }
         return colors;
       }
-
-      function handleChangeColor() {
-        document.body.style.backgroundColor =
-          colors[Math.floor(Math.random() * generateColorCodes(5).length)];
+      // Tạo 1 mã màu random
+      function mau_ngau_nhien() {
+        let color = Math.floor(Math.random() * 16777215)
+          .toString(16)
+          .padStart(6, "0");
+        return "#" + color;
       }
     </script>
   </body>
