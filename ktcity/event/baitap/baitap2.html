@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Counter -->
+    <div class="counter">
+      <button class="counter-descrease">
+        <i class="fa fa-minus"></i>
+      </button>
+      <h1 class="counter-number">0</h1>
+      <button class="counter-increase">
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+    <!-- - Javascript - -->
+    <script>
+      const btnMinus = document.querySelector(".counter-descrease");
+      const btnPlus = document.querySelector(".counter-increase");
+      const counterNumber = document.querySelector(".counter-number");
+      let counterValue = Number(counterNumber.textContent);
+      btnPlus.addEventListener("click", function (e) {
+        // 3 cách viết
+        counterValue++;
+        // counterValue = counterValue + 1;
+        // counterValue += 1;
+        counterNumber.textContent = counterValue;
+      });
+      btnMinus.addEventListener("click", function (e) {
+        if (counterValue <= 0) {
+          return 0;
+        }
+        // 3 cách viết
+        // counterValue--;
+        // counterValue = counterValue - 1;
+        counterValue -= 1;
+        counterNumber.textContent = counterValue;
+      });
+    </script>
+  </body>
+</html>

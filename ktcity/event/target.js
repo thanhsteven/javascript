@@ -1,8 +1,12 @@
 // * target vs currentTagrget
 const button = document.querySelector(".button");
 button.addEventListener("click", function (event) {
-  console.log(`event.target: ${event.target}`);
-  console.log(`event.currentTarget: ${event.currentTarget}`);
+  event.target.style.backgroundColor = "red";
+  event.currentTarget.style.backgroundColor = "red";
+  event.currentTarget.style.color = "yellow";
+  event.target.style.fontWeight = "700";
+  // console.log(`event.target: ${event.target}`);
+  // console.log(`event.currentTarget: ${event.currentTarget}`);
 });
 
 // * event.preventDefault()
@@ -10,5 +14,7 @@ button.addEventListener("click", function (event) {
 const link = document.querySelector(".link");
 link.addEventListener("click", function (e) {
   e.preventDefault();
-  console.log("Link tag a");
+  e.target.style.color = "red";
+  // Lấy custom attribute data-abc
+  console.log(e.target.dataset.name);
 });
