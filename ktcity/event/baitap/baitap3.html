@@ -53,20 +53,18 @@
       const toggle = document.querySelector(".menu-toggle");
       const menu = document.querySelector(".menu");
       toggle.addEventListener("click", handleToggleMenu);
-
       function handleToggleMenu(event) {
         event.target.classList.toggle("fa-times");
         event.target.classList.toggle("fa-bars");
         menu.classList.toggle("is-show");
       }
-
       document.addEventListener("click", handleClickOutMenu);
       function handleClickOutMenu(event) {
-        if (event.target.contains(menu) && menu.matches(".is-show")) {
+        console.log(event.target);
+        if (menu.contains(event.target) && !event.target.matches(".is-show")) {
           menu.classList.remove("is-show");
           toggle.classList.remove("fa-times");
           toggle.classList.add("fa-bars");
-          console.log(event.target);
         }
       }
     </script>
