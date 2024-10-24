@@ -14,3 +14,42 @@ a {
   color: #fff;
   text-decoration: unset;
 }
+
+.change {
+  background-color: #000;
+  padding: 8px 12px;
+  border: unset;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+body {
+  padding: 20px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+.counter-number {
+  font-size: 100px;
+  margin: 0 10px;
+  color: transparent;
+  background-image: linear-gradient(to right, #00aefd, #ff6bcb);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.counter button {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border: 0;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
