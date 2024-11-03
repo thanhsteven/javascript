@@ -37,3 +37,4 @@ span.addEventListener(
   { capture: true }
 );
 span.addEventListener("click", handleClick, { capture: true });
+
