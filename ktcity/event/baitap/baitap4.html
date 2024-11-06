@@ -61,12 +61,15 @@
           item.classList.remove("active");
         });
         event.target.classList.add("active");
-        const tabNumber = parseInt(event.target.dataset.tab);
+        const tabNumber = event.target.dataset.tab;
         // console.log(tabNumber);
         [...tabContent].forEach((item) => {
           item.classList.remove("active");
+          if (item.getAttribute("data-tab") === tabNumber) {
+            item.classList.add("active");
+          }
         });
-        [...tabContent][tabNumber - 1].classList.add("active");
+        // [...tabContent][tabNumber - 1].classList.add("active");
       }
     </script>
   </body>
