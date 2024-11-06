@@ -32,3 +32,5 @@ span.addEventListener("click", function (event) {
 
 // * Capture: Ngược lại với bubbling là chạy ngược lại từ ngoài vào trong
 
+// * target và currentTarget
+// - chỉ suất hiện khi mà phát sinh 1 sự kiện nào đó ví dụ như click
