@@ -34,3 +34,12 @@ span.addEventListener("click", function (event) {
 
 // * target và currentTarget
 // - chỉ suất hiện khi mà phát sinh 1 sự kiện nào đó ví dụ như click
+// - event.target: chọn chính xác element mà mình click tới
+// - event.currentTarget: chọn phần tử mà mình click, tức là chọn phần tử bao bọc ngoài cùng chứ không quan tâm bên trong có thêm thẻ gì đi nữa.
+const button03 = document.querySelector(".button-03");
+button03.addEventListener("click", function (event) {
+  console.log(`event.target: ${event.target}`);
+  console.log(`event.currentTarget: ${event.currentTarget}`);
+});
+
+// * event.preventDefault()
