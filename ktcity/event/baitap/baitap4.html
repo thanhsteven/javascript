@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bài tập Tab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="tab">
+      <div class="tab-list">
+        <div class="tab-item active" data-tab="1">Popular</div>
+        <div class="tab-item" data-tab="2">Hot</div>
+        <div class="tab-item" data-tab="3">Latest</div>
+      </div>
+      <div class="tab-wrapper">
+        <div class="tab-content" data-tab="2">
+          <h3 class="post-title">
+            Xin chào cô chú, xin chào các bạn ! xin chào !
+          </h3>
+        </div>
+        <div class="tab-content active" data-tab="1">
+          <h3 class="post-title">
+            Ờ thì hôm nay mình cũng có hơi thèm nước dừa
+          </h3>
+        </div>
+        <div class="tab-content" data-tab="3">
+          <h3 class="post-title">
+            Ngày hôm nay lên luông cho anh em 1 siêu phẩm
+          </h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tabItems = document.querySelectorAll(".tab-item");
+      const tabContent = document.querySelectorAll(".tab-content");
+      // console.log(tabItems);
+      [...tabItems].forEach(function (item) {
+        item.addEventListener("click", handleTagClick);
+      });
+      function handleTagClick(event) {
+        // console.log(event.target);
+        [...tabItems].forEach((item) => {
+          item.classList.remove("active");
+        });
+        event.target.classList.add("active");
+        const tabNumber = parseInt(event.target.dataset.tab);
+        // console.log(tabNumber);
+        [...tabContent].forEach((item) => {
+          item.classList.remove("active");
+        });
+        [...tabContent][tabNumber - 1].classList.add("active");
+      }
+    </script>
+  </body>
+</html>
