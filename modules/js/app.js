@@ -105,3 +105,10 @@ function formatInput(input) {
 function formatNumber(value) {
   return value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
+
+// * Chuyển có dấu sang không dấu
+removeAccent.onclick = function () {
+  let string = document.querySelector("#Th_vanban").value;
+  let result = removeVietnameseAccents(string);
+  Th_ketqua.innerHTML = result;
+};

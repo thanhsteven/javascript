@@ -98,3 +98,26 @@ function dinh_dang_so(number) {
   return chuoi_so.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
 
+// * Hàm chuyển có dấu sang không dấu - Ver 2
+function removeVietnameseAccents(str) {
+  const accentsMap = [
+    { base: "a", letters: /[àáạảãâầấậẩẫăằắặẳẵ]/g },
+    { base: "e", letters: /[èéẹẻẽêềếệểễ]/g },
+    { base: "i", letters: /[ìíịỉĩ]/g },
+    { base: "o", letters: /[òóọỏõôồốộổỗơờớợởỡ]/g },
+    { base: "u", letters: /[ùúụủũưừứựửữ]/g },
+    { base: "y", letters: /[ỳýỵỷỹ]/g },
+    { base: "d", letters: /[đ]/g },
+    { base: "A", letters: /[ÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴ]/g },
+    { base: "E", letters: /[ÈÉẸẺẼÊỀẾỆỂỄ]/g },
+    { base: "I", letters: /[ÌÍỊỈĨ]/g },
+    { base: "O", letters: /[ÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠ]/g },
+    { base: "U", letters: /[ÙÚỤỦŨƯỪỨỰỬỮ]/g },
+    { base: "Y", letters: /[ỲÝỴỶỸ]/g },
+    { base: "D", letters: /[Đ]/g },
+  ];
+  accentsMap.forEach((accent) => {
+    str = str.replace(accent.letters, accent.base);
+  });
+  return str;
+}

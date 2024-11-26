@@ -1,12 +1,12 @@
 button {
   padding: 12px;
-  color: #fff;
-  background-color: #ddd;
+  color: #333;
+  background-color: #efba32;
   border: unset;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
 }
-
 .change {
   background-color: #000;
   padding: 8px 12px;
@@ -16,8 +16,9 @@ button {
   font-weight: 600;
   cursor: pointer;
 }
+
 body {
-  padding: 20px;
+  padding: 50px;
 }
 
 .counter {
@@ -188,3 +189,4 @@ body {
   line-height: 1.8;
   font-size: 14px;
 }
+
