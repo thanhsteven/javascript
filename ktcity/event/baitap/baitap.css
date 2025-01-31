@@ -82,7 +82,7 @@ h2 {
 
 .counter-number {
   font-size: 100px;
-  margin: 0 10px;
+  margin: 0 20px;
   color: transparent;
   background-image: linear-gradient(to right, #00aefd, #ff6bcb);
   -webkit-background-clip: text;
@@ -139,16 +139,16 @@ h2 {
 }
 
 .tab {
-  padding: 2.5rem;
+  padding: 20px 20px;
   border-radius: 1rem;
   background-color: white;
   display: inline-block;
+  width: fit-content;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   margin: 50px auto;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  width: 400px;
 }
 
 .tab-list {
