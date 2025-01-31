@@ -204,3 +204,38 @@ h2 {
   line-height: 1.8;
   font-size: 14px;
 }
+
+.accordion {
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+.accordion-header {
+  padding: 20px;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-header * {
+  pointer-events: none;
+}
+.accordion-content {
+  border-top: 0;
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: white;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.25s linear;
+}
+.accordion-content-inner {
+  padding: 20px;
+  border: 1px solid #eee;
+}
+.accordion-content.is-active {
+  height: auto;
+}
