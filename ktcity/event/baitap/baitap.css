@@ -1,0 +1,204 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  font-size: 16px;
+  line-height: 1;
+  padding: 50px;
+}
+
+button {
+  padding: 12px;
+  color: #333;
+  background-color: #efba32;
+  border: unset;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  border-bottom: 1px solid #333;
+}
+
+.change {
+  background-color: orangered;
+  font-family: inherit;
+  padding: 15px 20px;
+  border: unset;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.counter-number {
+  font-size: 100px;
+  margin: 0 10px;
+  color: transparent;
+  background-image: linear-gradient(to right, #00aefd, #ff6bcb);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.counter button {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border: 0;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  list-style: none;
+  transform: translateX(100%);
+  transition: transform 0.25s linear;
+}
+
+.menu.is-show {
+  transform: translateX(0);
+}
+
+.menu-link {
+  display: block;
+  padding: 20px 15px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 30px;
+  position: relative;
+  z-index: 9999;
+}
+
+.tab {
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 50px auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 400px;
+}
+
+.tab-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.tab-item {
+  cursor: pointer;
+  padding: 1.2rem 2rem;
+  border-radius: 5rem;
+  color: #818e9b;
+  background-color: #f4f5f7;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 500;
+  flex: 1;
+}
+
+.tab-item.active {
+  color: white;
+  background-color: #2979ff;
+  pointer-events: none;
+}
+
+.tab-item:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+}
+
+.post:not(:first-child) {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  color: #4e4f51;
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 14px;
+}
