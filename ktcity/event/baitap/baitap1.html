@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bài tập 1</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body>
-    <!-- Change background color -->
-    <button class="change">Change Color</button>
-    <!-- Counter -->
-    <div class="counter">
-      <button class="counter-descrease">
-        <i class="fa fa-minus"></i>
-      </button>
-      <h1 class="counter-number">0</h1>
-      <button class="counter-increase">
-        <i class="fa fa-plus"></i>
-      </button>
-    </div>
-    <!-- - Javascript - -->
-    <script>
-      const button = document.querySelector(".change");
-      const colors = tao_mau_ngau_nhien(10);
-      button.addEventListener("click", handleChangeColor);
-      function handleChangeColor() {
-        document.body.style.backgroundColor = mau_ngau_nhien();
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bài tập 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+
+<body>
+  <!-- Change background color -->
+  <button class="change">Change Color</button>
+  <!-- Counter -->
+  <div class="counter">
+    <button class="counter-descrease">
+      <i class="fa fa-minus"></i>
+    </button>
+    <h1 class="counter-number">0</h1>
+    <button class="counter-increase">
+      <i class="fa fa-plus"></i>
+    </button>
+  </div>
+  <!-- - Javascript - -->
+  <script>
+    const button = document.querySelector(".change");
+    const colors = tao_mau_ngau_nhien(10);
+    button.addEventListener("click", handleChangeColor);
+    function handleChangeColor() {
+      document.body.style.backgroundColor = mau_ngau_nhien();
+    }
+    // Tạo array chứa các mã màu
+    function tao_mau_ngau_nhien(n) {
+      const colors = [];
+      for (let i = 0; i < n; i++) {
+        const color =
+          "#" +
+          Math.floor(Math.random() * 16777215)
+            .toString(16)
+            .padStart(6, "0");
+        colors.push(color);
       }
-      // Tạo array chứa các mã màu
-      function tao_mau_ngau_nhien(n) {
-        const colors = [];
-        for (let i = 0; i < n; i++) {
-          const color =
-            "#" +
-            Math.floor(Math.random() * 16777215)
-              .toString(16)
-              .padStart(6, "0");
-          colors.push(color);
-        }
-        return colors;
-      }
-      // Tạo 1 mã màu random
-      function mau_ngau_nhien() {
-        let color = Math.floor(Math.random() * 16777215)
-          .toString(16)
-          .padStart(6, "0");
-        return "#" + color;
-      }
-    </script>
-  </body>
+      return colors;
+    }
+    // Tạo 1 mã màu random
+    function mau_ngau_nhien() {
+      let color = Math.floor(Math.random() * 16777215)
+        .toString(16)
+        .padStart(6, "0");
+      return "#" + color;
+    }
+  </script>
+</body>
+
 </html>
