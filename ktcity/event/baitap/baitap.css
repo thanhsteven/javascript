@@ -111,6 +111,8 @@ h2 {
   list-style: none;
   transform: translateX(100%);
   transition: transform 0.25s linear;
+  background-color: #fff;
+  z-index: 999;
 }
 
 .menu.is-show {
@@ -124,11 +126,11 @@ h2 {
   border-bottom: 1px solid #eee;
 }
 
-.header {
+.header-menu {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .menu-toggle {

@@ -71,12 +71,10 @@ function handleClickOutMenu(event) {
 // - Bài tập 4 - Tab
 const tabItems = document.querySelectorAll(".tab-item");
 const tabContent = document.querySelectorAll(".tab-content");
-// console.log(tabItems);
 [...tabItems].forEach(function (item) {
   item.addEventListener("click", handleTagClick);
 });
 function handleTagClick(event) {
-  // console.log(event.target);
   [...tabItems].forEach((item) => {
     item.classList.remove("active");
   });
