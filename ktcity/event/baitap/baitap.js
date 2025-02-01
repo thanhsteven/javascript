@@ -60,7 +60,7 @@ function handleToggleMenu(event) {
 }
 document.addEventListener("click", handleClickOutMenu);
 function handleClickOutMenu(event) {
-  console.log(event.target);
+  // console.log(event.target);
   if (menu.contains(event.target) && !event.target.matches(".is-show")) {
     menu.classList.remove("is-show");
     toggle.classList.remove("fa-times");
@@ -89,3 +89,28 @@ function handleTagClick(event) {
   });
   // [...tabContent][tabNumber - 1].classList.add("active");
 }
+
+// - Bài tập 4 - Accordion
+const activeStr = "is-active";
+const accordionHeaders = document.querySelectorAll(".accordion-header");
+const accordionContents = document.querySelectorAll(".accordion-content");
+[...accordionHeaders].forEach(function (item) {
+  item.addEventListener("click", function (event) {
+    [...accordionContents].forEach(function (element) {
+      if (element.classList.contains(activeStr)) {
+        element.classList.remove(activeStr);
+        element.style.height = "0px";
+      }
+    });
+
+    let content = event.target.nextElementSibling;
+    content.style.height = content.scrollHeight + "px";
+    content.classList.toggle(activeStr);
+    if (!content.classList.contains(activeStr)) {
+      content.style.height = "0px";
+    }
+    let icon = event.target.querySelector(".icon");
+    icon.classList.toggle("fa-angle-down");
+    icon.classList.toggle("fa-angle-up");
+  });
+});
