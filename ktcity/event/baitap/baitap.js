@@ -114,3 +114,27 @@ const accordionContents = document.querySelectorAll(".accordion-content");
     icon.classList.toggle("fa-angle-up");
   });
 });
+
+// - Bài tập Lightbox
+const images = document.querySelectorAll(".content img");
+[...images].forEach(function (item) {
+  item.addEventListener("click", handleZoomImage);
+});
+
+function handleZoomImage(event) {
+  console.log(event.target);
+  const image = event.target.getAttribute("src");
+  const altImage = event.target.getAttribute("alt");
+  const template = `<div class="lightbox">
+  <div class="lightbox-content">
+    <img src="${image}" alt="${altImage}">
+  </div>
+</div>`;
+  document.body.insertAdjacentHTML("beforeend", template);
+}
+
+document.body.addEventListener("click", function (e) {
+  if (e.target.matches(".lightbox")) {
+    e.target.parentNode.removeChild(e.target);
+  }
+});
